@@ -1,0 +1,2331 @@
+{
+  "scope": "descriptive diagnostic pilot; no inferential intervals or training gain",
+  "planned_pairs": 36,
+  "admitted_pairs": 15,
+  "planned_contexts": 72,
+  "evaluated_contexts": 30,
+  "stable_contexts": 30,
+  "unresolved_contexts": 0,
+  "evaluated_contracts": 7,
+  "macro": {
+    "A": {
+      "correct_fraction": 0.7857142857142857,
+      "wrong_fraction": 0.21428571428571427,
+      "coverage": 1.0,
+      "utility": 0.5714285714285714,
+      "selective_error": 0.21428571428571427,
+      "selective_error_defined_contracts": 7
+    },
+    "B": {
+      "correct_fraction": 0.7857142857142857,
+      "wrong_fraction": 0.21428571428571427,
+      "coverage": 1.0,
+      "utility": 0.5714285714285714,
+      "selective_error": 0.21428571428571427,
+      "selective_error_defined_contracts": 7
+    },
+    "B_equal_budget": {
+      "correct_fraction": 0.7857142857142857,
+      "wrong_fraction": 0.21428571428571427,
+      "coverage": 1.0,
+      "utility": 0.5714285714285714,
+      "selective_error": 0.21428571428571427,
+      "selective_error_defined_contracts": 7
+    },
+    "C": {
+      "correct_fraction": 1.0,
+      "wrong_fraction": 0.0,
+      "coverage": 1.0,
+      "utility": 1.0,
+      "selective_error": 0.0,
+      "selective_error_defined_contracts": 7
+    }
+  },
+  "primary_delta_utility": 0.4285714285714286,
+  "pooled": {
+    "A": {
+      "n": 30,
+      "correct": 21,
+      "wrong": 9,
+      "abstain": 0,
+      "correct_fraction": 0.7,
+      "wrong_fraction": 0.3,
+      "coverage": 1.0,
+      "selective_error": 0.3,
+      "utility": 0.4
+    },
+    "B": {
+      "n": 30,
+      "correct": 21,
+      "wrong": 9,
+      "abstain": 0,
+      "correct_fraction": 0.7,
+      "wrong_fraction": 0.3,
+      "coverage": 1.0,
+      "selective_error": 0.3,
+      "utility": 0.4
+    },
+    "B_equal_budget": {
+      "n": 30,
+      "correct": 21,
+      "wrong": 9,
+      "abstain": 0,
+      "correct_fraction": 0.7,
+      "wrong_fraction": 0.3,
+      "coverage": 1.0,
+      "selective_error": 0.3,
+      "utility": 0.4
+    },
+    "C": {
+      "n": 30,
+      "correct": 30,
+      "wrong": 0,
+      "abstain": 0,
+      "correct_fraction": 1.0,
+      "wrong_fraction": 0.0,
+      "coverage": 1.0,
+      "selective_error": 0.0,
+      "utility": 1.0
+    }
+  },
+  "correct_fraction_all_72_planned_contexts": {
+    "A": 0.2916666666666667,
+    "B": 0.2916666666666667,
+    "B_equal_budget": 0.2916666666666667,
+    "C": 0.4166666666666667
+  },
+  "per_contract": {
+    "aggregation_greater_equal": {
+      "A": {
+        "n": 2,
+        "correct": 2,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      },
+      "B": {
+        "n": 2,
+        "correct": 2,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      },
+      "B_equal_budget": {
+        "n": 2,
+        "correct": 2,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      },
+      "C": {
+        "n": 2,
+        "correct": 2,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      }
+    },
+    "membership_matched_position_sum": {
+      "A": {
+        "n": 6,
+        "correct": 3,
+        "wrong": 3,
+        "abstain": 0,
+        "correct_fraction": 0.5,
+        "wrong_fraction": 0.5,
+        "coverage": 1.0,
+        "selective_error": 0.5,
+        "utility": 0.0
+      },
+      "B": {
+        "n": 6,
+        "correct": 3,
+        "wrong": 3,
+        "abstain": 0,
+        "correct_fraction": 0.5,
+        "wrong_fraction": 0.5,
+        "coverage": 1.0,
+        "selective_error": 0.5,
+        "utility": 0.0
+      },
+      "B_equal_budget": {
+        "n": 6,
+        "correct": 3,
+        "wrong": 3,
+        "abstain": 0,
+        "correct_fraction": 0.5,
+        "wrong_fraction": 0.5,
+        "coverage": 1.0,
+        "selective_error": 0.5,
+        "utility": 0.0
+      },
+      "C": {
+        "n": 6,
+        "correct": 6,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      }
+    },
+    "membership_matched_sum": {
+      "A": {
+        "n": 6,
+        "correct": 3,
+        "wrong": 3,
+        "abstain": 0,
+        "correct_fraction": 0.5,
+        "wrong_fraction": 0.5,
+        "coverage": 1.0,
+        "selective_error": 0.5,
+        "utility": 0.0
+      },
+      "B": {
+        "n": 6,
+        "correct": 3,
+        "wrong": 3,
+        "abstain": 0,
+        "correct_fraction": 0.5,
+        "wrong_fraction": 0.5,
+        "coverage": 1.0,
+        "selective_error": 0.5,
+        "utility": 0.0
+      },
+      "B_equal_budget": {
+        "n": 6,
+        "correct": 3,
+        "wrong": 3,
+        "abstain": 0,
+        "correct_fraction": 0.5,
+        "wrong_fraction": 0.5,
+        "coverage": 1.0,
+        "selective_error": 0.5,
+        "utility": 0.0
+      },
+      "C": {
+        "n": 6,
+        "correct": 6,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      }
+    },
+    "membership_miss_count": {
+      "A": {
+        "n": 6,
+        "correct": 3,
+        "wrong": 3,
+        "abstain": 0,
+        "correct_fraction": 0.5,
+        "wrong_fraction": 0.5,
+        "coverage": 1.0,
+        "selective_error": 0.5,
+        "utility": 0.0
+      },
+      "B": {
+        "n": 6,
+        "correct": 3,
+        "wrong": 3,
+        "abstain": 0,
+        "correct_fraction": 0.5,
+        "wrong_fraction": 0.5,
+        "coverage": 1.0,
+        "selective_error": 0.5,
+        "utility": 0.0
+      },
+      "B_equal_budget": {
+        "n": 6,
+        "correct": 3,
+        "wrong": 3,
+        "abstain": 0,
+        "correct_fraction": 0.5,
+        "wrong_fraction": 0.5,
+        "coverage": 1.0,
+        "selective_error": 0.5,
+        "utility": 0.0
+      },
+      "C": {
+        "n": 6,
+        "correct": 6,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      }
+    },
+    "strings_all": {
+      "A": {
+        "n": 6,
+        "correct": 6,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      },
+      "B": {
+        "n": 6,
+        "correct": 6,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      },
+      "B_equal_budget": {
+        "n": 6,
+        "correct": 6,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      },
+      "C": {
+        "n": 6,
+        "correct": 6,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      }
+    },
+    "strings_nonempty": {
+      "A": {
+        "n": 2,
+        "correct": 2,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      },
+      "B": {
+        "n": 2,
+        "correct": 2,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      },
+      "B_equal_budget": {
+        "n": 2,
+        "correct": 2,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      },
+      "C": {
+        "n": 2,
+        "correct": 2,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      }
+    },
+    "strings_reverse": {
+      "A": {
+        "n": 2,
+        "correct": 2,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      },
+      "B": {
+        "n": 2,
+        "correct": 2,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      },
+      "B_equal_budget": {
+        "n": 2,
+        "correct": 2,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      },
+      "C": {
+        "n": 2,
+        "correct": 2,
+        "wrong": 0,
+        "abstain": 0,
+        "correct_fraction": 1.0,
+        "wrong_fraction": 0.0,
+        "coverage": 1.0,
+        "selective_error": 0.0,
+        "utility": 1.0
+      }
+    }
+  },
+  "unique_code_sensitivity_pooled_first_frozen_pair": {
+    "A": {
+      "n": 30,
+      "correct": 21,
+      "wrong": 9,
+      "abstain": 0,
+      "correct_fraction": 0.7,
+      "wrong_fraction": 0.3,
+      "coverage": 1.0,
+      "selective_error": 0.3,
+      "utility": 0.4
+    },
+    "B": {
+      "n": 30,
+      "correct": 21,
+      "wrong": 9,
+      "abstain": 0,
+      "correct_fraction": 0.7,
+      "wrong_fraction": 0.3,
+      "coverage": 1.0,
+      "selective_error": 0.3,
+      "utility": 0.4
+    },
+    "B_equal_budget": {
+      "n": 30,
+      "correct": 21,
+      "wrong": 9,
+      "abstain": 0,
+      "correct_fraction": 0.7,
+      "wrong_fraction": 0.3,
+      "coverage": 1.0,
+      "selective_error": 0.3,
+      "utility": 0.4
+    },
+    "C": {
+      "n": 30,
+      "correct": 30,
+      "wrong": 0,
+      "abstain": 0,
+      "correct_fraction": 1.0,
+      "wrong_fraction": 0.0,
+      "coverage": 1.0,
+      "selective_error": 0.0,
+      "utility": 1.0
+    }
+  },
+  "rows": [
+    {
+      "pair_id": "quality004-aggregation_greater_equal-r1",
+      "contract_id": "aggregation_greater_equal",
+      "family": "aggregation",
+      "profile": "none_selected",
+      "calibration_ratios": {
+        "none_selected": 1.1728794946817522,
+        "all_selected": 5.4271214253704985
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        1.3891184155770664,
+        1.307729730797378
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 568,
+          "good_bytes": 0,
+          "good_minus_bad_bytes": -568
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 568,
+          "good_bytes": 0,
+          "good_minus_bad_bytes": -568
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-aggregation_greater_equal-r1",
+      "contract_id": "aggregation_greater_equal",
+      "family": "aggregation",
+      "profile": "all_selected",
+      "calibration_ratios": {
+        "none_selected": 1.1728794946817522,
+        "all_selected": 5.4271214253704985
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        3.22421241378858,
+        3.475403107857653
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 1104,
+          "good_bytes": 0,
+          "good_minus_bad_bytes": -1104
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 1104,
+          "good_bytes": 0,
+          "good_minus_bad_bytes": -1104
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r1",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08153853559734384,
+        "no_hit": 3.3012978327097904
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      },
+      "evaluation_ratios": [
+        0.07729772158348144,
+        0.06897224288438027
+      ],
+      "truth": "slower",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r1",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08153853559734384,
+        "no_hit": 3.3012978327097904
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        6.023803999576908,
+        5.511528004048721
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r2",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08018301867461036,
+        "no_hit": 2.9015360293583243
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      },
+      "evaluation_ratios": [
+        0.06561547543347393,
+        0.06805357905326333
+      ],
+      "truth": "slower",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r2",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08018301867461036,
+        "no_hit": 2.9015360293583243
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        5.8756007070143115,
+        5.906529853862125
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r3",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07717219632789557,
+        "no_hit": 3.1612973383685206
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      },
+      "evaluation_ratios": [
+        0.0699941172552297,
+        0.07075546093000197
+      ],
+      "truth": "slower",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r3",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07717219632789557,
+        "no_hit": 3.1612973383685206
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        5.451487544949582,
+        4.967600665277644
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r1",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07800241012944736,
+        "no_hit": 3.0339537367074074
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      },
+      "evaluation_ratios": [
+        0.06435851486238377,
+        0.073335616386273
+      ],
+      "truth": "slower",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r1",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07800241012944736,
+        "no_hit": 3.0339537367074074
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        4.843539278914562,
+        5.053537514175524
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r2",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08258722685610441,
+        "no_hit": 3.036819860913567
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      },
+      "evaluation_ratios": [
+        0.07543977168515972,
+        0.06497696623934691
+      ],
+      "truth": "slower",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r2",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08258722685610441,
+        "no_hit": 3.036819860913567
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        4.850129714476439,
+        5.408649962339474
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r3",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08941913480593974,
+        "no_hit": 2.897200217965981
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      },
+      "evaluation_ratios": [
+        0.07528755530262345,
+        0.0783915592718463
+      ],
+      "truth": "slower",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r3",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08941913480593974,
+        "no_hit": 2.897200217965981
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        5.992696834526477,
+        5.9677547977036385
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r1",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07372399393123992,
+        "no_hit": 2.4365951491896287
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      },
+      "evaluation_ratios": [
+        0.06517655741874732,
+        0.05752342423556068
+      ],
+      "truth": "slower",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r1",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07372399393123992,
+        "no_hit": 2.4365951491896287
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        5.515139611214444,
+        4.921893641713103
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r2",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07408259811490586,
+        "no_hit": 2.400590811513519
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      },
+      "evaluation_ratios": [
+        0.06709003036080681,
+        0.06989477689955215
+      ],
+      "truth": "slower",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r2",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07408259811490586,
+        "no_hit": 2.400590811513519
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        5.164204024841348,
+        5.264692640454188
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r3",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.0614914846214182,
+        "no_hit": 2.5696835165808714
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      },
+      "evaluation_ratios": [
+        0.060037214248258926,
+        0.06079058542919849
+      ],
+      "truth": "slower",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r3",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.0614914846214182,
+        "no_hit": 2.5696835165808714
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        5.611138108901372,
+        4.828253104620804
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 0,
+          "good_bytes": 2248,
+          "good_minus_bad_bytes": 2248
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 0,
+          "wrong": 1,
+          "abstain": 0,
+          "utility": -1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-strings_all-r1",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "profile": "short_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.440879504531016,
+        "long_fragments": 9.290783724321072
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        5.637521791947857,
+        6.7108512279681785
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 19688,
+          "good_bytes": 2400,
+          "good_minus_bad_bytes": -17288
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 19688,
+          "good_bytes": 2400,
+          "good_minus_bad_bytes": -17288
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-strings_all-r1",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "profile": "long_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.440879504531016,
+        "long_fragments": 9.290783724321072
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        22.744025251228773,
+        24.11054014577333
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 531368,
+          "good_bytes": 16624,
+          "good_minus_bad_bytes": -514744
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 531368,
+          "good_bytes": 16624,
+          "good_minus_bad_bytes": -514744
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-strings_all-r2",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "profile": "short_fragments",
+      "calibration_ratios": {
+        "short_fragments": 3.992518631616533,
+        "long_fragments": 12.030955176455025
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        6.178198021918629,
+        6.141829665888774
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 19688,
+          "good_bytes": 2400,
+          "good_minus_bad_bytes": -17288
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 19688,
+          "good_bytes": 2400,
+          "good_minus_bad_bytes": -17288
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-strings_all-r2",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "profile": "long_fragments",
+      "calibration_ratios": {
+        "short_fragments": 3.992518631616533,
+        "long_fragments": 12.030955176455025
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        20.920593752286717,
+        20.506987912925812
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 531368,
+          "good_bytes": 16624,
+          "good_minus_bad_bytes": -514744
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 531368,
+          "good_bytes": 16624,
+          "good_minus_bad_bytes": -514744
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-strings_all-r3",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "profile": "short_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.236954795291609,
+        "long_fragments": 8.711309392818425
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        6.04118784934218,
+        7.357106881918519
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 19688,
+          "good_bytes": 824,
+          "good_minus_bad_bytes": -18864
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 19688,
+          "good_bytes": 824,
+          "good_minus_bad_bytes": -18864
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-strings_all-r3",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "profile": "long_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.236954795291609,
+        "long_fragments": 8.711309392818425
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        19.379188387663728,
+        20.639326202261387
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 531368,
+          "good_bytes": 17056,
+          "good_minus_bad_bytes": -514312
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 531368,
+          "good_bytes": 17056,
+          "good_minus_bad_bytes": -514312
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-strings_nonempty-r2",
+      "contract_id": "strings_nonempty",
+      "family": "strings",
+      "profile": "short_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.083112078449289,
+        "long_fragments": 9.363699840664408
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        6.7115578917270104,
+        7.627028796273839
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 19688,
+          "good_bytes": 824,
+          "good_minus_bad_bytes": -18864
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 19688,
+          "good_bytes": 824,
+          "good_minus_bad_bytes": -18864
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-strings_nonempty-r2",
+      "contract_id": "strings_nonempty",
+      "family": "strings",
+      "profile": "long_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.083112078449289,
+        "long_fragments": 9.363699840664408
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        18.532872076371735,
+        20.658866073429248
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 531368,
+          "good_bytes": 17056,
+          "good_minus_bad_bytes": -514312
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 531368,
+          "good_bytes": 17056,
+          "good_minus_bad_bytes": -514312
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-strings_reverse-r2",
+      "contract_id": "strings_reverse",
+      "family": "strings",
+      "profile": "short_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.063414277437127,
+        "long_fragments": 9.722888937932165
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        7.045636114162443,
+        6.927956066080142
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 19688,
+          "good_bytes": 824,
+          "good_minus_bad_bytes": -18864
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 19688,
+          "good_bytes": 824,
+          "good_minus_bad_bytes": -18864
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    },
+    {
+      "pair_id": "quality004-strings_reverse-r2",
+      "contract_id": "strings_reverse",
+      "family": "strings",
+      "profile": "long_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.063414277437127,
+        "long_fragments": 9.722888937932165
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      },
+      "evaluation_ratios": [
+        19.223586768721578,
+        19.309091021271136
+      ],
+      "truth": "faster",
+      "allocations": [
+        {
+          "launch": 1,
+          "bad_bytes": 531368,
+          "good_bytes": 17056,
+          "good_minus_bad_bytes": -514312
+        },
+        {
+          "launch": 2,
+          "bad_bytes": 531368,
+          "good_bytes": 17056,
+          "good_minus_bad_bytes": -514312
+        }
+      ],
+      "scores": {
+        "A": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "B_equal_budget": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        },
+        "C": {
+          "correct": 1,
+          "wrong": 0,
+          "abstain": 0,
+          "utility": 1
+        }
+      }
+    }
+  ],
+  "family_macro": {
+    "aggregation": {
+      "contracts": 1,
+      "stable_contexts": 2,
+      "utility": {
+        "A": 1.0,
+        "B": 1.0,
+        "B_equal_budget": 1.0,
+        "C": 1.0
+      }
+    },
+    "membership": {
+      "contracts": 3,
+      "stable_contexts": 18,
+      "utility": {
+        "A": 0.0,
+        "B": 0.0,
+        "B_equal_budget": 0.0,
+        "C": 1.0
+      }
+    },
+    "strings": {
+      "contracts": 3,
+      "stable_contexts": 10,
+      "utility": {
+        "A": 1.0,
+        "B": 1.0,
+        "B_equal_budget": 1.0,
+        "C": 1.0
+      }
+    }
+  }
+}

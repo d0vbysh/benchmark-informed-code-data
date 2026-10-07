@@ -1,0 +1,1 @@
+public static class Candidate { public static long Run(int[] values, int threshold) { long sum = 0; for (int i = 0; i < values.Length; i++) { if (values[i] < threshold) { sum += Math.Abs((long)values[i]); } } return sum; } }

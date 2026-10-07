@@ -1,0 +1,16 @@
+{
+  "plan_sha256": "bc05fdcd497785445e3d981a4d7a798b56ecea476b08f09680823888df7c3ff5",
+  "runner_sha256": "edfc291df5c5e24aa4faa4f1eea5b62e3463fde72f0372af591f69df75ab7d31",
+  "started_unix": 1790267197.7461512,
+  "python": "3.13.15",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "gpu": "Tesla T4",
+  "cuda": "12.8",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.5.0",
+    "peft": "0.19.1",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.15.0"
+  }
+}

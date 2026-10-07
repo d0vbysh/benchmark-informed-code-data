@@ -1,0 +1,22 @@
+{
+  "job_id": "control-15-candidate-l1",
+  "status": "pass",
+  "time_ns": [
+    64.23752307891846,
+    66.808021068573,
+    66.23116731643677,
+    68.40018033981323,
+    69.58181858062744
+  ],
+  "median_ns": 66.808021068573,
+  "allocated_bytes": 0,
+  "raw_hashes": {
+    "bdn\\results\\TransferPilot.Sample43-report-full.json": "2d894815655e3835acfd13ab69804b6f170df9ed17e1c85afcd167acf9a72232",
+    "input.json": "8b304f3f8ae954f7140f640802c8aea105d392b5b3cd2c63afca2257ae1bacdc",
+    "console.log": "fbf74026ab399b76c53a9dd764c5e6a6979d0695902bc71df7c9500b26bda6e6",
+    "job.json": "5983a7fca93296ed4f654711eb857c424042a112a74d4282c3dacf37a26e0eb2",
+    "command.json": "3b99e24ff182cee6d999e655bda531e081fe3b0f5053a150823b5a6582af2f83"
+  },
+  "elapsed_seconds": 13.0,
+  "ended_utc": "2026-10-06T14:57:50.829497+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "bqm-annotation-comparison/1.0",
+  "experiment_id": "quality004",
+  "planned_pairs": 36,
+  "planned_teacher_calls": 72,
+  "contracts": 12,
+  "replicates_per_contract": 3,
+  "primary_resource": "elapsed_time",
+  "tau": 0.05,
+  "calibration_n": 64,
+  "evaluation_n": 128,
+  "calibration_launches": 1,
+  "evaluation_launches": 2,
+  "warmup_iterations": 3,
+  "measurement_iterations": 5,
+  "outlier_mode": "DontRemove",
+  "job_order_seed": 2026092417,
+  "arms": {
+    "A": "role-based export: proposed is faster; not an independently elicited runtime claim",
+    "B": "one preselected calibration profile, unconditioned export to both test profiles",
+    "B_equal_budget": "geometric mean of both calibration ratios, unconditioned export",
+    "C": "calibration ratio selected by matching workload profile; abstain if near threshold"
+  },
+  "minimum_for_cluster_interval": {
+    "admitted_pairs": 18,
+    "admitted_contracts": 8,
+    "each_family_contracts": 2
+  },
+  "inference": "exploratory stratified contract-cluster bootstrap, 10000 replicates, seed 2026092427",
+  "no_effect_guarantee": true,
+  "no_student_training": true,
+  "benchmark_inputs_sha256": "c959cdbd8a1c4321f786b3ab99574d77494c82ead3a6b0f41e7f41ce9d6609c8",
+  "contracts_sha256": "a41885e73ff75ae70d096d9127a0b29ee6be579b53389dfe9e6148c77b97b59b",
+  "protocol_sha256": "199a021c096fe3a022d9c37fb171ce847f0ea89e400e598c8058b4ffddf070a9",
+  "annotation_rules_sha256": "ea7eb8844b1c0c2010f8d8493f6ddbc1ce27b4129084b8e3692a677ff2793f7f"
+}

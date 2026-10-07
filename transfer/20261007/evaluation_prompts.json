@@ -1,0 +1,386 @@
+[
+  {
+    "id": "membership_matched_square_sum:first_hit",
+    "contract_id": "membership_matched_square_sum",
+    "profile": "first_hit",
+    "seed": 2026100500,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] left, int[] right)\nContract: Return the long sum of squares (long)x*x over left positions whose value occurs in right. Arrays are non-null. Duplicates in left count by position. Empty arrays are allowed. Integer values are in [-1000,1000]. Do not mutate inputs.\nBaseline implementation: For each relevant left position, search right from index zero with a nested loop, stopping at its first match. Use the membership result to compute the requested aggregate. No collections, LINQ, or sorting.\nCandidate implementation: Construct one System.Collections.Generic.HashSet<int> from right inside Run; query Contains for the relevant left positions and compute the requested aggregate. Do not deduplicate left. No LINQ.\nWorkload: Both arrays have 128 elements; every left value equals right[0]; right has distinct values.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "membership_matched_square_sum:no_hit",
+    "contract_id": "membership_matched_square_sum",
+    "profile": "no_hit",
+    "seed": 2026100501,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] left, int[] right)\nContract: Return the long sum of squares (long)x*x over left positions whose value occurs in right. Arrays are non-null. Duplicates in left count by position. Empty arrays are allowed. Integer values are in [-1000,1000]. Do not mutate inputs.\nBaseline implementation: For each relevant left position, search right from index zero with a nested loop, stopping at its first match. Use the membership result to compute the requested aggregate. No collections, LINQ, or sorting.\nCandidate implementation: Construct one System.Collections.Generic.HashSet<int> from right inside Run; query Contains for the relevant left positions and compute the requested aggregate. Do not deduplicate left. No LINQ.\nWorkload: Both arrays have 128 elements; their values are disjoint; right has distinct values.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "membership_missed_position_sum:first_hit",
+    "contract_id": "membership_missed_position_sum",
+    "profile": "first_hit",
+    "seed": 2026100502,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] left, int[] right)\nContract: Return the long sum of one-based positions i+1 whose left value does not occur in right. Arrays are non-null. Duplicates in left count by position. Empty arrays are allowed. Integer values are in [-1000,1000]. Do not mutate inputs.\nBaseline implementation: For each relevant left position, search right from index zero with a nested loop, stopping at its first match. Use the membership result to compute the requested aggregate. No collections, LINQ, or sorting.\nCandidate implementation: Construct one System.Collections.Generic.HashSet<int> from right inside Run; query Contains for the relevant left positions and compute the requested aggregate. Do not deduplicate left. No LINQ.\nWorkload: Both arrays have 128 elements; every left value equals right[0]; right has distinct values.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "membership_missed_position_sum:no_hit",
+    "contract_id": "membership_missed_position_sum",
+    "profile": "no_hit",
+    "seed": 2026100503,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] left, int[] right)\nContract: Return the long sum of one-based positions i+1 whose left value does not occur in right. Arrays are non-null. Duplicates in left count by position. Empty arrays are allowed. Integer values are in [-1000,1000]. Do not mutate inputs.\nBaseline implementation: For each relevant left position, search right from index zero with a nested loop, stopping at its first match. Use the membership result to compute the requested aggregate. No collections, LINQ, or sorting.\nCandidate implementation: Construct one System.Collections.Generic.HashSet<int> from right inside Run; query Contains for the relevant left positions and compute the requested aggregate. Do not deduplicate left. No LINQ.\nWorkload: Both arrays have 128 elements; their values are disjoint; right has distinct values.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "membership_even_match_count:first_hit",
+    "contract_id": "membership_even_match_count",
+    "profile": "first_hit",
+    "seed": 2026100504,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] left, int[] right)\nContract: Return as long, the number of left positions whose value is even and occurs in right. Arrays are non-null. Duplicates in left count by position. Empty arrays are allowed. Integer values are in [-1000,1000]. Do not mutate inputs.\nBaseline implementation: For each relevant left position, search right from index zero with a nested loop, stopping at its first match. Use the membership result to compute the requested aggregate. No collections, LINQ, or sorting.\nCandidate implementation: Construct one System.Collections.Generic.HashSet<int> from right inside Run; query Contains for the relevant left positions and compute the requested aggregate. Do not deduplicate left. No LINQ.\nWorkload: Both arrays have 128 elements; every left value equals right[0]; right has distinct values.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "membership_even_match_count:no_hit",
+    "contract_id": "membership_even_match_count",
+    "profile": "no_hit",
+    "seed": 2026100505,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] left, int[] right)\nContract: Return as long, the number of left positions whose value is even and occurs in right. Arrays are non-null. Duplicates in left count by position. Empty arrays are allowed. Integer values are in [-1000,1000]. Do not mutate inputs.\nBaseline implementation: For each relevant left position, search right from index zero with a nested loop, stopping at its first match. Use the membership result to compute the requested aggregate. No collections, LINQ, or sorting.\nCandidate implementation: Construct one System.Collections.Generic.HashSet<int> from right inside Run; query Contains for the relevant left positions and compute the requested aggregate. Do not deduplicate left. No LINQ.\nWorkload: Both arrays have 128 elements; their values are disjoint; right has distinct values.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "membership_odd_miss_sum:first_hit",
+    "contract_id": "membership_odd_miss_sum",
+    "profile": "first_hit",
+    "seed": 2026100506,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] left, int[] right)\nContract: Return the long sum of odd left values that do not occur in right. Arrays are non-null. Duplicates in left count by position. Empty arrays are allowed. Integer values are in [-1000,1000]. Do not mutate inputs.\nBaseline implementation: For each relevant left position, search right from index zero with a nested loop, stopping at its first match. Use the membership result to compute the requested aggregate. No collections, LINQ, or sorting.\nCandidate implementation: Construct one System.Collections.Generic.HashSet<int> from right inside Run; query Contains for the relevant left positions and compute the requested aggregate. Do not deduplicate left. No LINQ.\nWorkload: Both arrays have 128 elements; every left value equals right[0]; right has distinct values.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "membership_odd_miss_sum:no_hit",
+    "contract_id": "membership_odd_miss_sum",
+    "profile": "no_hit",
+    "seed": 2026100507,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] left, int[] right)\nContract: Return the long sum of odd left values that do not occur in right. Arrays are non-null. Duplicates in left count by position. Empty arrays are allowed. Integer values are in [-1000,1000]. Do not mutate inputs.\nBaseline implementation: For each relevant left position, search right from index zero with a nested loop, stopping at its first match. Use the membership result to compute the requested aggregate. No collections, LINQ, or sorting.\nCandidate implementation: Construct one System.Collections.Generic.HashSet<int> from right inside Run; query Contains for the relevant left positions and compute the requested aggregate. Do not deduplicate left. No LINQ.\nWorkload: Both arrays have 128 elements; their values are disjoint; right has distinct values.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "aggregation_less_equal_count:none_selected",
+    "contract_id": "aggregation_less_equal_count",
+    "profile": "none_selected",
+    "seed": 2026100508,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] values, int threshold)\nContract: Return as long, the count of values satisfying value <= threshold. Use signed comparisons. Empty input returns zero. Values are in [-1000,1000]. The array is non-null. Do not mutate inputs.\nBaseline implementation: Construct System.Collections.Generic.List<int>(values.Length), collect selected indices, call ToArray once, and traverse that array to compute the requested aggregate. Do not return before ToArray.\nCandidate implementation: Compute the requested aggregate in one scan with no collections, arrays, LINQ, or unsigned casts.\nWorkload: The array has 128 elements and none satisfies the specified selection predicate.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "aggregation_less_equal_count:all_selected",
+    "contract_id": "aggregation_less_equal_count",
+    "profile": "all_selected",
+    "seed": 2026100509,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] values, int threshold)\nContract: Return as long, the count of values satisfying value <= threshold. Use signed comparisons. Empty input returns zero. Values are in [-1000,1000]. The array is non-null. Do not mutate inputs.\nBaseline implementation: Construct System.Collections.Generic.List<int>(values.Length), collect selected indices, call ToArray once, and traverse that array to compute the requested aggregate. Do not return before ToArray.\nCandidate implementation: Compute the requested aggregate in one scan with no collections, arrays, LINQ, or unsigned casts.\nWorkload: The array has 128 elements and all satisfy the specified selection predicate.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "aggregation_greater_square_sum:none_selected",
+    "contract_id": "aggregation_greater_square_sum",
+    "profile": "none_selected",
+    "seed": 2026100510,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] values, int threshold)\nContract: Return the long sum of squares (long)value*value of values satisfying value > threshold. Use signed comparisons. Empty input returns zero. Values are in [-1000,1000]. The array is non-null. Do not mutate inputs.\nBaseline implementation: Construct System.Collections.Generic.List<int>(values.Length), collect selected indices, call ToArray once, and traverse that array to compute the requested aggregate. Do not return before ToArray.\nCandidate implementation: Compute the requested aggregate in one scan with no collections, arrays, LINQ, or unsigned casts.\nWorkload: The array has 128 elements and none satisfies the specified selection predicate.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "aggregation_greater_square_sum:all_selected",
+    "contract_id": "aggregation_greater_square_sum",
+    "profile": "all_selected",
+    "seed": 2026100511,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] values, int threshold)\nContract: Return the long sum of squares (long)value*value of values satisfying value > threshold. Use signed comparisons. Empty input returns zero. Values are in [-1000,1000]. The array is non-null. Do not mutate inputs.\nBaseline implementation: Construct System.Collections.Generic.List<int>(values.Length), collect selected indices, call ToArray once, and traverse that array to compute the requested aggregate. Do not return before ToArray.\nCandidate implementation: Compute the requested aggregate in one scan with no collections, arrays, LINQ, or unsigned casts.\nWorkload: The array has 128 elements and all satisfy the specified selection predicate.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "aggregation_less_absolute_sum:none_selected",
+    "contract_id": "aggregation_less_absolute_sum",
+    "profile": "none_selected",
+    "seed": 2026100512,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] values, int threshold)\nContract: Return the long sum of absolute values Math.Abs((long)value) for values satisfying value < threshold. Use signed comparisons. Empty input returns zero. Values are in [-1000,1000]. The array is non-null. Do not mutate inputs.\nBaseline implementation: Construct System.Collections.Generic.List<int>(values.Length), collect selected indices, call ToArray once, and traverse that array to compute the requested aggregate. Do not return before ToArray.\nCandidate implementation: Compute the requested aggregate in one scan with no collections, arrays, LINQ, or unsigned casts.\nWorkload: The array has 128 elements and none satisfies the specified selection predicate.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "aggregation_less_absolute_sum:all_selected",
+    "contract_id": "aggregation_less_absolute_sum",
+    "profile": "all_selected",
+    "seed": 2026100513,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] values, int threshold)\nContract: Return the long sum of absolute values Math.Abs((long)value) for values satisfying value < threshold. Use signed comparisons. Empty input returns zero. Values are in [-1000,1000]. The array is non-null. Do not mutate inputs.\nBaseline implementation: Construct System.Collections.Generic.List<int>(values.Length), collect selected indices, call ToArray once, and traverse that array to compute the requested aggregate. Do not return before ToArray.\nCandidate implementation: Compute the requested aggregate in one scan with no collections, arrays, LINQ, or unsigned casts.\nWorkload: The array has 128 elements and all satisfy the specified selection predicate.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "aggregation_equal_position_sum:none_selected",
+    "contract_id": "aggregation_equal_position_sum",
+    "profile": "none_selected",
+    "seed": 2026100514,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] values, int threshold)\nContract: Return the long sum of one-based positions i+1 satisfying values[i] == threshold. Use signed comparisons. Empty input returns zero. Values are in [-1000,1000]. The array is non-null. Do not mutate inputs.\nBaseline implementation: Construct System.Collections.Generic.List<int>(values.Length), collect selected indices, call ToArray once, and traverse that array to compute the requested aggregate. Do not return before ToArray.\nCandidate implementation: Compute the requested aggregate in one scan with no collections, arrays, LINQ, or unsigned casts.\nWorkload: The array has 128 elements and none satisfies the specified selection predicate.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "aggregation_equal_position_sum:all_selected",
+    "contract_id": "aggregation_equal_position_sum",
+    "profile": "all_selected",
+    "seed": 2026100515,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static long Run(int[] values, int threshold)\nContract: Return the long sum of one-based positions i+1 satisfying values[i] == threshold. Use signed comparisons. Empty input returns zero. Values are in [-1000,1000]. The array is non-null. Do not mutate inputs.\nBaseline implementation: Construct System.Collections.Generic.List<int>(values.Length), collect selected indices, call ToArray once, and traverse that array to compute the requested aggregate. Do not return before ToArray.\nCandidate implementation: Compute the requested aggregate in one scan with no collections, arrays, LINQ, or unsigned casts.\nWorkload: The array has 128 elements and all satisfy the specified selection predicate.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "strings_even_positions:short_fragments",
+    "contract_id": "strings_even_positions",
+    "profile": "short_fragments",
+    "seed": 2026100516,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static string Run(string[] parts)\nContract: Return the concatenation of parts at zero-based even indices, in original order. The array and strings are non-null. Empty array returns string.Empty. Preserve characters inside each part. Do not mutate inputs.\nBaseline implementation: Start with string.Empty and construct the requested result with repeated +=. No StringBuilder, string.Join, string.Concat, LINQ, or collections.\nCandidate implementation: Use one System.Text.StringBuilder, Append, and a final ToString to construct the requested result. No string.Join, string.Concat, LINQ, or repeated +=.\nWorkload: The array has 128 nonempty strings of length 1 each.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "strings_even_positions:long_fragments",
+    "contract_id": "strings_even_positions",
+    "profile": "long_fragments",
+    "seed": 2026100517,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static string Run(string[] parts)\nContract: Return the concatenation of parts at zero-based even indices, in original order. The array and strings are non-null. Empty array returns string.Empty. Preserve characters inside each part. Do not mutate inputs.\nBaseline implementation: Start with string.Empty and construct the requested result with repeated +=. No StringBuilder, string.Join, string.Concat, LINQ, or collections.\nCandidate implementation: Use one System.Text.StringBuilder, Append, and a final ToString to construct the requested result. No string.Join, string.Concat, LINQ, or repeated +=.\nWorkload: The array has 128 nonempty strings of length 32 each.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "strings_bracketed:short_fragments",
+    "contract_id": "strings_bracketed",
+    "profile": "short_fragments",
+    "seed": 2026100518,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static string Run(string[] parts)\nContract: Return the concatenation of every part surrounded individually by [ and ], in original order, including empty parts. The array and strings are non-null. Empty array returns string.Empty. Preserve characters inside each part. Do not mutate inputs.\nBaseline implementation: Start with string.Empty and construct the requested result with repeated +=. No StringBuilder, string.Join, string.Concat, LINQ, or collections.\nCandidate implementation: Use one System.Text.StringBuilder, Append, and a final ToString to construct the requested result. No string.Join, string.Concat, LINQ, or repeated +=.\nWorkload: The array has 128 nonempty strings of length 1 each.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "strings_bracketed:long_fragments",
+    "contract_id": "strings_bracketed",
+    "profile": "long_fragments",
+    "seed": 2026100519,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static string Run(string[] parts)\nContract: Return the concatenation of every part surrounded individually by [ and ], in original order, including empty parts. The array and strings are non-null. Empty array returns string.Empty. Preserve characters inside each part. Do not mutate inputs.\nBaseline implementation: Start with string.Empty and construct the requested result with repeated +=. No StringBuilder, string.Join, string.Concat, LINQ, or collections.\nCandidate implementation: Use one System.Text.StringBuilder, Append, and a final ToString to construct the requested result. No string.Join, string.Concat, LINQ, or repeated +=.\nWorkload: The array has 128 nonempty strings of length 32 each.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "strings_length_at_least_three:short_fragments",
+    "contract_id": "strings_length_at_least_three",
+    "profile": "short_fragments",
+    "seed": 2026100520,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static string Run(string[] parts)\nContract: Return the concatenation of parts with Length >= 3, in original order. The array and strings are non-null. Empty array returns string.Empty. Preserve characters inside each part. Do not mutate inputs.\nBaseline implementation: Start with string.Empty and construct the requested result with repeated +=. No StringBuilder, string.Join, string.Concat, LINQ, or collections.\nCandidate implementation: Use one System.Text.StringBuilder, Append, and a final ToString to construct the requested result. No string.Join, string.Concat, LINQ, or repeated +=.\nWorkload: The array has 128 nonempty strings of length 1 each.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "strings_length_at_least_three:long_fragments",
+    "contract_id": "strings_length_at_least_three",
+    "profile": "long_fragments",
+    "seed": 2026100521,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static string Run(string[] parts)\nContract: Return the concatenation of parts with Length >= 3, in original order. The array and strings are non-null. Empty array returns string.Empty. Preserve characters inside each part. Do not mutate inputs.\nBaseline implementation: Start with string.Empty and construct the requested result with repeated +=. No StringBuilder, string.Join, string.Concat, LINQ, or collections.\nCandidate implementation: Use one System.Text.StringBuilder, Append, and a final ToString to construct the requested result. No string.Join, string.Concat, LINQ, or repeated +=.\nWorkload: The array has 128 nonempty strings of length 32 each.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "strings_double_each:short_fragments",
+    "contract_id": "strings_double_each",
+    "profile": "short_fragments",
+    "seed": 2026100522,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static string Run(string[] parts)\nContract: Return the concatenation in original order where each part is appended twice before moving to the next part. The array and strings are non-null. Empty array returns string.Empty. Preserve characters inside each part. Do not mutate inputs.\nBaseline implementation: Start with string.Empty and construct the requested result with repeated +=. No StringBuilder, string.Join, string.Concat, LINQ, or collections.\nCandidate implementation: Use one System.Text.StringBuilder, Append, and a final ToString to construct the requested result. No string.Join, string.Concat, LINQ, or repeated +=.\nWorkload: The array has 128 nonempty strings of length 1 each.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  },
+  {
+    "id": "strings_double_each:long_fragments",
+    "contract_id": "strings_double_each",
+    "profile": "long_fragments",
+    "seed": 2026100523,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate a synthetic C# .NET 8 performance dataset record. Return only a JSON object with exactly three string fields: baseline_code, candidate_code, time_label. Each code field must be a complete public static class Candidate containing the requested public static Run method, with fully qualified library type names. Both implementations must satisfy the contract without modifying inputs. time_label describes candidate runtime relative to baseline for the stated workload: faster, slower, or uncertain. The candidate is an alternative, not necessarily faster. Do not include benchmarks, comments claiming measured results, or text outside JSON."
+      },
+      {
+        "role": "user",
+        "content": "Signature: public static string Run(string[] parts)\nContract: Return the concatenation in original order where each part is appended twice before moving to the next part. The array and strings are non-null. Empty array returns string.Empty. Preserve characters inside each part. Do not mutate inputs.\nBaseline implementation: Start with string.Empty and construct the requested result with repeated +=. No StringBuilder, string.Join, string.Concat, LINQ, or collections.\nCandidate implementation: Use one System.Text.StringBuilder, Append, and a final ToString to construct the requested result. No string.Join, string.Concat, LINQ, or repeated +=.\nWorkload: The array has 128 nonempty strings of length 32 each.\nArray setup is outside the measured method; all construction inside Run is included. Use a 5% relative threshold when describing a speed difference; use uncertain if unable to decide."
+      }
+    ]
+  }
+]

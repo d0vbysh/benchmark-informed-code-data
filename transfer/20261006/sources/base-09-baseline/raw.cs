@@ -1,0 +1,1 @@
+public static class Baseline { public static long Run(int[] values, int threshold) { List<int> selected = new List<int>(values.Length); for (int i = 0; i < values.Length; i++) { if (values[i] <= threshold) { selected.Add(values[i]); } } int[] resultArray = selected.ToArray(); long count = 0; foreach (int value in resultArray) { count++; } return count; } }

@@ -1,0 +1,1030 @@
+{
+  "runtime": "8.0.31",
+  "oracle_crosscheck_cases": 492,
+  "results": [
+    {
+      "attempt_id": "control-00-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-00-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-01-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-01-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-02-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-02-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-03-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-03-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-04-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-04-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-05-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 15,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 13,
+          "input": {
+            "left": [
+              -3,
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3
+            ],
+            "right": [
+              2,
+              2,
+              -3
+            ]
+          },
+          "expected": 1,
+          "actual": 2,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 18,
+          "input": {
+            "left": [
+              2,
+              2,
+              -3
+            ],
+            "right": [
+              2,
+              2,
+              -3
+            ]
+          },
+          "expected": 2,
+          "actual": 4,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 25,
+          "input": {
+            "left": [
+              -1,
+              8,
+              0,
+              3,
+              -5,
+              -6,
+              8,
+              7,
+              -9,
+              -7,
+              -6,
+              0,
+              8,
+              0,
+              5,
+              4,
+              9,
+              3,
+              -2
+            ],
+            "right": [
+              -9,
+              -5,
+              2,
+              3,
+              2,
+              0,
+              3,
+              -1,
+              0,
+              -5,
+              -8,
+              -3,
+              -4
+            ]
+          },
+          "expected": 3,
+          "actual": 6,
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "control-05-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-06-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-06-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-07-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-08-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-08-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-09-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-09-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-10-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-10-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-11-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-11-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-14-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-15-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-15-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-16-candidate",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-17-candidate",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-18-baseline",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-19-baseline",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-20-baseline",
+      "signature": true,
+      "tests": 29,
+      "failed": 24,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 2,
+          "input": {
+            "parts": [
+              "a"
+            ]
+          },
+          "expected": "",
+          "actual": "a",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 3,
+          "input": {
+            "parts": [
+              "a",
+              "bc",
+              "def",
+              ""
+            ]
+          },
+          "expected": "def",
+          "actual": "abcdef",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 4,
+          "input": {
+            "parts": [
+              "[",
+              "]",
+              "|",
+              "xx"
+            ]
+          },
+          "expected": "",
+          "actual": "[]|xx",
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "control-20-candidate",
+      "signature": true,
+      "tests": 29,
+      "failed": 24,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 2,
+          "input": {
+            "parts": [
+              "a"
+            ]
+          },
+          "expected": "",
+          "actual": "a",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 3,
+          "input": {
+            "parts": [
+              "a",
+              "bc",
+              "def",
+              ""
+            ]
+          },
+          "expected": "def",
+          "actual": "abcdef",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 4,
+          "input": {
+            "parts": [
+              "[",
+              "]",
+              "|",
+              "xx"
+            ]
+          },
+          "expected": "",
+          "actual": "[]|xx",
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "control-21-baseline",
+      "signature": true,
+      "tests": 29,
+      "failed": 24,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 2,
+          "input": {
+            "parts": [
+              "a"
+            ]
+          },
+          "expected": "",
+          "actual": "a",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 3,
+          "input": {
+            "parts": [
+              "a",
+              "bc",
+              "def",
+              ""
+            ]
+          },
+          "expected": "def",
+          "actual": "abcdef",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 4,
+          "input": {
+            "parts": [
+              "[",
+              "]",
+              "|",
+              "xx"
+            ]
+          },
+          "expected": "",
+          "actual": "[]|xx",
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "control-21-candidate",
+      "signature": true,
+      "tests": 29,
+      "failed": 24,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 2,
+          "input": {
+            "parts": [
+              "a"
+            ]
+          },
+          "expected": "",
+          "actual": "a",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 3,
+          "input": {
+            "parts": [
+              "a",
+              "bc",
+              "def",
+              ""
+            ]
+          },
+          "expected": "def",
+          "actual": "abcdef",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 4,
+          "input": {
+            "parts": [
+              "[",
+              "]",
+              "|",
+              "xx"
+            ]
+          },
+          "expected": "",
+          "actual": "[]|xx",
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "control-22-baseline",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-23-baseline",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "control-23-candidate",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-00-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-00-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-01-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-01-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-02-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-02-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-03-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-03-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-04-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-04-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-05-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-06-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-06-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-07-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-08-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-08-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-09-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-09-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-10-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-10-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-11-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-11-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-14-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-15-baseline",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-15-candidate",
+      "signature": true,
+      "tests": 47,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-16-candidate",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-17-baseline",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-17-candidate",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-18-baseline",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-19-baseline",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-20-baseline",
+      "signature": true,
+      "tests": 29,
+      "failed": 24,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 2,
+          "input": {
+            "parts": [
+              "a"
+            ]
+          },
+          "expected": "",
+          "actual": "a",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 3,
+          "input": {
+            "parts": [
+              "a",
+              "bc",
+              "def",
+              ""
+            ]
+          },
+          "expected": "def",
+          "actual": "abcdef",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 4,
+          "input": {
+            "parts": [
+              "[",
+              "]",
+              "|",
+              "xx"
+            ]
+          },
+          "expected": "",
+          "actual": "[]|xx",
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "benchmark-20-candidate",
+      "signature": true,
+      "tests": 29,
+      "failed": 24,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 2,
+          "input": {
+            "parts": [
+              "a"
+            ]
+          },
+          "expected": "",
+          "actual": "a",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 3,
+          "input": {
+            "parts": [
+              "a",
+              "bc",
+              "def",
+              ""
+            ]
+          },
+          "expected": "def",
+          "actual": "abcdef",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 4,
+          "input": {
+            "parts": [
+              "[",
+              "]",
+              "|",
+              "xx"
+            ]
+          },
+          "expected": "",
+          "actual": "[]|xx",
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "benchmark-21-baseline",
+      "signature": true,
+      "tests": 29,
+      "failed": 24,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 2,
+          "input": {
+            "parts": [
+              "a"
+            ]
+          },
+          "expected": "",
+          "actual": "a",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 3,
+          "input": {
+            "parts": [
+              "a",
+              "bc",
+              "def",
+              ""
+            ]
+          },
+          "expected": "def",
+          "actual": "abcdef",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 4,
+          "input": {
+            "parts": [
+              "[",
+              "]",
+              "|",
+              "xx"
+            ]
+          },
+          "expected": "",
+          "actual": "[]|xx",
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "benchmark-21-candidate",
+      "signature": true,
+      "tests": 29,
+      "failed": 24,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 2,
+          "input": {
+            "parts": [
+              "a"
+            ]
+          },
+          "expected": "",
+          "actual": "a",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 3,
+          "input": {
+            "parts": [
+              "a",
+              "bc",
+              "def",
+              ""
+            ]
+          },
+          "expected": "def",
+          "actual": "abcdef",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 4,
+          "input": {
+            "parts": [
+              "[",
+              "]",
+              "|",
+              "xx"
+            ]
+          },
+          "expected": "",
+          "actual": "[]|xx",
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "benchmark-22-baseline",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-23-baseline",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "benchmark-23-candidate",
+      "signature": true,
+      "tests": 29,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    }
+  ]
+}

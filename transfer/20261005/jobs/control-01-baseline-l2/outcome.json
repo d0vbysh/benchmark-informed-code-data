@@ -1,0 +1,22 @@
+{
+  "job_id": "control-01-baseline-l2",
+  "status": "pass",
+  "time_ns": [
+    5733.617782592773,
+    5655.170822143555,
+    5737.565994262695,
+    5696.211624145508,
+    5800.818252563477
+  ],
+  "median_ns": 5733.617782592773,
+  "allocated_bytes": 0,
+  "raw_hashes": {
+    "bdn\\results\\TransferPilot.Sample22-report-full.json": "db5340db7a31ee25b8801649599032f2b0ea4f9a18750a63a96e5d57f10de30f",
+    "input.json": "a7001e4a0b4bc11a726a85a1b6f6d8a9cf0414aa9fcd97b3c013edb247f35473",
+    "console.log": "98e3d29d1e171cbee65daafbc02853679b538de6c6d8699d8f61428eaceb827c",
+    "job.json": "fd2d7196f0190dc52a77273968d1d9441aa75575469453672e5bbeb0b5a661a6",
+    "command.json": "cd45408aa88e8890bde09069aa8b6f737da716351d75899f78d79cd0ebcb8e1d"
+  },
+  "elapsed_seconds": 15.155999999988126,
+  "ended_utc": "2026-10-05T21:06:31.081364+00:00"
+}

@@ -1,0 +1,1 @@
+public static class Candidate { public static long Run(int[] left, int[] right) { HashSet<int> rightSet = new HashSet<int>(right); long count = 0; for (int i = 0; i < left.Length; i++) { if (rightSet.Contains(left[i]) && left[i] % 2 == 0) { count++; } } return count; } }

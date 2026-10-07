@@ -1,0 +1,22 @@
+{
+  "job_id": "quality004-strings_all-r3-calibration-short_fragments-l1-good",
+  "status": "pass",
+  "time_ns": [
+    140.77601432800293,
+    144.4883108139038,
+    145.05696296691895,
+    142.87116527557373,
+    142.66314506530762
+  ],
+  "median_ns": 142.87116527557373,
+  "allocated_bytes": 496,
+  "raw_hashes": {
+    "bdn\\results\\Quality004.Sample25-report-full.json": "5fc0b14df3b88ba8a77f82b59a84f14ccbfa7d45ba3db7d0c78fea88dc86d863",
+    "input.json": "dbdda368657303133d5c77f4b899626bda76be7335dfb76439cd066cf62a15b3",
+    "console.log": "c24e611624d4f7ae7f659162d42e4ceebf1ac3894923bb300205f64bcba4a3f2",
+    "job.json": "8aed5974cc21f0623721d6b4ffba2e2128caad72c65cb99ab7cfe43e0799333e",
+    "command.json": "d35c9c8013be786c01af16626cb8d296a0976996ece7db6f23475bdd1c9ced6d"
+  },
+  "elapsed_seconds": 12.639999999999418,
+  "ended_utc": "2026-09-25T18:42:02.301258+00:00"
+}

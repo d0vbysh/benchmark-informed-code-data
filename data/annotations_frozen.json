@@ -1,0 +1,551 @@
+{
+  "created_utc": "2026-09-25T18:47:26.191533+00:00",
+  "evaluation_started": false,
+  "calibration_jobs": 60,
+  "annotation_rules_sha256": "ea7eb8844b1c0c2010f8d8493f6ddbc1ce27b4129084b8e3692a677ff2793f7f",
+  "measurement_freeze_sha256": "6332d84ba65d37ea0ad09c5acdd0ef0d8c9f70e6a20ae8de2b0859fbd6468ee7",
+  "calibration_outcome_hashes": {
+    "quality004-membership_matched_position_sum-r3-calibration-first_hit-l1-bad": "42085f728f1b6c9c5866f4adb6bb77e56a01b7ed43c354412e45a982a18d46cf",
+    "quality004-membership_matched_position_sum-r1-calibration-no_hit-l1-bad": "d00842746691550848c5724bd926aac370260139fb4523e3ad4e82596c9192b8",
+    "quality004-membership_matched_sum-r2-calibration-no_hit-l1-bad": "7b8b300ca8a107249cabf6cac5c370899b49d93369ed0f864ff8376fdee139ba",
+    "quality004-strings_reverse-r2-calibration-short_fragments-l1-bad": "b4067a03d020e4a7c44662cbcab7ad7d772b65e4d8827c540bdec0acc8fde978",
+    "quality004-strings_all-r2-calibration-long_fragments-l1-bad": "442da0c8db0d3176122751b353375e0ef297ce35d795b6d3818c64cd971956ab",
+    "quality004-membership_matched_position_sum-r3-calibration-no_hit-l1-bad": "5acdf3444291f96f4226c99fcb290b09b0d37e51faddf90f6a1b76ec4ca1fe25",
+    "quality004-membership_matched_position_sum-r2-calibration-no_hit-l1-good": "73f02d5d38793418c14ad7fd810cfa96d4a979b09ea24f071e357d826a7027e5",
+    "quality004-membership_matched_sum-r2-calibration-no_hit-l1-good": "fe5153cf82d9614e0696d31aed69a3f3a1a0968ce81d484fffb37605cd841137",
+    "quality004-membership_miss_count-r3-calibration-first_hit-l1-bad": "996e03f49a39d6977de480fc283c7df34fe2af3d5cdbac2f7addd0fb822fbe95",
+    "quality004-membership_miss_count-r3-calibration-first_hit-l1-good": "3f193cf9a636511a289ce163eb791af8f9297922cce8dd06588c9b2a35def217",
+    "quality004-strings_reverse-r2-calibration-short_fragments-l1-good": "73a01dcf835eaeab4dd19eb565ecab9da533aacd182d28f0df553e9d74dfe1d3",
+    "quality004-strings_reverse-r2-calibration-long_fragments-l1-good": "6199bacf79c4c68e4ae5873c7ace74f4d3a5cfa7bd6e879317cd56def46ead1c",
+    "quality004-strings_all-r3-calibration-short_fragments-l1-bad": "e4ee4872886e05a3f93282218b97b7c553e49fa707370d58bbdbe759b7799370",
+    "quality004-strings_nonempty-r2-calibration-short_fragments-l1-good": "cdc24ff99f427e62ba59b45bec07c360c60d901746a228c4eb622c2c8722e1f6",
+    "quality004-membership_matched_position_sum-r3-calibration-no_hit-l1-good": "350b487152661df004d0327aa5c81185e6fc597653dcf65794e8bacb32c34694",
+    "quality004-membership_matched_sum-r2-calibration-first_hit-l1-good": "9324d9136642c69cb5e6aae1b518e949e074a56d67154d5ed405126daf10fddd",
+    "quality004-aggregation_greater_equal-r1-calibration-none_selected-l1-good": "0615e872b8a652f052ae305cc18a14463e4c067667dd1386a5fd34adb48816fc",
+    "quality004-membership_matched_sum-r3-calibration-first_hit-l1-bad": "b5e5fabe143920e56ffea54374af09eed80c95883e94377d1c0a0e9f0face97e",
+    "quality004-membership_matched_sum-r3-calibration-first_hit-l1-good": "a6ad365194f8407aa40d87184f31b63d8d0a333a107e64c90677cb6864e38aef",
+    "quality004-membership_matched_sum-r1-calibration-no_hit-l1-good": "b0ee7dbf88815e89b924f9203e48019f44956971dcf39e236b7e6aaf4e271f0c",
+    "quality004-membership_matched_sum-r1-calibration-first_hit-l1-bad": "daaaddea82edc360bb0dfaebef08b3c98d463b96fd551fc8bb254ad3828e130e",
+    "quality004-membership_matched_sum-r1-calibration-no_hit-l1-bad": "71a139cfb86b31fa7c73e25d54c244a90a27c4513fa351c6332a4806dddb88f1",
+    "quality004-strings_all-r2-calibration-long_fragments-l1-good": "4b8c6a5360293708c68fca0de20d689eb34dcc7739ca3d0d6b4591da8fec08cd",
+    "quality004-membership_matched_position_sum-r1-calibration-first_hit-l1-bad": "36fef4364016b136321c68b88a467184a5c0cdb584f2db4d5e12ef92f43de68e",
+    "quality004-membership_miss_count-r1-calibration-no_hit-l1-bad": "424413c7354e3d6a34b7c3baba653d822a70c8f011a1e59ac3e08acbac7ca7cf",
+    "quality004-membership_matched_sum-r1-calibration-first_hit-l1-good": "cb461ec2e0781411a733311099bc985841e436c1a86babe05936f3db85b476c2",
+    "quality004-strings_nonempty-r2-calibration-long_fragments-l1-bad": "672ae802dcd85e32f6902e5f3f7124f287e51aacaffa101ea28848874fec178c",
+    "quality004-membership_matched_position_sum-r1-calibration-no_hit-l1-good": "c2fa0846feba34d28e6342e06e78b674bd7bc98d8ad00e18977551999057aed4",
+    "quality004-membership_matched_sum-r2-calibration-first_hit-l1-bad": "07701200941753d0a923df0f80b99bc4ee8f4255deb4928f3470c5fe9f18e771",
+    "quality004-membership_matched_position_sum-r3-calibration-first_hit-l1-good": "a2b426f3ae5ebf79d1e0604d03dcef85c892a1d526c26e593d7bddedc64d4078",
+    "quality004-strings_all-r1-calibration-long_fragments-l1-good": "e0f82dc097557799087f9daada45a31e9a9cae1d114007820ab39cb22fe707ea",
+    "quality004-membership_miss_count-r2-calibration-first_hit-l1-bad": "a1e1a0e82ce0f85ca873ee353d0636897a19059c5958db325438810096ffe449",
+    "quality004-strings_all-r3-calibration-long_fragments-l1-good": "8f43ff852b4a5755bc694c1676523023fb9ac9df1661f8421815d14a544280a1",
+    "quality004-strings_all-r2-calibration-short_fragments-l1-good": "808cc65d76efa44208f37afbb105b10d9e720da52d16f629e6cb7c3bcad50e2d",
+    "quality004-membership_matched_position_sum-r1-calibration-first_hit-l1-good": "7f62fd49c72efc5b8ec17015afd6c479c2df8243ae825f049bbdfa612d3edea9",
+    "quality004-strings_all-r3-calibration-short_fragments-l1-good": "807c1f8f150385fc706a6a9f6b341fce441a2642f3db22e4a183f1fc9eb49b47",
+    "quality004-strings_reverse-r2-calibration-long_fragments-l1-bad": "422b1829747e4299c87884da9dab1e17498fe8e3f725559f9b80fb3a59e202de",
+    "quality004-membership_matched_position_sum-r2-calibration-no_hit-l1-bad": "dab91f8c6c30910da913f26e81348aeadcb924ae036d66dfd3ad833f740902a7",
+    "quality004-strings_all-r1-calibration-short_fragments-l1-good": "067fdf2203d2e758e2783210e7faafa829e2083fdabcb72f930a5d7db252d39b",
+    "quality004-membership_matched_position_sum-r2-calibration-first_hit-l1-bad": "8ef4e75c5e5d5a11bf67189cf352c06b9848e2de1cef59d62e22dec9d5895e58",
+    "quality004-strings_nonempty-r2-calibration-short_fragments-l1-bad": "3b51040718e7749c9ce06888b49866639912eb3520542642b055a09055204ca5",
+    "quality004-membership_miss_count-r1-calibration-first_hit-l1-good": "70bd593d0fc71eb42b74866f29cfdfa82e61e69fc89af90ed532b657b71bb7f4",
+    "quality004-membership_matched_position_sum-r2-calibration-first_hit-l1-good": "2a7baf6d0a243414e9eda64b85222ee5d4789df84eb8900a053e09047441b531",
+    "quality004-membership_miss_count-r3-calibration-no_hit-l1-good": "06c52c86babadaf9082357a9365ae6caca1b07d89358e8d86af13ab399328009",
+    "quality004-strings_all-r1-calibration-long_fragments-l1-bad": "ddbb358d4310d10cf53b315a5dabc73b20be51f8bc46d49deb5dd386de8b4ab1",
+    "quality004-membership_matched_sum-r3-calibration-no_hit-l1-good": "3b071cde2eef9c8ea5063aa9faeb6acbb1f92c60681db6d1c9fb7448e76a5759",
+    "quality004-strings_all-r2-calibration-short_fragments-l1-bad": "9eef862a694490b3f1cf17237a0a6958d7a67947285a247ecdbd48f88ae4e5da",
+    "quality004-membership_miss_count-r2-calibration-first_hit-l1-good": "b447a2f4082ece4a522b6e79c4cf147aea09782b8a5de18156ca6af45acd10c7",
+    "quality004-strings_all-r1-calibration-short_fragments-l1-bad": "208aa08151faea4c5920744fb44ef7c831b8e81709bc4f3039dfde1220ea1bfb",
+    "quality004-aggregation_greater_equal-r1-calibration-all_selected-l1-good": "d0e3ba89790675778b4c416f7aa391199c27c908aefb806aae7c73060edc1c26",
+    "quality004-aggregation_greater_equal-r1-calibration-none_selected-l1-bad": "caae744466120349e8765dbe442d604a560ed41fc09dad569106915de16bd1b3",
+    "quality004-membership_miss_count-r1-calibration-no_hit-l1-good": "6b06275a5179c105c9f4225200d2f734affe0c01cf66cc63d2c5366a785c5f2c",
+    "quality004-membership_matched_sum-r3-calibration-no_hit-l1-bad": "7a1b1ac48aeb8f6f03cf6ae185b1f7497f9cf570366e0aad483b2cf9cea41657",
+    "quality004-strings_all-r3-calibration-long_fragments-l1-bad": "1a5f0d92c1a279269415a3039f71dd25bb92d67d889a373cf46aae03ef7edb8a",
+    "quality004-membership_miss_count-r2-calibration-no_hit-l1-good": "06af7d76e6a01bfd0d58cb7882a438891c17627166f2ed4a123f26254209b3f1",
+    "quality004-membership_miss_count-r1-calibration-first_hit-l1-bad": "5b2561fae0eccf045857728f0719fb2dfc8e9492f8742197029c22fb76a5a70b",
+    "quality004-strings_nonempty-r2-calibration-long_fragments-l1-good": "76569f76fc2d47f4e4e75834d194e2ec3eacc4ecdee16649f33340fc784c0438",
+    "quality004-membership_miss_count-r3-calibration-no_hit-l1-bad": "3db941908bbec79ee94f541fc7be1e7aa65c5cb94fd92eb4cf46dc1484f7ab85",
+    "quality004-membership_miss_count-r2-calibration-no_hit-l1-bad": "e46838b0f8b9b346b32451e90d0f3dbab711095c33b95ba8999ae1908ce49829",
+    "quality004-aggregation_greater_equal-r1-calibration-all_selected-l1-bad": "09659b49628c154b08d22aba8ded83fb611a789284c249ffa15f51beae9b0daf"
+  },
+  "rows": [
+    {
+      "pair_id": "quality004-aggregation_greater_equal-r1",
+      "contract_id": "aggregation_greater_equal",
+      "family": "aggregation",
+      "profile": "none_selected",
+      "calibration_ratios": {
+        "none_selected": 1.1728794946817522,
+        "all_selected": 5.4271214253704985
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-aggregation_greater_equal-r1",
+      "contract_id": "aggregation_greater_equal",
+      "family": "aggregation",
+      "profile": "all_selected",
+      "calibration_ratios": {
+        "none_selected": 1.1728794946817522,
+        "all_selected": 5.4271214253704985
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r1",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08153853559734384,
+        "no_hit": 3.3012978327097904
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r1",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08153853559734384,
+        "no_hit": 3.3012978327097904
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r2",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08018301867461036,
+        "no_hit": 2.9015360293583243
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r2",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08018301867461036,
+        "no_hit": 2.9015360293583243
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r3",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07717219632789557,
+        "no_hit": 3.1612973383685206
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r3",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07717219632789557,
+        "no_hit": 3.1612973383685206
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r1",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07800241012944736,
+        "no_hit": 3.0339537367074074
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r1",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07800241012944736,
+        "no_hit": 3.0339537367074074
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r2",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08258722685610441,
+        "no_hit": 3.036819860913567
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r2",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08258722685610441,
+        "no_hit": 3.036819860913567
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r3",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08941913480593974,
+        "no_hit": 2.897200217965981
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r3",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.08941913480593974,
+        "no_hit": 2.897200217965981
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r1",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07372399393123992,
+        "no_hit": 2.4365951491896287
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r1",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07372399393123992,
+        "no_hit": 2.4365951491896287
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r2",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07408259811490586,
+        "no_hit": 2.400590811513519
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r2",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.07408259811490586,
+        "no_hit": 2.400590811513519
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r3",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "profile": "first_hit",
+      "calibration_ratios": {
+        "first_hit": 0.0614914846214182,
+        "no_hit": 2.5696835165808714
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "slower"
+      }
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r3",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "profile": "no_hit",
+      "calibration_ratios": {
+        "first_hit": 0.0614914846214182,
+        "no_hit": 2.5696835165808714
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "slower",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-strings_all-r1",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "profile": "short_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.440879504531016,
+        "long_fragments": 9.290783724321072
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-strings_all-r1",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "profile": "long_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.440879504531016,
+        "long_fragments": 9.290783724321072
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-strings_all-r2",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "profile": "short_fragments",
+      "calibration_ratios": {
+        "short_fragments": 3.992518631616533,
+        "long_fragments": 12.030955176455025
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-strings_all-r2",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "profile": "long_fragments",
+      "calibration_ratios": {
+        "short_fragments": 3.992518631616533,
+        "long_fragments": 12.030955176455025
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-strings_all-r3",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "profile": "short_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.236954795291609,
+        "long_fragments": 8.711309392818425
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-strings_all-r3",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "profile": "long_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.236954795291609,
+        "long_fragments": 8.711309392818425
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-strings_nonempty-r2",
+      "contract_id": "strings_nonempty",
+      "family": "strings",
+      "profile": "short_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.083112078449289,
+        "long_fragments": 9.363699840664408
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-strings_nonempty-r2",
+      "contract_id": "strings_nonempty",
+      "family": "strings",
+      "profile": "long_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.083112078449289,
+        "long_fragments": 9.363699840664408
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-strings_reverse-r2",
+      "contract_id": "strings_reverse",
+      "family": "strings",
+      "profile": "short_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.063414277437127,
+        "long_fragments": 9.722888937932165
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      }
+    },
+    {
+      "pair_id": "quality004-strings_reverse-r2",
+      "contract_id": "strings_reverse",
+      "family": "strings",
+      "profile": "long_fragments",
+      "calibration_ratios": {
+        "short_fragments": 4.063414277437127,
+        "long_fragments": 9.722888937932165
+      },
+      "predictions": {
+        "A": "faster",
+        "B": "faster",
+        "B_equal_budget": "faster",
+        "C": "faster"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "job_id": "quality004-membership_matched_position_sum-r1-evaluation-no_hit-l1-bad",
+  "status": "pass",
+  "time_ns": [
+    5222.431182861328,
+    5424.129486083984,
+    5560.545349121094,
+    5387.763977050781,
+    5326.627349853516
+  ],
+  "median_ns": 5387.763977050781,
+  "allocated_bytes": 0,
+  "raw_hashes": {
+    "bdn\\results\\Quality004.Sample02-report-full.json": "316c712b2242d3eae0a6ad322dbc057be08810aa7f6c9b5caf20a73da44e0230",
+    "input.json": "549d4d9342a899fe2ad728deab541884fc7ef9d7300dfe47daf174effac34ac9",
+    "console.log": "2b4ac1c8aa2305933189430477d28e812875ced598c1b56f45d4294a12427937",
+    "job.json": "b65cdcccf31618ccff22711c765034b3f6104fb7d94e8c08c4768b06f50ee7ae",
+    "command.json": "b235a07294213f43b683d83d478925a856f5acacb6466a06b66715344578b623"
+  },
+  "elapsed_seconds": 12.89100000000144,
+  "ended_utc": "2026-09-25T19:07:46.162541+00:00"
+}

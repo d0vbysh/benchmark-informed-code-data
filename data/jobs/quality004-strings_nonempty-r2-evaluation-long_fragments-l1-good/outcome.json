@@ -1,0 +1,22 @@
+{
+  "job_id": "quality004-strings_nonempty-r2-evaluation-long_fragments-l1-good",
+  "status": "pass",
+  "time_ns": [
+    1262.4855995178223,
+    1382.7473640441895,
+    1172.710132598877,
+    1154.9189567565918,
+    1179.7471046447754
+  ],
+  "median_ns": 1179.7471046447754,
+  "allocated_bytes": 17056,
+  "raw_hashes": {
+    "bdn\\results\\Quality004.Sample27-report-full.json": "a2615aa22ece8afefe611d3ec1392b6b6cbaa449c65abf90ed3949d8790c43fd",
+    "input.json": "a3a15b251cc93f6be88d4b73e78b7c6f673663c121ea28d59111ba7bf3f91184",
+    "console.log": "08483faef2c8bd9ffe34fe7d6d42194f14db991689ed8da8da3f810df3362b9e",
+    "job.json": "e7759bb81b8d5484c148ec1f4aeada0fdbb53374d074d51cfd909c196296181e",
+    "command.json": "f2810ff3745ab183d546a07b9344a0ca9717b6a32f3ced743537e02dbdb4d5c5"
+  },
+  "elapsed_seconds": 12.328000000001339,
+  "ended_utc": "2026-09-25T19:06:57.525553+00:00"
+}

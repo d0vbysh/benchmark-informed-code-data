@@ -1,0 +1,10 @@
+public static class Candidate {
+public static long Run(int[] values, int threshold)
+{
+    var list = new System.Collections.Generic.List<int>(values.Length);
+    for (int i = 0; i < values.Length; i++)
+        if (values[i] < threshold)
+            list.Add(values[i]);
+    return list.Select(i => (long)Math.Abs(i)).Sum();
+}
+}

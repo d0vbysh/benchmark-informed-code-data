@@ -1,0 +1,1 @@
+public static class Baseline { public static long Run(int[] values, int threshold) { List<int> indices = new List<int>(values.Length); for (int i = 0; i < values.Length; i++) { if (values[i] == threshold) { indices.Add(i + 1); } } int[] selectedIndices = indices.ToArray(); long sum = 0; foreach (int index in selectedIndices) { sum += index; } return sum; } }

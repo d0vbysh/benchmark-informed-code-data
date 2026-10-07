@@ -1,0 +1,1 @@
+public static class Candidate { public static long Run(int[] values, int threshold) { long sum = 0; for (int i = 0; i < values.Length; i++) { if ((long)values[i] > threshold) { sum += (long)values[i] * values[i]; } } return sum; } }

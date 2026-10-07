@@ -1,0 +1,1 @@
+public static class Candidate { public static long Run(int[] left, int[] right) { HashSet<int> rightSet = new HashSet<int>(right); long sum = 0; for (int i = 0; i < left.Length; i++) { if (!rightSet.Contains(left[i])) { sum += i + 1; } } return sum; } }

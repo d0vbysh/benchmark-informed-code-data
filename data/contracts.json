@@ -1,0 +1,158 @@
+[
+  {
+    "id": "membership_match_count",
+    "family": "membership",
+    "signature": "public static long Run(int[] left, int[] right)",
+    "semantic_contract": "Return, as long, the number of left positions whose value occurs in right. Duplicates in left count separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.",
+    "bad": "For every left position, scan right from index zero with a nested loop and a local found flag. Stop the inner scan on the first match, then add 1 when found. No hash sets, LINQ, sorting or auxiliary collections.",
+    "good": "Construct one System.Collections.Generic.HashSet<int> from right. Visit every left position, query Contains, then add 1 when found. Do not deduplicate left. No LINQ.",
+    "profiles": [
+      "first_hit",
+      "no_hit"
+    ],
+    "baseline_profile": "no_hit"
+  },
+  {
+    "id": "membership_miss_count",
+    "family": "membership",
+    "signature": "public static long Run(int[] left, int[] right)",
+    "semantic_contract": "Return, as long, the number of left positions whose value does not occur in right. Duplicates in left count separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.",
+    "bad": "For every left position, scan right from index zero with a nested loop and a local found flag. Stop the inner scan on the first match, then add 1 when not found. No hash sets, LINQ, sorting or auxiliary collections.",
+    "good": "Construct one System.Collections.Generic.HashSet<int> from right. Visit every left position, query Contains, then add 1 when not found. Do not deduplicate left. No LINQ.",
+    "profiles": [
+      "first_hit",
+      "no_hit"
+    ],
+    "baseline_profile": "no_hit"
+  },
+  {
+    "id": "membership_matched_sum",
+    "family": "membership",
+    "signature": "public static long Run(int[] left, int[] right)",
+    "semantic_contract": "Return the long sum of all left values that occur in right. Each matching left position contributes its value, including negative values and duplicates. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.",
+    "bad": "For every left position, scan right from index zero with a nested loop and a local found flag. Stop the inner scan on the first match, then add (long)left[i] when found. No hash sets, LINQ, sorting or auxiliary collections.",
+    "good": "Construct one System.Collections.Generic.HashSet<int> from right. Visit every left position, query Contains, then add (long)left[i] when found. Do not deduplicate left. No LINQ.",
+    "profiles": [
+      "first_hit",
+      "no_hit"
+    ],
+    "baseline_profile": "no_hit"
+  },
+  {
+    "id": "membership_matched_position_sum",
+    "family": "membership",
+    "signature": "public static long Run(int[] left, int[] right)",
+    "semantic_contract": "Return the long sum of one-based positions i+1 of left elements whose value occurs in right. Duplicate values at different positions contribute separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.",
+    "bad": "For every left position, scan right from index zero with a nested loop and a local found flag. Stop the inner scan on the first match, then add (long)i+1 when found. No hash sets, LINQ, sorting or auxiliary collections.",
+    "good": "Construct one System.Collections.Generic.HashSet<int> from right. Visit every left position, query Contains, then add (long)i+1 when found. Do not deduplicate left. No LINQ.",
+    "profiles": [
+      "first_hit",
+      "no_hit"
+    ],
+    "baseline_profile": "no_hit"
+  },
+  {
+    "id": "aggregation_greater",
+    "family": "aggregation",
+    "signature": "public static long Run(int[] values, int threshold)",
+    "semantic_contract": "Return the long sum of values satisfying (value > threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.",
+    "bad": "Allocate System.Collections.Generic.List<int>(values.Length). Store indices satisfying (value > threshold). Call ToArray exactly once after the scan, then iterate that index array to sum selected values in a long accumulator. No early no-match return. Do not substitute List traversal for ToArray.",
+    "good": "Scan values once and sum values satisfying (value > threshold) directly into a long accumulator. No collections, arrays or LINQ; no unsigned casts.",
+    "profiles": [
+      "none_selected",
+      "all_selected"
+    ],
+    "baseline_profile": "all_selected"
+  },
+  {
+    "id": "aggregation_greater_equal",
+    "family": "aggregation",
+    "signature": "public static long Run(int[] values, int threshold)",
+    "semantic_contract": "Return the long sum of values satisfying (value >= threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.",
+    "bad": "Allocate System.Collections.Generic.List<int>(values.Length). Store indices satisfying (value >= threshold). Call ToArray exactly once after the scan, then iterate that index array to sum selected values in a long accumulator. No early no-match return. Do not substitute List traversal for ToArray.",
+    "good": "Scan values once and sum values satisfying (value >= threshold) directly into a long accumulator. No collections, arrays or LINQ; no unsigned casts.",
+    "profiles": [
+      "none_selected",
+      "all_selected"
+    ],
+    "baseline_profile": "all_selected"
+  },
+  {
+    "id": "aggregation_less",
+    "family": "aggregation",
+    "signature": "public static long Run(int[] values, int threshold)",
+    "semantic_contract": "Return the long sum of values satisfying (value < threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.",
+    "bad": "Allocate System.Collections.Generic.List<int>(values.Length). Store indices satisfying (value < threshold). Call ToArray exactly once after the scan, then iterate that index array to sum selected values in a long accumulator. No early no-match return. Do not substitute List traversal for ToArray.",
+    "good": "Scan values once and sum values satisfying (value < threshold) directly into a long accumulator. No collections, arrays or LINQ; no unsigned casts.",
+    "profiles": [
+      "none_selected",
+      "all_selected"
+    ],
+    "baseline_profile": "all_selected"
+  },
+  {
+    "id": "aggregation_even_greater",
+    "family": "aggregation",
+    "signature": "public static long Run(int[] values, int threshold)",
+    "semantic_contract": "Return the long sum of values satisfying (value > threshold && value % 2 == 0), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.",
+    "bad": "Allocate System.Collections.Generic.List<int>(values.Length). Store indices satisfying (value > threshold && value % 2 == 0). Call ToArray exactly once after the scan, then iterate that index array to sum selected values in a long accumulator. No early no-match return. Do not substitute List traversal for ToArray.",
+    "good": "Scan values once and sum values satisfying (value > threshold && value % 2 == 0) directly into a long accumulator. No collections, arrays or LINQ; no unsigned casts.",
+    "profiles": [
+      "none_selected",
+      "all_selected"
+    ],
+    "baseline_profile": "all_selected"
+  },
+  {
+    "id": "strings_all",
+    "family": "strings",
+    "signature": "public static string Run(string[] parts)",
+    "semantic_contract": "Concatenate every string in original order with no delimiter. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.",
+    "bad": "Start with string.Empty and use repeated += to append every part in original order. No StringBuilder, string.Join, string.Concat, LINQ or other collections.",
+    "good": "Use one System.Text.StringBuilder and Append to append every part in original order, then return ToString. No string.Join, LINQ or repeated +=.",
+    "profiles": [
+      "short_fragments",
+      "long_fragments"
+    ],
+    "baseline_profile": "long_fragments"
+  },
+  {
+    "id": "strings_nonempty",
+    "family": "strings",
+    "signature": "public static string Run(string[] parts)",
+    "semantic_contract": "Concatenate nonempty strings in original order with no delimiter; skip empty strings. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.",
+    "bad": "Start with string.Empty and use repeated += to append each nonempty part in original order. No StringBuilder, string.Join, string.Concat, LINQ or other collections.",
+    "good": "Use one System.Text.StringBuilder and Append to append each nonempty part in original order, then return ToString. No string.Join, LINQ or repeated +=.",
+    "profiles": [
+      "short_fragments",
+      "long_fragments"
+    ],
+    "baseline_profile": "long_fragments"
+  },
+  {
+    "id": "strings_reverse",
+    "family": "strings",
+    "signature": "public static string Run(string[] parts)",
+    "semantic_contract": "Concatenate all strings in reverse array-index order with no delimiter. Do not reverse characters inside strings. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.",
+    "bad": "Start with string.Empty and use repeated += to append every part in reverse array-index order. No StringBuilder, string.Join, string.Concat, LINQ or other collections.",
+    "good": "Use one System.Text.StringBuilder and Append to append every part in reverse array-index order, then return ToString. No string.Join, LINQ or repeated +=.",
+    "profiles": [
+      "short_fragments",
+      "long_fragments"
+    ],
+    "baseline_profile": "long_fragments"
+  },
+  {
+    "id": "strings_delimited",
+    "family": "strings",
+    "signature": "public static string Run(string[] parts)",
+    "semantic_contract": "Join every string in original order with the literal vertical bar | between consecutive array positions, including empty positions. No leading or trailing delimiter. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.",
+    "bad": "Start with string.Empty and use repeated += to append each part in original order, inserting | before every part except the first. No StringBuilder, string.Join, string.Concat, LINQ or other collections.",
+    "good": "Use one System.Text.StringBuilder and Append to append each part in original order, inserting | before every part except the first, then return ToString. No string.Join, LINQ or repeated +=.",
+    "profiles": [
+      "short_fragments",
+      "long_fragments"
+    ],
+    "baseline_profile": "long_fragments"
+  }
+]

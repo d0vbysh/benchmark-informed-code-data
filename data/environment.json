@@ -1,0 +1,9 @@
+{
+  "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+  "logical_processors": "12",
+  "os": "Microsoft Windows NT 10.0.26200.0",
+  "active_power_plan": "Power Scheme GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c  (High performance)",
+  "recorded_utc": "2026-09-25T18:36:38.3225966Z",
+  "limitation": "BenchmarkDotNet reports unknown CPU and cannot set its requested power plan; workstation load and drift are not controlled.",
+  "processor_name_registry": "12th Gen Intel(R) Core(TM) i5-12400F"
+}

@@ -1,0 +1,22 @@
+{
+  "job_id": "quality004-aggregation_greater_equal-r1-evaluation-none_selected-l1-good",
+  "status": "pass",
+  "time_ns": [
+    43.64200830459595,
+    43.146538734436035,
+    43.68560314178467,
+    42.89645552635193,
+    43.58524680137634
+  ],
+  "median_ns": 43.58524680137634,
+  "allocated_bytes": 0,
+  "raw_hashes": {
+    "bdn\\results\\Quality004.Sample01-report-full.json": "4394d2535383ea65230dc0cc72701fa1d04e49128ab05e1929f08c6300e51828",
+    "input.json": "31e0c3cb2cb2116377522d614455a93a1fea025aa2e4d7588ed52800acf9f5c4",
+    "console.log": "4ea032295bb18ff8ccbfa7692ea97db5ebaf5032fbb724a45a3bfe783d435602",
+    "job.json": "2e6474fd74f73d2645e002adf500b6d78a8a38105006cb2dc61f0c0dfb493f5f",
+    "command.json": "1640fe73285e617f95eeee0552bc454e5d512408e1c39d8c3cfc273701c3f31c"
+  },
+  "elapsed_seconds": 15.078999999999724,
+  "ended_utc": "2026-09-25T19:03:19.879840+00:00"
+}

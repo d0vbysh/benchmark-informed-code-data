@@ -1,0 +1,1 @@
+public static class Candidate { public static string Run(string[] parts) { System.Text.StringBuilder sb = new System.Text.StringBuilder(); foreach (string part in parts) { sb.Append("[").Append(part).Append("]"); } return sb.ToString(); } }

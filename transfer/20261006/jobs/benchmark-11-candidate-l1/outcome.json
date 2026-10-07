@@ -1,0 +1,22 @@
+{
+  "job_id": "benchmark-11-candidate-l1",
+  "status": "pass",
+  "time_ns": [
+    76.35700702667236,
+    71.07714414596558,
+    75.39526224136353,
+    71.43758535385132,
+    70.82275152206421
+  ],
+  "median_ns": 71.43758535385132,
+  "allocated_bytes": 0,
+  "raw_hashes": {
+    "bdn\\results\\TransferPilot.Sample15-report-full.json": "66997a9511fe9a61f470690bf6e28af2471fe5ab38aac79ecac4bd4ce6b2ea78",
+    "input.json": "af06c2595dd6fe0202072191f988dbab3cb56d8df543158bc173639a43154b29",
+    "console.log": "aaa36a9db2861b517b781ad5df9074a00d9961c4b041b491853ffbb77d4df5f0",
+    "job.json": "d19bf7dfa4c713ebc9987de67bdde0fa0e745bef9325835aa35946216a388e68",
+    "command.json": "562b7eb1ea64e564ad03938462eceba8fcad63a58667e087cca4fedec61d595d"
+  },
+  "elapsed_seconds": 13.640999999999622,
+  "ended_utc": "2026-10-06T14:53:34.402362+00:00"
+}

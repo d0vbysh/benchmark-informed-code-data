@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "jobs_verified": 180,
+  "calibration_before_freeze": true,
+  "evaluation_after_freeze": true,
+  "nonoverlapping_jobs": true,
+  "frozen_source_hashes_verified": true,
+  "raw_hashes_verified": true,
+  "same_recorded_os_runtime_architecture_sdk": true,
+  "annotations_sha256": "b7f3cbb051a2db6cbd4cbb2aba4a9ecd203a0fcbd540999a847eff5f25e9fe47",
+  "phase_ranges": {
+    "calibration": {
+      "start_utc": "2026-09-25T18:33:57.711558+00:00",
+      "end_utc": "2026-09-25T18:47:15.888798+00:00"
+    },
+    "evaluation": {
+      "start_utc": "2026-09-25T18:47:49.183314+00:00",
+      "end_utc": "2026-09-25T19:12:40.237749+00:00"
+    }
+  },
+  "environment": {
+    "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "logical_processors": "12",
+    "os": "Microsoft Windows NT 10.0.26200.0",
+    "active_power_plan": "Power Scheme GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c  (High performance)",
+    "recorded_utc": "2026-09-25T18:36:38.3225966Z",
+    "limitation": "BenchmarkDotNet reports unknown CPU and cannot set its requested power plan; workstation load and drift are not controlled.",
+    "processor_name_registry": "12th Gen Intel(R) Core(TM) i5-12400F"
+  },
+  "limitation": "Checks provenance and consistency, not isolation from unrelated workstation activity."
+}

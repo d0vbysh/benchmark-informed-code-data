@@ -1,0 +1,1 @@
+public static class Candidate { public static long Run(int[] values, int threshold) { long count = 0; for (int i = 0; i < values.Length; i++) { if (values[i] <= threshold) { count++; } } return count; } }

@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "files": {
+    "chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "adapter_config.json": "b461e24e15b8dfe26e4b987b741ce0dc305afe3385dfa6e831344755765c5c30",
+    "manifest.json": "e11a8fe8fc21456bee421efcde601df2cfab98c4b2aa42473b98ea841ff9cd5c",
+    "adapter_model.safetensors": "688032416127e617bb41907532593be285f8b129e5d57d8de70f5898c1b6d87d",
+    "tokenizer_config.json": "b8fc1a3a724ef3f47234226ad32c7da48c79444806cbd4e9ef7aeb47b4cc1b13",
+    "README.md": "898eea133d28d4cd7b8c75e87cfa9fa1b635936225d0301210d2cdaefc61b143",
+    "tokenizer.json": "bd5948af71b4f56cf697f7580814c7ce8b80595ef985544efcacf716126a2e31"
+  }
+}

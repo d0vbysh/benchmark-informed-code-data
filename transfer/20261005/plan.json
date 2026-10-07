@@ -1,0 +1,34 @@
+{
+  "experiment": "benchmark_to_generator_transfer_pilot_001",
+  "package_revision": "r2-tokenizer-return-format-fix",
+  "status": "prospective pilot, not confirmatory evidence",
+  "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+  "base_revision": "4858886f896bd05db823557fc5cbc4ac28342af7",
+  "historical_adapter_loaded": false,
+  "training_seed": 20261005,
+  "epochs": 3,
+  "learning_rate": 0.0002,
+  "gradient_accumulation": 2,
+  "microbatch_size": 1,
+  "lora_rank": 16,
+  "lora_alpha": 16,
+  "target_modules": ["q_proj", "v_proj"],
+  "max_context_tokens": 3072,
+  "generation": {
+    "max_new_tokens": 1400,
+    "do_sample": true,
+    "temperature": 0.6,
+    "top_p": 0.9,
+    "top_k": 50,
+    "repetition_penalty": 1.0,
+    "max_time": 180
+  },
+  "arms": {
+    "base": "same pinned instruction-tuned checkpoint, no study-specific adaptation",
+    "control": "same admitted code pairs, role-only A labels; no benchmark-derived targets",
+    "benchmark": "same admitted code pairs, context-dependent C calibration labels"
+  },
+  "primary_endpoint": "contract-macro proportion of fully usable generated records among ALL planned slots",
+  "reference": "two independent fresh benchmark launches per implementation and profile; same decisive 5% ratio label in both",
+  "inference": "descriptive pilot; no claim of statistical confirmation from one training seed"
+}

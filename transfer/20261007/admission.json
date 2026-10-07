@@ -1,0 +1,3717 @@
+{
+  "methods": [
+    {
+      "attempt_id": "base-00-baseline",
+      "pair_id": "base-00",
+      "arm": "base",
+      "slot_id": "membership_matched_square_sum:first_hit",
+      "contract_id": "membership_matched_square_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "first_hit",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "8a46a8e24f7432f3bee40c4fc122c186ac209d6ff1a2e4c0d04ac1534d22914c",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-00-candidate",
+      "pair_id": "base-00",
+      "arm": "base",
+      "slot_id": "membership_matched_square_sum:first_hit",
+      "contract_id": "membership_matched_square_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "first_hit",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "e6c3df947a40680c5a54fda4a9816196d5adfad44d2e2b4b3f2812f7a74ff27a",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-01-baseline",
+      "pair_id": "base-01",
+      "arm": "base",
+      "slot_id": "membership_matched_square_sum:no_hit",
+      "contract_id": "membership_matched_square_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "no_hit",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "8a46a8e24f7432f3bee40c4fc122c186ac209d6ff1a2e4c0d04ac1534d22914c",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-01-candidate",
+      "pair_id": "base-01",
+      "arm": "base",
+      "slot_id": "membership_matched_square_sum:no_hit",
+      "contract_id": "membership_matched_square_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "no_hit",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "46a999c284d335fd2096f878d1b9a911841f1e985f9df6d05b516f0b96180a63",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-02-baseline",
+      "pair_id": "base-02",
+      "arm": "base",
+      "slot_id": "membership_missed_position_sum:first_hit",
+      "contract_id": "membership_missed_position_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "first_hit",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "671364174b6ac9f8196c3cbd5daba7cbe6d1e53e57a9e055e6c9a3749f551bd9",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-02-candidate",
+      "pair_id": "base-02",
+      "arm": "base",
+      "slot_id": "membership_missed_position_sum:first_hit",
+      "contract_id": "membership_missed_position_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "first_hit",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "2405637cfe59c7c036dc119d3edde115ac786fbc3f5cdf81016d9b45b211a29a",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-03-baseline",
+      "pair_id": "base-03",
+      "arm": "base",
+      "slot_id": "membership_missed_position_sum:no_hit",
+      "contract_id": "membership_missed_position_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "no_hit",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "671364174b6ac9f8196c3cbd5daba7cbe6d1e53e57a9e055e6c9a3749f551bd9",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-03-candidate",
+      "pair_id": "base-03",
+      "arm": "base",
+      "slot_id": "membership_missed_position_sum:no_hit",
+      "contract_id": "membership_missed_position_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "no_hit",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "2405637cfe59c7c036dc119d3edde115ac786fbc3f5cdf81016d9b45b211a29a",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-04-baseline",
+      "pair_id": "base-04",
+      "arm": "base",
+      "slot_id": "membership_even_match_count:first_hit",
+      "contract_id": "membership_even_match_count",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "first_hit",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "884690b9ce2b443d1640e7f4ca67cdd80536e9f5e552d06c16196e04b9cfec0f",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-04-candidate",
+      "pair_id": "base-04",
+      "arm": "base",
+      "slot_id": "membership_even_match_count:first_hit",
+      "contract_id": "membership_even_match_count",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "first_hit",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "b0d5d2db7380d69ddd711e2e7e7d3f550d55db42c6a75f6052e5ced377365b8f",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-05-baseline",
+      "pair_id": "base-05",
+      "arm": "base",
+      "slot_id": "membership_even_match_count:no_hit",
+      "contract_id": "membership_even_match_count",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "no_hit",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "884690b9ce2b443d1640e7f4ca67cdd80536e9f5e552d06c16196e04b9cfec0f",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-05-candidate",
+      "pair_id": "base-05",
+      "arm": "base",
+      "slot_id": "membership_even_match_count:no_hit",
+      "contract_id": "membership_even_match_count",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "no_hit",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "da947605d12556f7ff9049f3ee96fca058b439d02fc621a273cdff86d315d5d7",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-06-baseline",
+      "pair_id": "base-06",
+      "arm": "base",
+      "slot_id": "membership_odd_miss_sum:first_hit",
+      "contract_id": "membership_odd_miss_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "first_hit",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "88914212840b2f9a04c9c8437adc5840bdb18f3603ce37d230a24f7533c4591d",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-06-candidate",
+      "pair_id": "base-06",
+      "arm": "base",
+      "slot_id": "membership_odd_miss_sum:first_hit",
+      "contract_id": "membership_odd_miss_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "first_hit",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "c75bd2ea04c15d5a1a973ecff93644c1f5eef242a221941fddd1afeeec375877",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-07-baseline",
+      "pair_id": "base-07",
+      "arm": "base",
+      "slot_id": "membership_odd_miss_sum:no_hit",
+      "contract_id": "membership_odd_miss_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "no_hit",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "88914212840b2f9a04c9c8437adc5840bdb18f3603ce37d230a24f7533c4591d",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-07-candidate",
+      "pair_id": "base-07",
+      "arm": "base",
+      "slot_id": "membership_odd_miss_sum:no_hit",
+      "contract_id": "membership_odd_miss_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "no_hit",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "6126073fc3a985fee9bd2ae5e489a146c27b30d5b38feef8a7a7d858b5a1c7c0",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-08-baseline",
+      "pair_id": "base-08",
+      "arm": "base",
+      "slot_id": "aggregation_less_equal_count:none_selected",
+      "contract_id": "aggregation_less_equal_count",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "none_selected",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "869475cf02585cd381f4788ba8be2618ebe11737d7cf78981c8e809e9ae57767",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-08-candidate",
+      "pair_id": "base-08",
+      "arm": "base",
+      "slot_id": "aggregation_less_equal_count:none_selected",
+      "contract_id": "aggregation_less_equal_count",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "none_selected",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "956c383f18b81f3ed20259e2602693d83ce878ad7c415a1e0bcb08f198f205d8",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-09-baseline",
+      "pair_id": "base-09",
+      "arm": "base",
+      "slot_id": "aggregation_less_equal_count:all_selected",
+      "contract_id": "aggregation_less_equal_count",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "all_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "02105ad0be9742817ad7c70bc606507a09ae625abaf6718bc693e8632c9ef67d",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-09-candidate",
+      "pair_id": "base-09",
+      "arm": "base",
+      "slot_id": "aggregation_less_equal_count:all_selected",
+      "contract_id": "aggregation_less_equal_count",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "all_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "956c383f18b81f3ed20259e2602693d83ce878ad7c415a1e0bcb08f198f205d8",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-10-baseline",
+      "pair_id": "base-10",
+      "arm": "base",
+      "slot_id": "aggregation_greater_square_sum:none_selected",
+      "contract_id": "aggregation_greater_square_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "none_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "363cf9e7287331a0517c5dde18c87426994f1a649ecf5b82945bea000eb61012",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-10-candidate",
+      "pair_id": "base-10",
+      "arm": "base",
+      "slot_id": "aggregation_greater_square_sum:none_selected",
+      "contract_id": "aggregation_greater_square_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "none_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "5b5fa9c2447e76697ba93cea7bd119bfe4a873364c1cc5ef1f74d9b22fbca7e1",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-11-baseline",
+      "pair_id": "base-11",
+      "arm": "base",
+      "slot_id": "aggregation_greater_square_sum:all_selected",
+      "contract_id": "aggregation_greater_square_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "all_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "d8f5bf2b8c750c3f4ce85b3f0606e0336db54acc32251b46d24fa1b9ef661e16",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-11-candidate",
+      "pair_id": "base-11",
+      "arm": "base",
+      "slot_id": "aggregation_greater_square_sum:all_selected",
+      "contract_id": "aggregation_greater_square_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "all_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "2d648b4ea81732beaf48270a9ee437e5369e671b8c9ee4bc53ce95ff0bc9d6a5",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-12-baseline",
+      "pair_id": "base-12",
+      "arm": "base",
+      "slot_id": "aggregation_less_absolute_sum:none_selected",
+      "contract_id": "aggregation_less_absolute_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "none_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "0221303f09f9f812353850970903f403778090bf64e99018d5c574663aef2a02",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-12-candidate",
+      "pair_id": "base-12",
+      "arm": "base",
+      "slot_id": "aggregation_less_absolute_sum:none_selected",
+      "contract_id": "aggregation_less_absolute_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "none_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "3d9ac149a0d4a3c78f3b696cd3ce29908f3335f8c1b11a31ae989a9e61ffa63c",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-13-baseline",
+      "pair_id": "base-13",
+      "arm": "base",
+      "slot_id": "aggregation_less_absolute_sum:all_selected",
+      "contract_id": "aggregation_less_absolute_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "all_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "0221303f09f9f812353850970903f403778090bf64e99018d5c574663aef2a02",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-13-candidate",
+      "pair_id": "base-13",
+      "arm": "base",
+      "slot_id": "aggregation_less_absolute_sum:all_selected",
+      "contract_id": "aggregation_less_absolute_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "all_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "3d9ac149a0d4a3c78f3b696cd3ce29908f3335f8c1b11a31ae989a9e61ffa63c",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-14-baseline",
+      "pair_id": "base-14",
+      "arm": "base",
+      "slot_id": "aggregation_equal_position_sum:none_selected",
+      "contract_id": "aggregation_equal_position_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "none_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "e409180806681ca1bc8aa7c8299059c52036d53b67403d9634ff03c3103f0081",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-14-candidate",
+      "pair_id": "base-14",
+      "arm": "base",
+      "slot_id": "aggregation_equal_position_sum:none_selected",
+      "contract_id": "aggregation_equal_position_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "none_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "2b440929d77433d85a410422eea8a154ec969a43e8390ef6b50ca9de44cd5ad1",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-15-baseline",
+      "pair_id": "base-15",
+      "arm": "base",
+      "slot_id": "aggregation_equal_position_sum:all_selected",
+      "contract_id": "aggregation_equal_position_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "all_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "6c3bcc4ce961281a9d17c404d1004da30f9b41facc4d6a9bc82c9a53f28b2b7b",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed",
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-15-candidate",
+      "pair_id": "base-15",
+      "arm": "base",
+      "slot_id": "aggregation_equal_position_sum:all_selected",
+      "contract_id": "aggregation_equal_position_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "all_selected",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "2b440929d77433d85a410422eea8a154ec969a43e8390ef6b50ca9de44cd5ad1",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-16-baseline",
+      "pair_id": "base-16",
+      "arm": "base",
+      "slot_id": "strings_even_positions:short_fragments",
+      "contract_id": "strings_even_positions",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "short_fragments",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "e146adca256d4748c33719e28d9179d8b22ab6757a181740baa5cda705004a06",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-16-candidate",
+      "pair_id": "base-16",
+      "arm": "base",
+      "slot_id": "strings_even_positions:short_fragments",
+      "contract_id": "strings_even_positions",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "short_fragments",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "857a1bf3db9505176a1e5c1ae28c6d9fa2bcc92747bb035823fcea7b8f4b3424",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-17-baseline",
+      "pair_id": "base-17",
+      "arm": "base",
+      "slot_id": "strings_even_positions:long_fragments",
+      "contract_id": "strings_even_positions",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "long_fragments",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "e146adca256d4748c33719e28d9179d8b22ab6757a181740baa5cda705004a06",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-17-candidate",
+      "pair_id": "base-17",
+      "arm": "base",
+      "slot_id": "strings_even_positions:long_fragments",
+      "contract_id": "strings_even_positions",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "long_fragments",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "857a1bf3db9505176a1e5c1ae28c6d9fa2bcc92747bb035823fcea7b8f4b3424",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-18-baseline",
+      "pair_id": "base-18",
+      "arm": "base",
+      "slot_id": "strings_bracketed:short_fragments",
+      "contract_id": "strings_bracketed",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "short_fragments",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "8982f86dbfeb183c8ac33d9a945460ec132c02834c3ceab142e4d3e0644e9e8c",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-18-candidate",
+      "pair_id": "base-18",
+      "arm": "base",
+      "slot_id": "strings_bracketed:short_fragments",
+      "contract_id": "strings_bracketed",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "short_fragments",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "377f00780fe24757fc3b67fa8c4166f7aaa1534702a6bdfc47b7c5d497e51945",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-19-baseline",
+      "pair_id": "base-19",
+      "arm": "base",
+      "slot_id": "strings_bracketed:long_fragments",
+      "contract_id": "strings_bracketed",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "long_fragments",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "8982f86dbfeb183c8ac33d9a945460ec132c02834c3ceab142e4d3e0644e9e8c",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-19-candidate",
+      "pair_id": "base-19",
+      "arm": "base",
+      "slot_id": "strings_bracketed:long_fragments",
+      "contract_id": "strings_bracketed",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "long_fragments",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "377f00780fe24757fc3b67fa8c4166f7aaa1534702a6bdfc47b7c5d497e51945",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-20-baseline",
+      "pair_id": "base-20",
+      "arm": "base",
+      "slot_id": "strings_length_at_least_three:short_fragments",
+      "contract_id": "strings_length_at_least_three",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "short_fragments",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "e98a787e226a790c1fd677fda449244bf79845136ae3ac7c5f026e9f638baaf9",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-20-candidate",
+      "pair_id": "base-20",
+      "arm": "base",
+      "slot_id": "strings_length_at_least_three:short_fragments",
+      "contract_id": "strings_length_at_least_three",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "short_fragments",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "f30f32a8ca7148f1fd2be8ea6439441c029df50ec1d7e507954d80a0f678c52d",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-21-baseline",
+      "pair_id": "base-21",
+      "arm": "base",
+      "slot_id": "strings_length_at_least_three:long_fragments",
+      "contract_id": "strings_length_at_least_three",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "long_fragments",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "e98a787e226a790c1fd677fda449244bf79845136ae3ac7c5f026e9f638baaf9",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-21-candidate",
+      "pair_id": "base-21",
+      "arm": "base",
+      "slot_id": "strings_length_at_least_three:long_fragments",
+      "contract_id": "strings_length_at_least_three",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "long_fragments",
+      "strict_schema": false,
+      "time_label": "faster",
+      "code_sha256": "f30f32a8ca7148f1fd2be8ea6439441c029df50ec1d7e507954d80a0f678c52d",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-22-baseline",
+      "pair_id": "base-22",
+      "arm": "base",
+      "slot_id": "strings_double_each:short_fragments",
+      "contract_id": "strings_double_each",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "short_fragments",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "ec58a7a22fc94718b213c373aa7d5b8cd933f98785ec8e742b0bb4d65bef1d9b",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-22-candidate",
+      "pair_id": "base-22",
+      "arm": "base",
+      "slot_id": "strings_double_each:short_fragments",
+      "contract_id": "strings_double_each",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "short_fragments",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "901e145197a3fa9877cbc5fcdb39944e935d936a3df3c842847743a3b7c7ec6f",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-23-baseline",
+      "pair_id": "base-23",
+      "arm": "base",
+      "slot_id": "strings_double_each:long_fragments",
+      "contract_id": "strings_double_each",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "long_fragments",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "ec58a7a22fc94718b213c373aa7d5b8cd933f98785ec8e742b0bb4d65bef1d9b",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "base-23-candidate",
+      "pair_id": "base-23",
+      "arm": "base",
+      "slot_id": "strings_double_each:long_fragments",
+      "contract_id": "strings_double_each",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "long_fragments",
+      "strict_schema": false,
+      "time_label": "uncertain",
+      "code_sha256": "901e145197a3fa9877cbc5fcdb39944e935d936a3df3c842847743a3b7c7ec6f",
+      "raw_compile": true,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "strict_json_schema_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-00-baseline",
+      "pair_id": "control-00",
+      "arm": "control",
+      "slot_id": "membership_matched_square_sum:first_hit",
+      "contract_id": "membership_matched_square_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "97e9d2ee545ed3deae4e4e03ba852277c0e5e64920e7ec4f59dcb6efca8f4cc2",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-00-candidate",
+      "pair_id": "control-00",
+      "arm": "control",
+      "slot_id": "membership_matched_square_sum:first_hit",
+      "contract_id": "membership_matched_square_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "c2c531403b0a6d2154e99cdfc6f28653168ca171510e9c0c2c632751749d37c5",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-01-baseline",
+      "pair_id": "control-01",
+      "arm": "control",
+      "slot_id": "membership_matched_square_sum:no_hit",
+      "contract_id": "membership_matched_square_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "06ef571a5417d06b1999970a0563999ae7edd12c7c1c78b7586838d2149817a1",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-01-candidate",
+      "pair_id": "control-01",
+      "arm": "control",
+      "slot_id": "membership_matched_square_sum:no_hit",
+      "contract_id": "membership_matched_square_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "31e1c6232bbbba78df2132907ed7b62ee17a4598825995a551f4aa4cd1c6af03",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-02-baseline",
+      "pair_id": "control-02",
+      "arm": "control",
+      "slot_id": "membership_missed_position_sum:first_hit",
+      "contract_id": "membership_missed_position_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "21b534e5b671785086b6ffbdc03d894431be5c719b0731713e1dd915505c0f04",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-02-candidate",
+      "pair_id": "control-02",
+      "arm": "control",
+      "slot_id": "membership_missed_position_sum:first_hit",
+      "contract_id": "membership_missed_position_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "79148e2015e41e53c1902a378e237c3460b378d2d0ce7209de20ad754328eb68",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-03-baseline",
+      "pair_id": "control-03",
+      "arm": "control",
+      "slot_id": "membership_missed_position_sum:no_hit",
+      "contract_id": "membership_missed_position_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "440ad217fa1ff0fc6eb69f33d548b525d8635e8dae8c333465b76c020465ec68",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-03-candidate",
+      "pair_id": "control-03",
+      "arm": "control",
+      "slot_id": "membership_missed_position_sum:no_hit",
+      "contract_id": "membership_missed_position_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "3f3d1f167828b426cb634ed6b48f0531e67605b98f2a0035beff81627b1c1d46",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-04-baseline",
+      "pair_id": "control-04",
+      "arm": "control",
+      "slot_id": "membership_even_match_count:first_hit",
+      "contract_id": "membership_even_match_count",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "b6871244a2b4a47aa7c163e31ec2bdd393fd118e7e85ca55049da03df892005b",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-04-candidate",
+      "pair_id": "control-04",
+      "arm": "control",
+      "slot_id": "membership_even_match_count:first_hit",
+      "contract_id": "membership_even_match_count",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "49439aef4ca0ccc79a1ab2ec1e3c54ee509a3e3edfd95b4ffb4a70bb147abf80",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-05-baseline",
+      "pair_id": "control-05",
+      "arm": "control",
+      "slot_id": "membership_even_match_count:no_hit",
+      "contract_id": "membership_even_match_count",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "404ee07a6dc10379feda041b41b8a62eb074266bac4fd2c1d5a5dac38acec36f",
+      "raw_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-05-candidate",
+      "pair_id": "control-05",
+      "arm": "control",
+      "slot_id": "membership_even_match_count:no_hit",
+      "contract_id": "membership_even_match_count",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "820dae58e7682b0a5b1a7e7c551a5286188fa9ce70b10fa4c7c9be1f0c60f096",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-06-baseline",
+      "pair_id": "control-06",
+      "arm": "control",
+      "slot_id": "membership_odd_miss_sum:first_hit",
+      "contract_id": "membership_odd_miss_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "f901e982ff44f0bd1dba4578cd1f174ed33946a4af6014b7d10b5ae53b1d0b5b",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-06-candidate",
+      "pair_id": "control-06",
+      "arm": "control",
+      "slot_id": "membership_odd_miss_sum:first_hit",
+      "contract_id": "membership_odd_miss_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "63971faf646c1e39b6a92926a5c53eb025859093427384ac71d5ae78bcaf5277",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-07-baseline",
+      "pair_id": "control-07",
+      "arm": "control",
+      "slot_id": "membership_odd_miss_sum:no_hit",
+      "contract_id": "membership_odd_miss_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "ba04a7b67325610583a6f94e0b38a5ebe77a7cc8658b94de2df438abe525a5a4",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-07-candidate",
+      "pair_id": "control-07",
+      "arm": "control",
+      "slot_id": "membership_odd_miss_sum:no_hit",
+      "contract_id": "membership_odd_miss_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "6a385c86931c8bac20a428db3a45ad03021171a1c7117f2301b3f4b475cd07c6",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-08-baseline",
+      "pair_id": "control-08",
+      "arm": "control",
+      "slot_id": "aggregation_less_equal_count:none_selected",
+      "contract_id": "aggregation_less_equal_count",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "ae377b8fcb0e812b6a56d9e06c2b0c45b7ab31f84ce3aefe0827e9c2405fe2c7",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "fail_source_review",
+      "admitted": false,
+      "reasons": [
+        "collects_values_instead_of_requested_selected_indices"
+      ]
+    },
+    {
+      "attempt_id": "control-08-candidate",
+      "pair_id": "control-08",
+      "arm": "control",
+      "slot_id": "aggregation_less_equal_count:none_selected",
+      "contract_id": "aggregation_less_equal_count",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "690d85cf2df2ca428a001fa138fa10691634b140c0e4ff606052ad95200c194d",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-09-baseline",
+      "pair_id": "control-09",
+      "arm": "control",
+      "slot_id": "aggregation_less_equal_count:all_selected",
+      "contract_id": "aggregation_less_equal_count",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "7dea9b0ca8048204defeb4f7da7303f66d88c1c75198603561915a784c3e0d18",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-09-candidate",
+      "pair_id": "control-09",
+      "arm": "control",
+      "slot_id": "aggregation_less_equal_count:all_selected",
+      "contract_id": "aggregation_less_equal_count",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "624de46fea6193fda78610378550077e0f4dce00b6ca635fb5d61e2d1f4bd4e0",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-10-baseline",
+      "pair_id": "control-10",
+      "arm": "control",
+      "slot_id": "aggregation_greater_square_sum:none_selected",
+      "contract_id": "aggregation_greater_square_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "26f498260f768b3c521206896f0d71fb2b93d77703709929aee0262f293f57ff",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-10-candidate",
+      "pair_id": "control-10",
+      "arm": "control",
+      "slot_id": "aggregation_greater_square_sum:none_selected",
+      "contract_id": "aggregation_greater_square_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "dfd35a1643cf070f2ac8d83dbd02a6dd1d470a2edd96fee257425608f9eeee86",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-11-baseline",
+      "pair_id": "control-11",
+      "arm": "control",
+      "slot_id": "aggregation_greater_square_sum:all_selected",
+      "contract_id": "aggregation_greater_square_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "22a147afb46a38d81f3e2531ff227a2304a6c04f6b52d506c765d6880d751241",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-11-candidate",
+      "pair_id": "control-11",
+      "arm": "control",
+      "slot_id": "aggregation_greater_square_sum:all_selected",
+      "contract_id": "aggregation_greater_square_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "d1413518e5244175fca106c57e2508e013858e5de76b5aa3ab0189adac1683af",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-12-baseline",
+      "pair_id": "control-12",
+      "arm": "control",
+      "slot_id": "aggregation_less_absolute_sum:none_selected",
+      "contract_id": "aggregation_less_absolute_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "f777ff0b0d0916b5ad0f7190359bd00981a7fda8fc1eaf05ece6cac9db4540c7",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-12-candidate",
+      "pair_id": "control-12",
+      "arm": "control",
+      "slot_id": "aggregation_less_absolute_sum:none_selected",
+      "contract_id": "aggregation_less_absolute_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "972c94b21ef18c0db7c6cef546fd66034aa1b6faf87b032c30910a0067b9904a",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-13-baseline",
+      "pair_id": "control-13",
+      "arm": "control",
+      "slot_id": "aggregation_less_absolute_sum:all_selected",
+      "contract_id": "aggregation_less_absolute_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "195feeca8ff3345ac89db3738d22ef387a5bebf827589ceba0ea4cbe0cbbfaff",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-13-candidate",
+      "pair_id": "control-13",
+      "arm": "control",
+      "slot_id": "aggregation_less_absolute_sum:all_selected",
+      "contract_id": "aggregation_less_absolute_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "9cee0e86ced432a3df883a7047bd8614a20ac7492bede9e3c4ba52c0d428bbfa",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-14-baseline",
+      "pair_id": "control-14",
+      "arm": "control",
+      "slot_id": "aggregation_equal_position_sum:none_selected",
+      "contract_id": "aggregation_equal_position_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "d2d05953754dd7ef1828ba20068ca310b07b710a5f75dbbfd70a5cfe63427088",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-14-candidate",
+      "pair_id": "control-14",
+      "arm": "control",
+      "slot_id": "aggregation_equal_position_sum:none_selected",
+      "contract_id": "aggregation_equal_position_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "57b7243058616d7c19fca71f631cc00ae83b87d1cca92b4d43d96fbd7f2e320b",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-15-baseline",
+      "pair_id": "control-15",
+      "arm": "control",
+      "slot_id": "aggregation_equal_position_sum:all_selected",
+      "contract_id": "aggregation_equal_position_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "1c000e6ea4ea2a5e7f50dc5959700eaf8d8690970a692a23cf5a0c6da54d19af",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-15-candidate",
+      "pair_id": "control-15",
+      "arm": "control",
+      "slot_id": "aggregation_equal_position_sum:all_selected",
+      "contract_id": "aggregation_equal_position_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "57b7243058616d7c19fca71f631cc00ae83b87d1cca92b4d43d96fbd7f2e320b",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-16-baseline",
+      "pair_id": "control-16",
+      "arm": "control",
+      "slot_id": "strings_even_positions:short_fragments",
+      "contract_id": "strings_even_positions",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "b0a88cd076c0ad5536188b9a12bccf381202ef29c21128774dc1baa687fa9a1a",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-16-candidate",
+      "pair_id": "control-16",
+      "arm": "control",
+      "slot_id": "strings_even_positions:short_fragments",
+      "contract_id": "strings_even_positions",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "9788e4baf06c5e79a5d225fb98f1e73b5f411b50d67908e6fe59728ca98aa3d7",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-17-baseline",
+      "pair_id": "control-17",
+      "arm": "control",
+      "slot_id": "strings_even_positions:long_fragments",
+      "contract_id": "strings_even_positions",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "b0a88cd076c0ad5536188b9a12bccf381202ef29c21128774dc1baa687fa9a1a",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-17-candidate",
+      "pair_id": "control-17",
+      "arm": "control",
+      "slot_id": "strings_even_positions:long_fragments",
+      "contract_id": "strings_even_positions",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "9788e4baf06c5e79a5d225fb98f1e73b5f411b50d67908e6fe59728ca98aa3d7",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-18-baseline",
+      "pair_id": "control-18",
+      "arm": "control",
+      "slot_id": "strings_bracketed:short_fragments",
+      "contract_id": "strings_bracketed",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "cc93df075413fd2336a8f3c2d721a9eda1116ed49350b3551ae187be3f0b9dd8",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-18-candidate",
+      "pair_id": "control-18",
+      "arm": "control",
+      "slot_id": "strings_bracketed:short_fragments",
+      "contract_id": "strings_bracketed",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "9ac1e129f1c4c6b6e62468ecd0dc67898882b3e7b71a9f54905e0df639455640",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-19-baseline",
+      "pair_id": "control-19",
+      "arm": "control",
+      "slot_id": "strings_bracketed:long_fragments",
+      "contract_id": "strings_bracketed",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "144121cd2ac016789e34024f2710bd82cc290a518c78717b1ab4951d6ca58d82",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-19-candidate",
+      "pair_id": "control-19",
+      "arm": "control",
+      "slot_id": "strings_bracketed:long_fragments",
+      "contract_id": "strings_bracketed",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "ac02e366a02d9f49ec7eed99ad764c68526e4e5aa756b2543cbec56ad64d7dfd",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-20-baseline",
+      "pair_id": "control-20",
+      "arm": "control",
+      "slot_id": "strings_length_at_least_three:short_fragments",
+      "contract_id": "strings_length_at_least_three",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "64602c8c38b7e46656f7845a5e383f92335fa704d81f1648ac969c28ea7488e9",
+      "raw_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-20-candidate",
+      "pair_id": "control-20",
+      "arm": "control",
+      "slot_id": "strings_length_at_least_three:short_fragments",
+      "contract_id": "strings_length_at_least_three",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "8def8070c06e2fef58dc67f5c6b9ad7e262273596eeff52487832198df21f1b9",
+      "raw_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-21-baseline",
+      "pair_id": "control-21",
+      "arm": "control",
+      "slot_id": "strings_length_at_least_three:long_fragments",
+      "contract_id": "strings_length_at_least_three",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "6790961507e0ff5d0fe4e9dc42e3e5f4b9bec459406cdc58678358ac70c11714",
+      "raw_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-21-candidate",
+      "pair_id": "control-21",
+      "arm": "control",
+      "slot_id": "strings_length_at_least_three:long_fragments",
+      "contract_id": "strings_length_at_least_three",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "8def8070c06e2fef58dc67f5c6b9ad7e262273596eeff52487832198df21f1b9",
+      "raw_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-22-baseline",
+      "pair_id": "control-22",
+      "arm": "control",
+      "slot_id": "strings_double_each:short_fragments",
+      "contract_id": "strings_double_each",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "aabd6dd2b4b34143cc0709a8269a667c98ca43a070f846ec4e6e77582777941a",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-22-candidate",
+      "pair_id": "control-22",
+      "arm": "control",
+      "slot_id": "strings_double_each:short_fragments",
+      "contract_id": "strings_double_each",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "5c11bf474f446a42e53a04b1d84486c75a396a3eb84b91c09e77058dd06e0e2c",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "control-23-baseline",
+      "pair_id": "control-23",
+      "arm": "control",
+      "slot_id": "strings_double_each:long_fragments",
+      "contract_id": "strings_double_each",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "4e3dcdafec96dbbc3e929ab9845a99a71009c5cfe005ae1da1f1cd6d030f8893",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "control-23-candidate",
+      "pair_id": "control-23",
+      "arm": "control",
+      "slot_id": "strings_double_each:long_fragments",
+      "contract_id": "strings_double_each",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "67a4ce2f35efbebfd82210c5e70812ddd242d48d6cb1866e76a594c01bc6d445",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-00-baseline",
+      "pair_id": "benchmark-00",
+      "arm": "benchmark",
+      "slot_id": "membership_matched_square_sum:first_hit",
+      "contract_id": "membership_matched_square_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "97e9d2ee545ed3deae4e4e03ba852277c0e5e64920e7ec4f59dcb6efca8f4cc2",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-00-candidate",
+      "pair_id": "benchmark-00",
+      "arm": "benchmark",
+      "slot_id": "membership_matched_square_sum:first_hit",
+      "contract_id": "membership_matched_square_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "c2c531403b0a6d2154e99cdfc6f28653168ca171510e9c0c2c632751749d37c5",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-01-baseline",
+      "pair_id": "benchmark-01",
+      "arm": "benchmark",
+      "slot_id": "membership_matched_square_sum:no_hit",
+      "contract_id": "membership_matched_square_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "slower",
+      "code_sha256": "7785750a1e48b1dec3d33382572f3a7e3d596c8e9a6a8c2079baf531121482a9",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-01-candidate",
+      "pair_id": "benchmark-01",
+      "arm": "benchmark",
+      "slot_id": "membership_matched_square_sum:no_hit",
+      "contract_id": "membership_matched_square_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "slower",
+      "code_sha256": "f669d5ab6774913507c5e1f650d995c01909f35df64b78d047b8ee447e91d203",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-02-baseline",
+      "pair_id": "benchmark-02",
+      "arm": "benchmark",
+      "slot_id": "membership_missed_position_sum:first_hit",
+      "contract_id": "membership_missed_position_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "21b534e5b671785086b6ffbdc03d894431be5c719b0731713e1dd915505c0f04",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-02-candidate",
+      "pair_id": "benchmark-02",
+      "arm": "benchmark",
+      "slot_id": "membership_missed_position_sum:first_hit",
+      "contract_id": "membership_missed_position_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "79148e2015e41e53c1902a378e237c3460b378d2d0ce7209de20ad754328eb68",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-03-baseline",
+      "pair_id": "benchmark-03",
+      "arm": "benchmark",
+      "slot_id": "membership_missed_position_sum:no_hit",
+      "contract_id": "membership_missed_position_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "440ad217fa1ff0fc6eb69f33d548b525d8635e8dae8c333465b76c020465ec68",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-03-candidate",
+      "pair_id": "benchmark-03",
+      "arm": "benchmark",
+      "slot_id": "membership_missed_position_sum:no_hit",
+      "contract_id": "membership_missed_position_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "3f3d1f167828b426cb634ed6b48f0531e67605b98f2a0035beff81627b1c1d46",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-04-baseline",
+      "pair_id": "benchmark-04",
+      "arm": "benchmark",
+      "slot_id": "membership_even_match_count:first_hit",
+      "contract_id": "membership_even_match_count",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "slower",
+      "code_sha256": "b6871244a2b4a47aa7c163e31ec2bdd393fd118e7e85ca55049da03df892005b",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-04-candidate",
+      "pair_id": "benchmark-04",
+      "arm": "benchmark",
+      "slot_id": "membership_even_match_count:first_hit",
+      "contract_id": "membership_even_match_count",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "slower",
+      "code_sha256": "49439aef4ca0ccc79a1ab2ec1e3c54ee509a3e3edfd95b4ffb4a70bb147abf80",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-05-baseline",
+      "pair_id": "benchmark-05",
+      "arm": "benchmark",
+      "slot_id": "membership_even_match_count:no_hit",
+      "contract_id": "membership_even_match_count",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "2b0d10314855f24afd761269224274d4cc0a7e1b35d114c239989269040b3820",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-05-candidate",
+      "pair_id": "benchmark-05",
+      "arm": "benchmark",
+      "slot_id": "membership_even_match_count:no_hit",
+      "contract_id": "membership_even_match_count",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "d79b081194001a0fc1a8eaf29fa05b6a64dfdf15d421f54d943c247a0368ade9",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-06-baseline",
+      "pair_id": "benchmark-06",
+      "arm": "benchmark",
+      "slot_id": "membership_odd_miss_sum:first_hit",
+      "contract_id": "membership_odd_miss_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "f901e982ff44f0bd1dba4578cd1f174ed33946a4af6014b7d10b5ae53b1d0b5b",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-06-candidate",
+      "pair_id": "benchmark-06",
+      "arm": "benchmark",
+      "slot_id": "membership_odd_miss_sum:first_hit",
+      "contract_id": "membership_odd_miss_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "first_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "63971faf646c1e39b6a92926a5c53eb025859093427384ac71d5ae78bcaf5277",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-07-baseline",
+      "pair_id": "benchmark-07",
+      "arm": "benchmark",
+      "slot_id": "membership_odd_miss_sum:no_hit",
+      "contract_id": "membership_odd_miss_sum",
+      "family": "membership",
+      "role": "baseline",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "ba04a7b67325610583a6f94e0b38a5ebe77a7cc8658b94de2df438abe525a5a4",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-07-candidate",
+      "pair_id": "benchmark-07",
+      "arm": "benchmark",
+      "slot_id": "membership_odd_miss_sum:no_hit",
+      "contract_id": "membership_odd_miss_sum",
+      "family": "membership",
+      "role": "candidate",
+      "profile": "no_hit",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "6a385c86931c8bac20a428db3a45ad03021171a1c7117f2301b3f4b475cd07c6",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-08-baseline",
+      "pair_id": "benchmark-08",
+      "arm": "benchmark",
+      "slot_id": "aggregation_less_equal_count:none_selected",
+      "contract_id": "aggregation_less_equal_count",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "ae377b8fcb0e812b6a56d9e06c2b0c45b7ab31f84ce3aefe0827e9c2405fe2c7",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "fail_source_review",
+      "admitted": false,
+      "reasons": [
+        "collects_values_instead_of_requested_selected_indices"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-08-candidate",
+      "pair_id": "benchmark-08",
+      "arm": "benchmark",
+      "slot_id": "aggregation_less_equal_count:none_selected",
+      "contract_id": "aggregation_less_equal_count",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "690d85cf2df2ca428a001fa138fa10691634b140c0e4ff606052ad95200c194d",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-09-baseline",
+      "pair_id": "benchmark-09",
+      "arm": "benchmark",
+      "slot_id": "aggregation_less_equal_count:all_selected",
+      "contract_id": "aggregation_less_equal_count",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "7dea9b0ca8048204defeb4f7da7303f66d88c1c75198603561915a784c3e0d18",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-09-candidate",
+      "pair_id": "benchmark-09",
+      "arm": "benchmark",
+      "slot_id": "aggregation_less_equal_count:all_selected",
+      "contract_id": "aggregation_less_equal_count",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "624de46fea6193fda78610378550077e0f4dce00b6ca635fb5d61e2d1f4bd4e0",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-10-baseline",
+      "pair_id": "benchmark-10",
+      "arm": "benchmark",
+      "slot_id": "aggregation_greater_square_sum:none_selected",
+      "contract_id": "aggregation_greater_square_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "26f498260f768b3c521206896f0d71fb2b93d77703709929aee0262f293f57ff",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-10-candidate",
+      "pair_id": "benchmark-10",
+      "arm": "benchmark",
+      "slot_id": "aggregation_greater_square_sum:none_selected",
+      "contract_id": "aggregation_greater_square_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "dfd35a1643cf070f2ac8d83dbd02a6dd1d470a2edd96fee257425608f9eeee86",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-11-baseline",
+      "pair_id": "benchmark-11",
+      "arm": "benchmark",
+      "slot_id": "aggregation_greater_square_sum:all_selected",
+      "contract_id": "aggregation_greater_square_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "22a147afb46a38d81f3e2531ff227a2304a6c04f6b52d506c765d6880d751241",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-11-candidate",
+      "pair_id": "benchmark-11",
+      "arm": "benchmark",
+      "slot_id": "aggregation_greater_square_sum:all_selected",
+      "contract_id": "aggregation_greater_square_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "a7112769e191adeadb0fed0666667cfac7a01bcad8be83d183221ad1edf154fd",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-12-baseline",
+      "pair_id": "benchmark-12",
+      "arm": "benchmark",
+      "slot_id": "aggregation_less_absolute_sum:none_selected",
+      "contract_id": "aggregation_less_absolute_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "f777ff0b0d0916b5ad0f7190359bd00981a7fda8fc1eaf05ece6cac9db4540c7",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-12-candidate",
+      "pair_id": "benchmark-12",
+      "arm": "benchmark",
+      "slot_id": "aggregation_less_absolute_sum:none_selected",
+      "contract_id": "aggregation_less_absolute_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "972c94b21ef18c0db7c6cef546fd66034aa1b6faf87b032c30910a0067b9904a",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-13-baseline",
+      "pair_id": "benchmark-13",
+      "arm": "benchmark",
+      "slot_id": "aggregation_less_absolute_sum:all_selected",
+      "contract_id": "aggregation_less_absolute_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "195feeca8ff3345ac89db3738d22ef387a5bebf827589ceba0ea4cbe0cbbfaff",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-13-candidate",
+      "pair_id": "benchmark-13",
+      "arm": "benchmark",
+      "slot_id": "aggregation_less_absolute_sum:all_selected",
+      "contract_id": "aggregation_less_absolute_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "9cee0e86ced432a3df883a7047bd8614a20ac7492bede9e3c4ba52c0d428bbfa",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-14-baseline",
+      "pair_id": "benchmark-14",
+      "arm": "benchmark",
+      "slot_id": "aggregation_equal_position_sum:none_selected",
+      "contract_id": "aggregation_equal_position_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "d2d05953754dd7ef1828ba20068ca310b07b710a5f75dbbfd70a5cfe63427088",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-14-candidate",
+      "pair_id": "benchmark-14",
+      "arm": "benchmark",
+      "slot_id": "aggregation_equal_position_sum:none_selected",
+      "contract_id": "aggregation_equal_position_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "none_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "57b7243058616d7c19fca71f631cc00ae83b87d1cca92b4d43d96fbd7f2e320b",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-15-baseline",
+      "pair_id": "benchmark-15",
+      "arm": "benchmark",
+      "slot_id": "aggregation_equal_position_sum:all_selected",
+      "contract_id": "aggregation_equal_position_sum",
+      "family": "aggregation",
+      "role": "baseline",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "da52785c8e5d7193650a1146a7977eaa08e0e498437e32b988015c7fde13625c",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-15-candidate",
+      "pair_id": "benchmark-15",
+      "arm": "benchmark",
+      "slot_id": "aggregation_equal_position_sum:all_selected",
+      "contract_id": "aggregation_equal_position_sum",
+      "family": "aggregation",
+      "role": "candidate",
+      "profile": "all_selected",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "57b7243058616d7c19fca71f631cc00ae83b87d1cca92b4d43d96fbd7f2e320b",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-16-baseline",
+      "pair_id": "benchmark-16",
+      "arm": "benchmark",
+      "slot_id": "strings_even_positions:short_fragments",
+      "contract_id": "strings_even_positions",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "b0a88cd076c0ad5536188b9a12bccf381202ef29c21128774dc1baa687fa9a1a",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-16-candidate",
+      "pair_id": "benchmark-16",
+      "arm": "benchmark",
+      "slot_id": "strings_even_positions:short_fragments",
+      "contract_id": "strings_even_positions",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "9788e4baf06c5e79a5d225fb98f1e73b5f411b50d67908e6fe59728ca98aa3d7",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-17-baseline",
+      "pair_id": "benchmark-17",
+      "arm": "benchmark",
+      "slot_id": "strings_even_positions:long_fragments",
+      "contract_id": "strings_even_positions",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "f3e0aade77b0d52c45f48d8a5a945ba0e7952b7f0bba9cd3da98857db53f1e55",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-17-candidate",
+      "pair_id": "benchmark-17",
+      "arm": "benchmark",
+      "slot_id": "strings_even_positions:long_fragments",
+      "contract_id": "strings_even_positions",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "f03724da5962cc1f4de746a4e47901f58adb5602b683b88dcc85942df40d5d82",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-18-baseline",
+      "pair_id": "benchmark-18",
+      "arm": "benchmark",
+      "slot_id": "strings_bracketed:short_fragments",
+      "contract_id": "strings_bracketed",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "cc93df075413fd2336a8f3c2d721a9eda1116ed49350b3551ae187be3f0b9dd8",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-18-candidate",
+      "pair_id": "benchmark-18",
+      "arm": "benchmark",
+      "slot_id": "strings_bracketed:short_fragments",
+      "contract_id": "strings_bracketed",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "7a14d11837174100c3c4c600126d8ce04faeb2ce92f93135afa7deaf90325f66",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-19-baseline",
+      "pair_id": "benchmark-19",
+      "arm": "benchmark",
+      "slot_id": "strings_bracketed:long_fragments",
+      "contract_id": "strings_bracketed",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "144121cd2ac016789e34024f2710bd82cc290a518c78717b1ab4951d6ca58d82",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-19-candidate",
+      "pair_id": "benchmark-19",
+      "arm": "benchmark",
+      "slot_id": "strings_bracketed:long_fragments",
+      "contract_id": "strings_bracketed",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "ac02e366a02d9f49ec7eed99ad764c68526e4e5aa756b2543cbec56ad64d7dfd",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-20-baseline",
+      "pair_id": "benchmark-20",
+      "arm": "benchmark",
+      "slot_id": "strings_length_at_least_three:short_fragments",
+      "contract_id": "strings_length_at_least_three",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "64602c8c38b7e46656f7845a5e383f92335fa704d81f1648ac969c28ea7488e9",
+      "raw_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-20-candidate",
+      "pair_id": "benchmark-20",
+      "arm": "benchmark",
+      "slot_id": "strings_length_at_least_three:short_fragments",
+      "contract_id": "strings_length_at_least_three",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "8def8070c06e2fef58dc67f5c6b9ad7e262273596eeff52487832198df21f1b9",
+      "raw_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-21-baseline",
+      "pair_id": "benchmark-21",
+      "arm": "benchmark",
+      "slot_id": "strings_length_at_least_three:long_fragments",
+      "contract_id": "strings_length_at_least_three",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "6790961507e0ff5d0fe4e9dc42e3e5f4b9bec459406cdc58678358ac70c11714",
+      "raw_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-21-candidate",
+      "pair_id": "benchmark-21",
+      "arm": "benchmark",
+      "slot_id": "strings_length_at_least_three:long_fragments",
+      "contract_id": "strings_length_at_least_three",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "8def8070c06e2fef58dc67f5c6b9ad7e262273596eeff52487832198df21f1b9",
+      "raw_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-22-baseline",
+      "pair_id": "benchmark-22",
+      "arm": "benchmark",
+      "slot_id": "strings_double_each:short_fragments",
+      "contract_id": "strings_double_each",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "aabd6dd2b4b34143cc0709a8269a667c98ca43a070f846ec4e6e77582777941a",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-22-candidate",
+      "pair_id": "benchmark-22",
+      "arm": "benchmark",
+      "slot_id": "strings_double_each:short_fragments",
+      "contract_id": "strings_double_each",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "short_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "384f1a5cfff776f27bc95dc4ce4031e1e0b5164b5b3867bd47b70a7f152d4891",
+      "raw_compile": false,
+      "functional_pass": null,
+      "mechanism": "not_reached",
+      "admitted": false,
+      "reasons": [
+        "raw_compilation_failed"
+      ]
+    },
+    {
+      "attempt_id": "benchmark-23-baseline",
+      "pair_id": "benchmark-23",
+      "arm": "benchmark",
+      "slot_id": "strings_double_each:long_fragments",
+      "contract_id": "strings_double_each",
+      "family": "strings",
+      "role": "baseline",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "4e3dcdafec96dbbc3e929ab9845a99a71009c5cfe005ae1da1f1cd6d030f8893",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    },
+    {
+      "attempt_id": "benchmark-23-candidate",
+      "pair_id": "benchmark-23",
+      "arm": "benchmark",
+      "slot_id": "strings_double_each:long_fragments",
+      "contract_id": "strings_double_each",
+      "family": "strings",
+      "role": "candidate",
+      "profile": "long_fragments",
+      "strict_schema": true,
+      "time_label": "faster",
+      "code_sha256": "67a4ce2f35efbebfd82210c5e70812ddd242d48d6cb1866e76a594c01bc6d445",
+      "raw_compile": true,
+      "functional_pass": true,
+      "mechanism": "pass_source_review",
+      "admitted": true,
+      "reasons": []
+    }
+  ],
+  "pairs": [
+    {
+      "pair_id": "base-00",
+      "arm": "base",
+      "contract_id": "membership_matched_square_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "base-00-baseline",
+        "base-00-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-01",
+      "arm": "base",
+      "contract_id": "membership_matched_square_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "base-01-baseline",
+        "base-01-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-02",
+      "arm": "base",
+      "contract_id": "membership_missed_position_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "base-02-baseline",
+        "base-02-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-03",
+      "arm": "base",
+      "contract_id": "membership_missed_position_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "base-03-baseline",
+        "base-03-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-04",
+      "arm": "base",
+      "contract_id": "membership_even_match_count",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "base-04-baseline",
+        "base-04-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-05",
+      "arm": "base",
+      "contract_id": "membership_even_match_count",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "base-05-baseline",
+        "base-05-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-06",
+      "arm": "base",
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "uncertain",
+      "methods": [
+        "base-06-baseline",
+        "base-06-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-07",
+      "arm": "base",
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "uncertain",
+      "methods": [
+        "base-07-baseline",
+        "base-07-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-08",
+      "arm": "base",
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "base-08-baseline",
+        "base-08-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-09",
+      "arm": "base",
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-09-baseline",
+        "base-09-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-10",
+      "arm": "base",
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-10-baseline",
+        "base-10-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-11",
+      "arm": "base",
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-11-baseline",
+        "base-11-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-12",
+      "arm": "base",
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-12-baseline",
+        "base-12-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-13",
+      "arm": "base",
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-13-baseline",
+        "base-13-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-14",
+      "arm": "base",
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-14-baseline",
+        "base-14-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-15",
+      "arm": "base",
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-15-baseline",
+        "base-15-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-16",
+      "arm": "base",
+      "contract_id": "strings_even_positions",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "uncertain",
+      "methods": [
+        "base-16-baseline",
+        "base-16-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-17",
+      "arm": "base",
+      "contract_id": "strings_even_positions",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "uncertain",
+      "methods": [
+        "base-17-baseline",
+        "base-17-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-18",
+      "arm": "base",
+      "contract_id": "strings_bracketed",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "uncertain",
+      "methods": [
+        "base-18-baseline",
+        "base-18-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-19",
+      "arm": "base",
+      "contract_id": "strings_bracketed",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "uncertain",
+      "methods": [
+        "base-19-baseline",
+        "base-19-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-20",
+      "arm": "base",
+      "contract_id": "strings_length_at_least_three",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "base-20-baseline",
+        "base-20-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-21",
+      "arm": "base",
+      "contract_id": "strings_length_at_least_three",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "base-21-baseline",
+        "base-21-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-22",
+      "arm": "base",
+      "contract_id": "strings_double_each",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "uncertain",
+      "methods": [
+        "base-22-baseline",
+        "base-22-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "base-23",
+      "arm": "base",
+      "contract_id": "strings_double_each",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "uncertain",
+      "methods": [
+        "base-23-baseline",
+        "base-23-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "benchmark-00",
+      "arm": "benchmark",
+      "contract_id": "membership_matched_square_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-00-baseline",
+        "benchmark-00-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "benchmark-01",
+      "arm": "benchmark",
+      "contract_id": "membership_matched_square_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "slower",
+      "methods": [
+        "benchmark-01-baseline",
+        "benchmark-01-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "benchmark-02",
+      "arm": "benchmark",
+      "contract_id": "membership_missed_position_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-02-baseline",
+        "benchmark-02-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "benchmark-03",
+      "arm": "benchmark",
+      "contract_id": "membership_missed_position_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-03-baseline",
+        "benchmark-03-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "benchmark-04",
+      "arm": "benchmark",
+      "contract_id": "membership_even_match_count",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "slower",
+      "methods": [
+        "benchmark-04-baseline",
+        "benchmark-04-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "benchmark-05",
+      "arm": "benchmark",
+      "contract_id": "membership_even_match_count",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-05-baseline",
+        "benchmark-05-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "benchmark-06",
+      "arm": "benchmark",
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-06-baseline",
+        "benchmark-06-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "benchmark-07",
+      "arm": "benchmark",
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-07-baseline",
+        "benchmark-07-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "benchmark-08",
+      "arm": "benchmark",
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-08-baseline",
+        "benchmark-08-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "benchmark-09",
+      "arm": "benchmark",
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-09-baseline",
+        "benchmark-09-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "benchmark-10",
+      "arm": "benchmark",
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-10-baseline",
+        "benchmark-10-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "benchmark-11",
+      "arm": "benchmark",
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-11-baseline",
+        "benchmark-11-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "benchmark-12",
+      "arm": "benchmark",
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-12-baseline",
+        "benchmark-12-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "benchmark-13",
+      "arm": "benchmark",
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-13-baseline",
+        "benchmark-13-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "benchmark-14",
+      "arm": "benchmark",
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-14-baseline",
+        "benchmark-14-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "benchmark-15",
+      "arm": "benchmark",
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-15-baseline",
+        "benchmark-15-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "benchmark-16",
+      "arm": "benchmark",
+      "contract_id": "strings_even_positions",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-16-baseline",
+        "benchmark-16-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "benchmark-17",
+      "arm": "benchmark",
+      "contract_id": "strings_even_positions",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-17-baseline",
+        "benchmark-17-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "benchmark-18",
+      "arm": "benchmark",
+      "contract_id": "strings_bracketed",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-18-baseline",
+        "benchmark-18-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "benchmark-19",
+      "arm": "benchmark",
+      "contract_id": "strings_bracketed",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-19-baseline",
+        "benchmark-19-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "benchmark-20",
+      "arm": "benchmark",
+      "contract_id": "strings_length_at_least_three",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-20-baseline",
+        "benchmark-20-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "benchmark-21",
+      "arm": "benchmark",
+      "contract_id": "strings_length_at_least_three",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-21-baseline",
+        "benchmark-21-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "benchmark-22",
+      "arm": "benchmark",
+      "contract_id": "strings_double_each",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-22-baseline",
+        "benchmark-22-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "benchmark-23",
+      "arm": "benchmark",
+      "contract_id": "strings_double_each",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-23-baseline",
+        "benchmark-23-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "control-00",
+      "arm": "control",
+      "contract_id": "membership_matched_square_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-00-baseline",
+        "control-00-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "control-01",
+      "arm": "control",
+      "contract_id": "membership_matched_square_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-01-baseline",
+        "control-01-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "control-02",
+      "arm": "control",
+      "contract_id": "membership_missed_position_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-02-baseline",
+        "control-02-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "control-03",
+      "arm": "control",
+      "contract_id": "membership_missed_position_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-03-baseline",
+        "control-03-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "control-04",
+      "arm": "control",
+      "contract_id": "membership_even_match_count",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-04-baseline",
+        "control-04-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "control-05",
+      "arm": "control",
+      "contract_id": "membership_even_match_count",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-05-baseline",
+        "control-05-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "control-06",
+      "arm": "control",
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-06-baseline",
+        "control-06-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "control-07",
+      "arm": "control",
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-07-baseline",
+        "control-07-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "control-08",
+      "arm": "control",
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-08-baseline",
+        "control-08-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "control-09",
+      "arm": "control",
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-09-baseline",
+        "control-09-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "control-10",
+      "arm": "control",
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-10-baseline",
+        "control-10-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "control-11",
+      "arm": "control",
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-11-baseline",
+        "control-11-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "control-12",
+      "arm": "control",
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-12-baseline",
+        "control-12-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "control-13",
+      "arm": "control",
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-13-baseline",
+        "control-13-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "control-14",
+      "arm": "control",
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-14-baseline",
+        "control-14-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "control-15",
+      "arm": "control",
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-15-baseline",
+        "control-15-candidate"
+      ],
+      "admitted": true
+    },
+    {
+      "pair_id": "control-16",
+      "arm": "control",
+      "contract_id": "strings_even_positions",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-16-baseline",
+        "control-16-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "control-17",
+      "arm": "control",
+      "contract_id": "strings_even_positions",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-17-baseline",
+        "control-17-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "control-18",
+      "arm": "control",
+      "contract_id": "strings_bracketed",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-18-baseline",
+        "control-18-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "control-19",
+      "arm": "control",
+      "contract_id": "strings_bracketed",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-19-baseline",
+        "control-19-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "control-20",
+      "arm": "control",
+      "contract_id": "strings_length_at_least_three",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-20-baseline",
+        "control-20-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "control-21",
+      "arm": "control",
+      "contract_id": "strings_length_at_least_three",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-21-baseline",
+        "control-21-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "control-22",
+      "arm": "control",
+      "contract_id": "strings_double_each",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-22-baseline",
+        "control-22-candidate"
+      ],
+      "admitted": false
+    },
+    {
+      "pair_id": "control-23",
+      "arm": "control",
+      "contract_id": "strings_double_each",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-23-baseline",
+        "control-23-candidate"
+      ],
+      "admitted": true
+    }
+  ],
+  "review_limit": "source review was not blinded; this deviation from the prospective protocol is explicitly reported",
+  "indexing_interpretation": "aggregation_equal_position_sum stores selected one-based positions i+1; these are selected indices in the coordinate convention explicitly required for the result. No extra zero-based-only restriction added.",
+  "comments": "Model comments such as one allocation are not accepted as verified scientific claims."
+}

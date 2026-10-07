@@ -1,0 +1,158 @@
+[
+  {
+    "id": "membership_matched_square_sum",
+    "family": "membership",
+    "signature": "public static long Run(int[] left, int[] right)",
+    "semantic_contract": "Return the long sum of squares (long)x*x over left positions whose value occurs in right. Arrays are non-null. Duplicates in left count by position. Empty arrays are allowed. Integer values are in [-1000,1000]. Do not mutate inputs.",
+    "bad": "For each relevant left position, search right from index zero with a nested loop, stopping at its first match. Use the membership result to compute the requested aggregate. No collections, LINQ, or sorting.",
+    "good": "Construct one System.Collections.Generic.HashSet<int> from right inside Run; query Contains for the relevant left positions and compute the requested aggregate. Do not deduplicate left. No LINQ.",
+    "profiles": [
+      "first_hit",
+      "no_hit"
+    ],
+    "oracle": "matched_square_sum"
+  },
+  {
+    "id": "membership_missed_position_sum",
+    "family": "membership",
+    "signature": "public static long Run(int[] left, int[] right)",
+    "semantic_contract": "Return the long sum of one-based positions i+1 whose left value does not occur in right. Arrays are non-null. Duplicates in left count by position. Empty arrays are allowed. Integer values are in [-1000,1000]. Do not mutate inputs.",
+    "bad": "For each relevant left position, search right from index zero with a nested loop, stopping at its first match. Use the membership result to compute the requested aggregate. No collections, LINQ, or sorting.",
+    "good": "Construct one System.Collections.Generic.HashSet<int> from right inside Run; query Contains for the relevant left positions and compute the requested aggregate. Do not deduplicate left. No LINQ.",
+    "profiles": [
+      "first_hit",
+      "no_hit"
+    ],
+    "oracle": "missed_position_sum"
+  },
+  {
+    "id": "membership_even_match_count",
+    "family": "membership",
+    "signature": "public static long Run(int[] left, int[] right)",
+    "semantic_contract": "Return as long, the number of left positions whose value is even and occurs in right. Arrays are non-null. Duplicates in left count by position. Empty arrays are allowed. Integer values are in [-1000,1000]. Do not mutate inputs.",
+    "bad": "For each relevant left position, search right from index zero with a nested loop, stopping at its first match. Use the membership result to compute the requested aggregate. No collections, LINQ, or sorting.",
+    "good": "Construct one System.Collections.Generic.HashSet<int> from right inside Run; query Contains for the relevant left positions and compute the requested aggregate. Do not deduplicate left. No LINQ.",
+    "profiles": [
+      "first_hit",
+      "no_hit"
+    ],
+    "oracle": "even_match_count"
+  },
+  {
+    "id": "membership_odd_miss_sum",
+    "family": "membership",
+    "signature": "public static long Run(int[] left, int[] right)",
+    "semantic_contract": "Return the long sum of odd left values that do not occur in right. Arrays are non-null. Duplicates in left count by position. Empty arrays are allowed. Integer values are in [-1000,1000]. Do not mutate inputs.",
+    "bad": "For each relevant left position, search right from index zero with a nested loop, stopping at its first match. Use the membership result to compute the requested aggregate. No collections, LINQ, or sorting.",
+    "good": "Construct one System.Collections.Generic.HashSet<int> from right inside Run; query Contains for the relevant left positions and compute the requested aggregate. Do not deduplicate left. No LINQ.",
+    "profiles": [
+      "first_hit",
+      "no_hit"
+    ],
+    "oracle": "odd_miss_sum"
+  },
+  {
+    "id": "aggregation_less_equal_count",
+    "family": "aggregation",
+    "signature": "public static long Run(int[] values, int threshold)",
+    "semantic_contract": "Return as long, the count of values satisfying value <= threshold. Use signed comparisons. Empty input returns zero. Values are in [-1000,1000]. The array is non-null. Do not mutate inputs.",
+    "bad": "Construct System.Collections.Generic.List<int>(values.Length), collect selected indices, call ToArray once, and traverse that array to compute the requested aggregate. Do not return before ToArray.",
+    "good": "Compute the requested aggregate in one scan with no collections, arrays, LINQ, or unsigned casts.",
+    "profiles": [
+      "none_selected",
+      "all_selected"
+    ],
+    "oracle": "less_equal_count"
+  },
+  {
+    "id": "aggregation_greater_square_sum",
+    "family": "aggregation",
+    "signature": "public static long Run(int[] values, int threshold)",
+    "semantic_contract": "Return the long sum of squares (long)value*value of values satisfying value > threshold. Use signed comparisons. Empty input returns zero. Values are in [-1000,1000]. The array is non-null. Do not mutate inputs.",
+    "bad": "Construct System.Collections.Generic.List<int>(values.Length), collect selected indices, call ToArray once, and traverse that array to compute the requested aggregate. Do not return before ToArray.",
+    "good": "Compute the requested aggregate in one scan with no collections, arrays, LINQ, or unsigned casts.",
+    "profiles": [
+      "none_selected",
+      "all_selected"
+    ],
+    "oracle": "greater_square_sum"
+  },
+  {
+    "id": "aggregation_less_absolute_sum",
+    "family": "aggregation",
+    "signature": "public static long Run(int[] values, int threshold)",
+    "semantic_contract": "Return the long sum of absolute values Math.Abs((long)value) for values satisfying value < threshold. Use signed comparisons. Empty input returns zero. Values are in [-1000,1000]. The array is non-null. Do not mutate inputs.",
+    "bad": "Construct System.Collections.Generic.List<int>(values.Length), collect selected indices, call ToArray once, and traverse that array to compute the requested aggregate. Do not return before ToArray.",
+    "good": "Compute the requested aggregate in one scan with no collections, arrays, LINQ, or unsigned casts.",
+    "profiles": [
+      "none_selected",
+      "all_selected"
+    ],
+    "oracle": "less_absolute_sum"
+  },
+  {
+    "id": "aggregation_equal_position_sum",
+    "family": "aggregation",
+    "signature": "public static long Run(int[] values, int threshold)",
+    "semantic_contract": "Return the long sum of one-based positions i+1 satisfying values[i] == threshold. Use signed comparisons. Empty input returns zero. Values are in [-1000,1000]. The array is non-null. Do not mutate inputs.",
+    "bad": "Construct System.Collections.Generic.List<int>(values.Length), collect selected indices, call ToArray once, and traverse that array to compute the requested aggregate. Do not return before ToArray.",
+    "good": "Compute the requested aggregate in one scan with no collections, arrays, LINQ, or unsigned casts.",
+    "profiles": [
+      "none_selected",
+      "all_selected"
+    ],
+    "oracle": "equal_position_sum"
+  },
+  {
+    "id": "strings_even_positions",
+    "family": "strings",
+    "signature": "public static string Run(string[] parts)",
+    "semantic_contract": "Return the concatenation of parts at zero-based even indices, in original order. The array and strings are non-null. Empty array returns string.Empty. Preserve characters inside each part. Do not mutate inputs.",
+    "bad": "Start with string.Empty and construct the requested result with repeated +=. No StringBuilder, string.Join, string.Concat, LINQ, or collections.",
+    "good": "Use one System.Text.StringBuilder, Append, and a final ToString to construct the requested result. No string.Join, string.Concat, LINQ, or repeated +=.",
+    "profiles": [
+      "short_fragments",
+      "long_fragments"
+    ],
+    "oracle": "even_positions"
+  },
+  {
+    "id": "strings_bracketed",
+    "family": "strings",
+    "signature": "public static string Run(string[] parts)",
+    "semantic_contract": "Return the concatenation of every part surrounded individually by [ and ], in original order, including empty parts. The array and strings are non-null. Empty array returns string.Empty. Preserve characters inside each part. Do not mutate inputs.",
+    "bad": "Start with string.Empty and construct the requested result with repeated +=. No StringBuilder, string.Join, string.Concat, LINQ, or collections.",
+    "good": "Use one System.Text.StringBuilder, Append, and a final ToString to construct the requested result. No string.Join, string.Concat, LINQ, or repeated +=.",
+    "profiles": [
+      "short_fragments",
+      "long_fragments"
+    ],
+    "oracle": "bracketed"
+  },
+  {
+    "id": "strings_length_at_least_three",
+    "family": "strings",
+    "signature": "public static string Run(string[] parts)",
+    "semantic_contract": "Return the concatenation of parts with Length >= 3, in original order. The array and strings are non-null. Empty array returns string.Empty. Preserve characters inside each part. Do not mutate inputs.",
+    "bad": "Start with string.Empty and construct the requested result with repeated +=. No StringBuilder, string.Join, string.Concat, LINQ, or collections.",
+    "good": "Use one System.Text.StringBuilder, Append, and a final ToString to construct the requested result. No string.Join, string.Concat, LINQ, or repeated +=.",
+    "profiles": [
+      "short_fragments",
+      "long_fragments"
+    ],
+    "oracle": "length_at_least_three"
+  },
+  {
+    "id": "strings_double_each",
+    "family": "strings",
+    "signature": "public static string Run(string[] parts)",
+    "semantic_contract": "Return the concatenation in original order where each part is appended twice before moving to the next part. The array and strings are non-null. Empty array returns string.Empty. Preserve characters inside each part. Do not mutate inputs.",
+    "bad": "Start with string.Empty and construct the requested result with repeated +=. No StringBuilder, string.Join, string.Concat, LINQ, or collections.",
+    "good": "Use one System.Text.StringBuilder, Append, and a final ToString to construct the requested result. No string.Join, string.Concat, LINQ, or repeated +=.",
+    "profiles": [
+      "short_fragments",
+      "long_fragments"
+    ],
+    "oracle": "double_each"
+  }
+]

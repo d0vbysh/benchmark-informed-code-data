@@ -1,0 +1,2123 @@
+{
+  "jobs_verified": 92,
+  "raw_timing_values": 460,
+  "summary": {
+    "base": {
+      "planned": 24,
+      "not_admitted": 24,
+      "admitted": 0,
+      "stable_reference": 0,
+      "raw_compiled_pairs": 0,
+      "functional_pairs": 0,
+      "usable_yield": 0.0,
+      "contract_macro_yield": 0.0,
+      "conditional_accuracy": null
+    },
+    "control": {
+      "planned": 24,
+      "wrong": 4,
+      "correct": 7,
+      "not_admitted": 13,
+      "admitted": 11,
+      "stable_reference": 11,
+      "raw_compiled_pairs": 15,
+      "functional_pairs": 12,
+      "usable_yield": 0.2916666666666667,
+      "contract_macro_yield": 0.2916666666666667,
+      "conditional_accuracy": 0.6363636363636364
+    },
+    "benchmark": {
+      "planned": 24,
+      "wrong": 4,
+      "correct": 8,
+      "not_admitted": 12,
+      "admitted": 12,
+      "stable_reference": 12,
+      "raw_compiled_pairs": 15,
+      "functional_pairs": 13,
+      "usable_yield": 0.3333333333333333,
+      "contract_macro_yield": 0.3333333333333333,
+      "conditional_accuracy": 0.6666666666666666
+    }
+  },
+  "records": [
+    {
+      "pair_id": "base-00",
+      "arm": "base",
+      "contract_id": "membership_matched_square_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "base-00-baseline",
+        "base-00-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-01",
+      "arm": "base",
+      "contract_id": "membership_matched_square_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "base-01-baseline",
+        "base-01-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-02",
+      "arm": "base",
+      "contract_id": "membership_missed_position_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "base-02-baseline",
+        "base-02-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-03",
+      "arm": "base",
+      "contract_id": "membership_missed_position_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "base-03-baseline",
+        "base-03-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-04",
+      "arm": "base",
+      "contract_id": "membership_even_match_count",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "base-04-baseline",
+        "base-04-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-05",
+      "arm": "base",
+      "contract_id": "membership_even_match_count",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "base-05-baseline",
+        "base-05-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-06",
+      "arm": "base",
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "uncertain",
+      "methods": [
+        "base-06-baseline",
+        "base-06-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-07",
+      "arm": "base",
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "uncertain",
+      "methods": [
+        "base-07-baseline",
+        "base-07-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-08",
+      "arm": "base",
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "base-08-baseline",
+        "base-08-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-09",
+      "arm": "base",
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-09-baseline",
+        "base-09-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-10",
+      "arm": "base",
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-10-baseline",
+        "base-10-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-11",
+      "arm": "base",
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-11-baseline",
+        "base-11-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-12",
+      "arm": "base",
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-12-baseline",
+        "base-12-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-13",
+      "arm": "base",
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-13-baseline",
+        "base-13-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-14",
+      "arm": "base",
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-14-baseline",
+        "base-14-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-15",
+      "arm": "base",
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "uncertain",
+      "methods": [
+        "base-15-baseline",
+        "base-15-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-16",
+      "arm": "base",
+      "contract_id": "strings_even_positions",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "uncertain",
+      "methods": [
+        "base-16-baseline",
+        "base-16-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-17",
+      "arm": "base",
+      "contract_id": "strings_even_positions",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "uncertain",
+      "methods": [
+        "base-17-baseline",
+        "base-17-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-18",
+      "arm": "base",
+      "contract_id": "strings_bracketed",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "uncertain",
+      "methods": [
+        "base-18-baseline",
+        "base-18-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-19",
+      "arm": "base",
+      "contract_id": "strings_bracketed",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "uncertain",
+      "methods": [
+        "base-19-baseline",
+        "base-19-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-20",
+      "arm": "base",
+      "contract_id": "strings_length_at_least_three",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "base-20-baseline",
+        "base-20-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-21",
+      "arm": "base",
+      "contract_id": "strings_length_at_least_three",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "base-21-baseline",
+        "base-21-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-22",
+      "arm": "base",
+      "contract_id": "strings_double_each",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "uncertain",
+      "methods": [
+        "base-22-baseline",
+        "base-22-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "base-23",
+      "arm": "base",
+      "contract_id": "strings_double_each",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "uncertain",
+      "methods": [
+        "base-23-baseline",
+        "base-23-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "benchmark-00",
+      "arm": "benchmark",
+      "contract_id": "membership_matched_square_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-00-baseline",
+        "benchmark-00-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "slower",
+      "correct": false,
+      "ratio_l1": 0.07644108622015254,
+      "ratio_l2": 0.07321035854042644,
+      "baseline_allocated_bytes": [
+        0,
+        0
+      ],
+      "candidate_allocated_bytes": [
+        2248,
+        2248
+      ],
+      "status": "wrong"
+    },
+    {
+      "pair_id": "benchmark-01",
+      "arm": "benchmark",
+      "contract_id": "membership_matched_square_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "slower",
+      "methods": [
+        "benchmark-01-baseline",
+        "benchmark-01-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": false,
+      "ratio_l1": 5.328333837314787,
+      "ratio_l2": 5.003412010835149,
+      "baseline_allocated_bytes": [
+        0,
+        0
+      ],
+      "candidate_allocated_bytes": [
+        2248,
+        2248
+      ],
+      "status": "wrong"
+    },
+    {
+      "pair_id": "benchmark-02",
+      "arm": "benchmark",
+      "contract_id": "membership_missed_position_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-02-baseline",
+        "benchmark-02-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "slower",
+      "correct": false,
+      "ratio_l1": 0.06855383302481545,
+      "ratio_l2": 0.05409713122468162,
+      "baseline_allocated_bytes": [
+        0,
+        0
+      ],
+      "candidate_allocated_bytes": [
+        2248,
+        2248
+      ],
+      "status": "wrong"
+    },
+    {
+      "pair_id": "benchmark-03",
+      "arm": "benchmark",
+      "contract_id": "membership_missed_position_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-03-baseline",
+        "benchmark-03-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 5.058886458809396,
+      "ratio_l2": 4.971163413441517,
+      "baseline_allocated_bytes": [
+        0,
+        0
+      ],
+      "candidate_allocated_bytes": [
+        2248,
+        2248
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "benchmark-04",
+      "arm": "benchmark",
+      "contract_id": "membership_even_match_count",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "slower",
+      "methods": [
+        "benchmark-04-baseline",
+        "benchmark-04-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "slower",
+      "correct": true,
+      "ratio_l1": 0.062404633559603226,
+      "ratio_l2": 0.058206153130899004,
+      "baseline_allocated_bytes": [
+        0,
+        0
+      ],
+      "candidate_allocated_bytes": [
+        2248,
+        2248
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "benchmark-05",
+      "arm": "benchmark",
+      "contract_id": "membership_even_match_count",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-05-baseline",
+        "benchmark-05-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "benchmark-06",
+      "arm": "benchmark",
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-06-baseline",
+        "benchmark-06-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "slower",
+      "correct": false,
+      "ratio_l1": 0.07925166181367944,
+      "ratio_l2": 0.08839497271660074,
+      "baseline_allocated_bytes": [
+        0,
+        0
+      ],
+      "candidate_allocated_bytes": [
+        2248,
+        2248
+      ],
+      "status": "wrong"
+    },
+    {
+      "pair_id": "benchmark-07",
+      "arm": "benchmark",
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-07-baseline",
+        "benchmark-07-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "benchmark-08",
+      "arm": "benchmark",
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-08-baseline",
+        "benchmark-08-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "benchmark-09",
+      "arm": "benchmark",
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-09-baseline",
+        "benchmark-09-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 6.681744387644338,
+      "ratio_l2": 6.179987799676062,
+      "baseline_allocated_bytes": [
+        1104,
+        1104
+      ],
+      "candidate_allocated_bytes": [
+        0,
+        0
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "benchmark-10",
+      "arm": "benchmark",
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-10-baseline",
+        "benchmark-10-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 1.2680280592648934,
+      "ratio_l2": 1.4205057171271869,
+      "baseline_allocated_bytes": [
+        568,
+        568
+      ],
+      "candidate_allocated_bytes": [
+        0,
+        0
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "benchmark-11",
+      "arm": "benchmark",
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-11-baseline",
+        "benchmark-11-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 3.0427210402732023,
+      "ratio_l2": 2.9790208655743373,
+      "baseline_allocated_bytes": [
+        1104,
+        1104
+      ],
+      "candidate_allocated_bytes": [
+        0,
+        0
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "benchmark-12",
+      "arm": "benchmark",
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-12-baseline",
+        "benchmark-12-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "benchmark-13",
+      "arm": "benchmark",
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-13-baseline",
+        "benchmark-13-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "benchmark-14",
+      "arm": "benchmark",
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-14-baseline",
+        "benchmark-14-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "benchmark-15",
+      "arm": "benchmark",
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-15-baseline",
+        "benchmark-15-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 3.1667290576203384,
+      "ratio_l2": 3.350042213189049,
+      "baseline_allocated_bytes": [
+        1104,
+        1104
+      ],
+      "candidate_allocated_bytes": [
+        0,
+        0
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "benchmark-16",
+      "arm": "benchmark",
+      "contract_id": "strings_even_positions",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-16-baseline",
+        "benchmark-16-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "benchmark-17",
+      "arm": "benchmark",
+      "contract_id": "strings_even_positions",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-17-baseline",
+        "benchmark-17-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 10.357561543596535,
+      "ratio_l2": 14.687356665669558,
+      "baseline_allocated_bytes": [
+        134568,
+        134568
+      ],
+      "candidate_allocated_bytes": [
+        8288,
+        8288
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "benchmark-18",
+      "arm": "benchmark",
+      "contract_id": "strings_bracketed",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-18-baseline",
+        "benchmark-18-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "benchmark-19",
+      "arm": "benchmark",
+      "contract_id": "strings_bracketed",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-19-baseline",
+        "benchmark-19-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "benchmark-20",
+      "arm": "benchmark",
+      "contract_id": "strings_length_at_least_three",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-20-baseline",
+        "benchmark-20-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "benchmark-21",
+      "arm": "benchmark",
+      "contract_id": "strings_length_at_least_three",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-21-baseline",
+        "benchmark-21-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "benchmark-22",
+      "arm": "benchmark",
+      "contract_id": "strings_double_each",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-22-baseline",
+        "benchmark-22-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "benchmark-23",
+      "arm": "benchmark",
+      "contract_id": "strings_double_each",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "benchmark-23-baseline",
+        "benchmark-23-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 15.967542692047468,
+      "ratio_l2": 21.992232650131893,
+      "baseline_allocated_bytes": [
+        1059840,
+        1059840
+      ],
+      "candidate_allocated_bytes": [
+        33512,
+        33512
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "control-00",
+      "arm": "control",
+      "contract_id": "membership_matched_square_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-00-baseline",
+        "control-00-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "slower",
+      "correct": false,
+      "ratio_l1": 0.07366862616650577,
+      "ratio_l2": 0.07904068720574955,
+      "baseline_allocated_bytes": [
+        0,
+        0
+      ],
+      "candidate_allocated_bytes": [
+        2248,
+        2248
+      ],
+      "status": "wrong"
+    },
+    {
+      "pair_id": "control-01",
+      "arm": "control",
+      "contract_id": "membership_matched_square_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-01-baseline",
+        "control-01-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 5.921592305710373,
+      "ratio_l2": 5.438838875633596,
+      "baseline_allocated_bytes": [
+        0,
+        0
+      ],
+      "candidate_allocated_bytes": [
+        2248,
+        2248
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "control-02",
+      "arm": "control",
+      "contract_id": "membership_missed_position_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-02-baseline",
+        "control-02-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "slower",
+      "correct": false,
+      "ratio_l1": 0.06707016537933519,
+      "ratio_l2": 0.057849828239354015,
+      "baseline_allocated_bytes": [
+        0,
+        0
+      ],
+      "candidate_allocated_bytes": [
+        2248,
+        2248
+      ],
+      "status": "wrong"
+    },
+    {
+      "pair_id": "control-03",
+      "arm": "control",
+      "contract_id": "membership_missed_position_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-03-baseline",
+        "control-03-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 5.681999411898116,
+      "ratio_l2": 4.9593190800619205,
+      "baseline_allocated_bytes": [
+        0,
+        0
+      ],
+      "candidate_allocated_bytes": [
+        2248,
+        2248
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "control-04",
+      "arm": "control",
+      "contract_id": "membership_even_match_count",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-04-baseline",
+        "control-04-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "slower",
+      "correct": false,
+      "ratio_l1": 0.06694824222721805,
+      "ratio_l2": 0.06476235692057943,
+      "baseline_allocated_bytes": [
+        0,
+        0
+      ],
+      "candidate_allocated_bytes": [
+        2248,
+        2248
+      ],
+      "status": "wrong"
+    },
+    {
+      "pair_id": "control-05",
+      "arm": "control",
+      "contract_id": "membership_even_match_count",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-05-baseline",
+        "control-05-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "control-06",
+      "arm": "control",
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "first_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-06-baseline",
+        "control-06-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "slower",
+      "correct": false,
+      "ratio_l1": 0.07922027077077347,
+      "ratio_l2": 0.0747010437834842,
+      "baseline_allocated_bytes": [
+        0,
+        0
+      ],
+      "candidate_allocated_bytes": [
+        2248,
+        2248
+      ],
+      "status": "wrong"
+    },
+    {
+      "pair_id": "control-07",
+      "arm": "control",
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "no_hit",
+      "family": "membership",
+      "time_label": "faster",
+      "methods": [
+        "control-07-baseline",
+        "control-07-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "control-08",
+      "arm": "control",
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-08-baseline",
+        "control-08-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "control-09",
+      "arm": "control",
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-09-baseline",
+        "control-09-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 6.76584221827331,
+      "ratio_l2": 5.46867313230006,
+      "baseline_allocated_bytes": [
+        1104,
+        1104
+      ],
+      "candidate_allocated_bytes": [
+        0,
+        0
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "control-10",
+      "arm": "control",
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-10-baseline",
+        "control-10-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 1.6960962898410237,
+      "ratio_l2": 1.6737057545308422,
+      "baseline_allocated_bytes": [
+        568,
+        568
+      ],
+      "candidate_allocated_bytes": [
+        0,
+        0
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "control-11",
+      "arm": "control",
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-11-baseline",
+        "control-11-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 3.222674438079925,
+      "ratio_l2": 2.9613852630694053,
+      "baseline_allocated_bytes": [
+        1104,
+        1104
+      ],
+      "candidate_allocated_bytes": [
+        0,
+        0
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "control-12",
+      "arm": "control",
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-12-baseline",
+        "control-12-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "control-13",
+      "arm": "control",
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-13-baseline",
+        "control-13-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "control-14",
+      "arm": "control",
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "none_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-14-baseline",
+        "control-14-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "control-15",
+      "arm": "control",
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "all_selected",
+      "family": "aggregation",
+      "time_label": "faster",
+      "methods": [
+        "control-15-baseline",
+        "control-15-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 3.247633810190564,
+      "ratio_l2": 3.155569494395347,
+      "baseline_allocated_bytes": [
+        1104,
+        1104
+      ],
+      "candidate_allocated_bytes": [
+        0,
+        0
+      ],
+      "status": "correct"
+    },
+    {
+      "pair_id": "control-16",
+      "arm": "control",
+      "contract_id": "strings_even_positions",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-16-baseline",
+        "control-16-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "control-17",
+      "arm": "control",
+      "contract_id": "strings_even_positions",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-17-baseline",
+        "control-17-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "control-18",
+      "arm": "control",
+      "contract_id": "strings_bracketed",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-18-baseline",
+        "control-18-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "control-19",
+      "arm": "control",
+      "contract_id": "strings_bracketed",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-19-baseline",
+        "control-19-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "control-20",
+      "arm": "control",
+      "contract_id": "strings_length_at_least_three",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-20-baseline",
+        "control-20-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "control-21",
+      "arm": "control",
+      "contract_id": "strings_length_at_least_three",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-21-baseline",
+        "control-21-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "control-22",
+      "arm": "control",
+      "contract_id": "strings_double_each",
+      "profile": "short_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-22-baseline",
+        "control-22-candidate"
+      ],
+      "admitted": false,
+      "reference_label": null,
+      "correct": false,
+      "ratio_l1": null,
+      "ratio_l2": null,
+      "status": "not_admitted"
+    },
+    {
+      "pair_id": "control-23",
+      "arm": "control",
+      "contract_id": "strings_double_each",
+      "profile": "long_fragments",
+      "family": "strings",
+      "time_label": "faster",
+      "methods": [
+        "control-23-baseline",
+        "control-23-candidate"
+      ],
+      "admitted": true,
+      "reference_label": "faster",
+      "correct": true,
+      "ratio_l1": 20.21118272445613,
+      "ratio_l2": 19.62684485152138,
+      "baseline_allocated_bytes": [
+        1059840,
+        1059840
+      ],
+      "candidate_allocated_bytes": [
+        33512,
+        33512
+      ],
+      "status": "correct"
+    }
+  ],
+  "contracts": [
+    {
+      "arm": "base",
+      "contract_id": "aggregation_equal_position_sum",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "base",
+      "contract_id": "aggregation_greater_square_sum",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "base",
+      "contract_id": "aggregation_less_absolute_sum",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "base",
+      "contract_id": "aggregation_less_equal_count",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "base",
+      "contract_id": "membership_even_match_count",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "base",
+      "contract_id": "membership_matched_square_sum",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "base",
+      "contract_id": "membership_missed_position_sum",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "base",
+      "contract_id": "membership_odd_miss_sum",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "base",
+      "contract_id": "strings_bracketed",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "base",
+      "contract_id": "strings_double_each",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "base",
+      "contract_id": "strings_even_positions",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "base",
+      "contract_id": "strings_length_at_least_three",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "control",
+      "contract_id": "aggregation_equal_position_sum",
+      "correct": 1,
+      "planned": 2,
+      "yield_rate": 0.5
+    },
+    {
+      "arm": "control",
+      "contract_id": "aggregation_greater_square_sum",
+      "correct": 2,
+      "planned": 2,
+      "yield_rate": 1.0
+    },
+    {
+      "arm": "control",
+      "contract_id": "aggregation_less_absolute_sum",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "control",
+      "contract_id": "aggregation_less_equal_count",
+      "correct": 1,
+      "planned": 2,
+      "yield_rate": 0.5
+    },
+    {
+      "arm": "control",
+      "contract_id": "membership_even_match_count",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "control",
+      "contract_id": "membership_matched_square_sum",
+      "correct": 1,
+      "planned": 2,
+      "yield_rate": 0.5
+    },
+    {
+      "arm": "control",
+      "contract_id": "membership_missed_position_sum",
+      "correct": 1,
+      "planned": 2,
+      "yield_rate": 0.5
+    },
+    {
+      "arm": "control",
+      "contract_id": "membership_odd_miss_sum",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "control",
+      "contract_id": "strings_bracketed",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "control",
+      "contract_id": "strings_double_each",
+      "correct": 1,
+      "planned": 2,
+      "yield_rate": 0.5
+    },
+    {
+      "arm": "control",
+      "contract_id": "strings_even_positions",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "control",
+      "contract_id": "strings_length_at_least_three",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "benchmark",
+      "contract_id": "aggregation_equal_position_sum",
+      "correct": 1,
+      "planned": 2,
+      "yield_rate": 0.5
+    },
+    {
+      "arm": "benchmark",
+      "contract_id": "aggregation_greater_square_sum",
+      "correct": 2,
+      "planned": 2,
+      "yield_rate": 1.0
+    },
+    {
+      "arm": "benchmark",
+      "contract_id": "aggregation_less_absolute_sum",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "benchmark",
+      "contract_id": "aggregation_less_equal_count",
+      "correct": 1,
+      "planned": 2,
+      "yield_rate": 0.5
+    },
+    {
+      "arm": "benchmark",
+      "contract_id": "membership_even_match_count",
+      "correct": 1,
+      "planned": 2,
+      "yield_rate": 0.5
+    },
+    {
+      "arm": "benchmark",
+      "contract_id": "membership_matched_square_sum",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "benchmark",
+      "contract_id": "membership_missed_position_sum",
+      "correct": 1,
+      "planned": 2,
+      "yield_rate": 0.5
+    },
+    {
+      "arm": "benchmark",
+      "contract_id": "membership_odd_miss_sum",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "benchmark",
+      "contract_id": "strings_bracketed",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    },
+    {
+      "arm": "benchmark",
+      "contract_id": "strings_double_each",
+      "correct": 1,
+      "planned": 2,
+      "yield_rate": 0.5
+    },
+    {
+      "arm": "benchmark",
+      "contract_id": "strings_even_positions",
+      "correct": 1,
+      "planned": 2,
+      "yield_rate": 0.5
+    },
+    {
+      "arm": "benchmark",
+      "contract_id": "strings_length_at_least_three",
+      "correct": 0,
+      "planned": 2,
+      "yield_rate": 0.0
+    }
+  ],
+  "matched_slot_comparisons": [
+    {
+      "contract_id": "membership_matched_square_sum",
+      "profile": "first_hit",
+      "code_pair_identical": true,
+      "control_status": "wrong",
+      "benchmark_status": "wrong",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": "slower",
+      "benchmark_reference": "slower",
+      "control_ratio_l1": 0.07366862616650577,
+      "benchmark_ratio_l1": 0.07644108622015254,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "membership_matched_square_sum",
+      "profile": "no_hit",
+      "code_pair_identical": false,
+      "control_status": "correct",
+      "benchmark_status": "wrong",
+      "control_label": "faster",
+      "benchmark_label": "slower",
+      "control_reference": "faster",
+      "benchmark_reference": "faster",
+      "control_ratio_l1": 5.921592305710373,
+      "benchmark_ratio_l1": 5.328333837314787,
+      "usable_difference": -1
+    },
+    {
+      "contract_id": "membership_missed_position_sum",
+      "profile": "first_hit",
+      "code_pair_identical": true,
+      "control_status": "wrong",
+      "benchmark_status": "wrong",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": "slower",
+      "benchmark_reference": "slower",
+      "control_ratio_l1": 0.06707016537933519,
+      "benchmark_ratio_l1": 0.06855383302481545,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "membership_missed_position_sum",
+      "profile": "no_hit",
+      "code_pair_identical": true,
+      "control_status": "correct",
+      "benchmark_status": "correct",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": "faster",
+      "benchmark_reference": "faster",
+      "control_ratio_l1": 5.681999411898116,
+      "benchmark_ratio_l1": 5.058886458809396,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "membership_even_match_count",
+      "profile": "first_hit",
+      "code_pair_identical": true,
+      "control_status": "wrong",
+      "benchmark_status": "correct",
+      "control_label": "faster",
+      "benchmark_label": "slower",
+      "control_reference": "slower",
+      "benchmark_reference": "slower",
+      "control_ratio_l1": 0.06694824222721805,
+      "benchmark_ratio_l1": 0.062404633559603226,
+      "usable_difference": 1
+    },
+    {
+      "contract_id": "membership_even_match_count",
+      "profile": "no_hit",
+      "code_pair_identical": false,
+      "control_status": "not_admitted",
+      "benchmark_status": "not_admitted",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": null,
+      "benchmark_reference": null,
+      "control_ratio_l1": null,
+      "benchmark_ratio_l1": null,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "first_hit",
+      "code_pair_identical": true,
+      "control_status": "wrong",
+      "benchmark_status": "wrong",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": "slower",
+      "benchmark_reference": "slower",
+      "control_ratio_l1": 0.07922027077077347,
+      "benchmark_ratio_l1": 0.07925166181367944,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "membership_odd_miss_sum",
+      "profile": "no_hit",
+      "code_pair_identical": true,
+      "control_status": "not_admitted",
+      "benchmark_status": "not_admitted",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": null,
+      "benchmark_reference": null,
+      "control_ratio_l1": null,
+      "benchmark_ratio_l1": null,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "none_selected",
+      "code_pair_identical": true,
+      "control_status": "not_admitted",
+      "benchmark_status": "not_admitted",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": null,
+      "benchmark_reference": null,
+      "control_ratio_l1": null,
+      "benchmark_ratio_l1": null,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "aggregation_less_equal_count",
+      "profile": "all_selected",
+      "code_pair_identical": true,
+      "control_status": "correct",
+      "benchmark_status": "correct",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": "faster",
+      "benchmark_reference": "faster",
+      "control_ratio_l1": 6.76584221827331,
+      "benchmark_ratio_l1": 6.681744387644338,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "none_selected",
+      "code_pair_identical": true,
+      "control_status": "correct",
+      "benchmark_status": "correct",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": "faster",
+      "benchmark_reference": "faster",
+      "control_ratio_l1": 1.6960962898410237,
+      "benchmark_ratio_l1": 1.2680280592648934,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "aggregation_greater_square_sum",
+      "profile": "all_selected",
+      "code_pair_identical": false,
+      "control_status": "correct",
+      "benchmark_status": "correct",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": "faster",
+      "benchmark_reference": "faster",
+      "control_ratio_l1": 3.222674438079925,
+      "benchmark_ratio_l1": 3.0427210402732023,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "none_selected",
+      "code_pair_identical": true,
+      "control_status": "not_admitted",
+      "benchmark_status": "not_admitted",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": null,
+      "benchmark_reference": null,
+      "control_ratio_l1": null,
+      "benchmark_ratio_l1": null,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "aggregation_less_absolute_sum",
+      "profile": "all_selected",
+      "code_pair_identical": true,
+      "control_status": "not_admitted",
+      "benchmark_status": "not_admitted",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": null,
+      "benchmark_reference": null,
+      "control_ratio_l1": null,
+      "benchmark_ratio_l1": null,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "none_selected",
+      "code_pair_identical": true,
+      "control_status": "not_admitted",
+      "benchmark_status": "not_admitted",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": null,
+      "benchmark_reference": null,
+      "control_ratio_l1": null,
+      "benchmark_ratio_l1": null,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "aggregation_equal_position_sum",
+      "profile": "all_selected",
+      "code_pair_identical": false,
+      "control_status": "correct",
+      "benchmark_status": "correct",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": "faster",
+      "benchmark_reference": "faster",
+      "control_ratio_l1": 3.247633810190564,
+      "benchmark_ratio_l1": 3.1667290576203384,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "strings_even_positions",
+      "profile": "short_fragments",
+      "code_pair_identical": true,
+      "control_status": "not_admitted",
+      "benchmark_status": "not_admitted",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": null,
+      "benchmark_reference": null,
+      "control_ratio_l1": null,
+      "benchmark_ratio_l1": null,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "strings_even_positions",
+      "profile": "long_fragments",
+      "code_pair_identical": false,
+      "control_status": "not_admitted",
+      "benchmark_status": "correct",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": null,
+      "benchmark_reference": "faster",
+      "control_ratio_l1": null,
+      "benchmark_ratio_l1": 10.357561543596535,
+      "usable_difference": 1
+    },
+    {
+      "contract_id": "strings_bracketed",
+      "profile": "short_fragments",
+      "code_pair_identical": false,
+      "control_status": "not_admitted",
+      "benchmark_status": "not_admitted",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": null,
+      "benchmark_reference": null,
+      "control_ratio_l1": null,
+      "benchmark_ratio_l1": null,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "strings_bracketed",
+      "profile": "long_fragments",
+      "code_pair_identical": true,
+      "control_status": "not_admitted",
+      "benchmark_status": "not_admitted",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": null,
+      "benchmark_reference": null,
+      "control_ratio_l1": null,
+      "benchmark_ratio_l1": null,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "strings_length_at_least_three",
+      "profile": "short_fragments",
+      "code_pair_identical": true,
+      "control_status": "not_admitted",
+      "benchmark_status": "not_admitted",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": null,
+      "benchmark_reference": null,
+      "control_ratio_l1": null,
+      "benchmark_ratio_l1": null,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "strings_length_at_least_three",
+      "profile": "long_fragments",
+      "code_pair_identical": true,
+      "control_status": "not_admitted",
+      "benchmark_status": "not_admitted",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": null,
+      "benchmark_reference": null,
+      "control_ratio_l1": null,
+      "benchmark_ratio_l1": null,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "strings_double_each",
+      "profile": "short_fragments",
+      "code_pair_identical": false,
+      "control_status": "not_admitted",
+      "benchmark_status": "not_admitted",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": null,
+      "benchmark_reference": null,
+      "control_ratio_l1": null,
+      "benchmark_ratio_l1": null,
+      "usable_difference": 0
+    },
+    {
+      "contract_id": "strings_double_each",
+      "profile": "long_fragments",
+      "code_pair_identical": true,
+      "control_status": "correct",
+      "benchmark_status": "correct",
+      "control_label": "faster",
+      "benchmark_label": "faster",
+      "control_reference": "faster",
+      "benchmark_reference": "faster",
+      "control_ratio_l1": 20.21118272445613,
+      "benchmark_ratio_l1": 15.967542692047468,
+      "usable_difference": 0
+    }
+  ],
+  "usable_yield_difference_pp": 4.1666666666666625,
+  "functional_yield_difference_pp": 4.166666666666666,
+  "prespecified_practical_pilot_rule_met": false,
+  "practical_rule": "at least +10 percentage points usable yield and functional-yield drop <=5 pp",
+  "inference": "descriptive one-seed pilot; no confidence interval or significance claim; source review not blinded",
+  "benchmark_scope": "task-specific profiles, n=128, 5% ratio threshold, .NET 8.0.31 on one CPU environment"
+}

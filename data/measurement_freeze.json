@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-09-25T18:33:57.699048+00:00",
+  "hashes": {
+    "measurement\\Program.cs": "dd9d76a3ca64eeba61824bd118db832cde390a708aa88df9c1a53191fc5d5baf",
+    "measurement\\QualityMeasurement.csproj": "25a9a03f47e0655a4ddcb58062fc6bd9649c2f7b93c3d3815d32b19df828a15c",
+    "measurement\\bin\\Release\\net8.0\\QualityMeasurement.dll": "5d66b2c1d5fb41b236fd0884737db68d87f5d8abc192026b395e6f7c3de9d599",
+    "benchmark_mapping.json": "c29a49b9908092227d206294f971e74a76adb484617e4c0a904c25dc17cef627",
+    "calibration_jobs.json": "a13cecc1d0fb250a3c47b8473e3c0a6f00e2dbb8a47c4e8b73664ab2e7d7012c",
+    "evaluation_jobs.json": "24ee85941391279e1d6034eb48812b10c64baffee76dd3a5f1f7525c8d07f94f",
+    "admission.json": "249a5fbc0e1abf7cf60a832675ec95648f3cef005c1be8d9757955d3a8d4628b",
+    "correctness_cases.json": "a36db53d5c5f3408fa4523d74509435f7e2482b0fc30b18a2218c8824785db50",
+    "run_benchmarks.py": "cbfd3136519bcd547bbbcfdcee6c4e3b5496aebf04930cb4591c23ef8c8de47d"
+  },
+  "runtime": "8.0.31",
+  "benchmarkdotnet": "0.14.0",
+  "launches_per_job": 1,
+  "warmup": 3,
+  "iterations": 5,
+  "outliers": "DontRemove",
+  "timeout_seconds": 900,
+  "automatic_retries": false
+}

@@ -1,0 +1,620 @@
+{
+  "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+  "base_revision": "4858886f896bd05db823557fc5cbc4ac28342af7",
+  "historical_base_revision_known": false,
+  "adapter_manifest_sha256": "e11a8fe8fc21456bee421efcde601df2cfab98c4b2aa42473b98ea841ff9cd5c",
+  "adapter_weights_sha256": "688032416127e617bb41907532593be285f8b129e5d57d8de70f5898c1b6d87d",
+  "backend": "Transformers/PEFT on Colab; historical Unsloth equivalence not assumed",
+  "config": {
+    "max_new_tokens": 900,
+    "max_context_tokens": 2048,
+    "temperature": 0.6,
+    "top_p": 0.9,
+    "top_k": 50,
+    "repetition_penalty": 1.0,
+    "do_sample": true,
+    "batch_size": 1,
+    "dtype": "float16",
+    "attention": "sdpa",
+    "max_time_seconds_per_attempt": 180,
+    "bnb_4bit_compute_dtype": "float16"
+  },
+  "runtime_policy": "Use Colab CUDA torch already installed; record exact versions and pip freeze. Pin other libraries. This is a compatibility run, not exact historical replay.",
+  "adapter_files": {
+    "chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "adapter_config.json": "b461e24e15b8dfe26e4b987b741ce0dc305afe3385dfa6e831344755765c5c30",
+    "manifest.json": "e11a8fe8fc21456bee421efcde601df2cfab98c4b2aa42473b98ea841ff9cd5c",
+    "adapter_model.safetensors": "688032416127e617bb41907532593be285f8b129e5d57d8de70f5898c1b6d87d",
+    "tokenizer_config.json": "b8fc1a3a724ef3f47234226ad32c7da48c79444806cbd4e9ef7aeb47b4cc1b13",
+    "README.md": "898eea133d28d4cd7b8c75e87cfa9fa1b635936225d0301210d2cdaefc61b143",
+    "tokenizer.json": "bd5948af71b4f56cf697f7580814c7ce8b80595ef985544efcacf716126a2e31"
+  },
+  "schema": "bqm-quality004/1.0",
+  "purpose": "prospective_annotation_comparison_not_student_training",
+  "experiment_id": "quality004",
+  "batch_id": 1,
+  "expected_calls": 24,
+  "evaluation_plan_sha256": "3d211c8d19ba2d62465260a57ff1fb67b3d7cfedd9b0e751cac4d6634ead9ed5",
+  "slots": [
+    {
+      "attempt_id": "quality004-strings_nonempty-r1-good",
+      "pair_id": "quality004-strings_nonempty-r1",
+      "ancestry_id": "strings_nonempty",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "strings",
+      "role": "good",
+      "seed": 2026092419,
+      "expected_label": "efficient",
+      "expected_defect_class": "none",
+      "semantic_contract": "Concatenate nonempty strings in original order with no delimiter; skip empty strings. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.",
+      "signature": "public static string Run(string[] parts)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: efficient\nDefect class: none\nFramework: aspnetcore\nScenario: Concatenate nonempty strings in original order with no delimiter; skip empty strings. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.\nRequired implementation: Use one System.Text.StringBuilder and Append to append each nonempty part in original order, then return ToString. No string.Join, LINQ or repeated +=.\nCode contract: exactly one method with signature public static string Run(string[] parts). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater-r1-good",
+      "pair_id": "quality004-aggregation_greater-r1",
+      "ancestry_id": "aggregation_greater",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "aggregation",
+      "role": "good",
+      "seed": 2026092409,
+      "expected_label": "efficient",
+      "expected_defect_class": "none",
+      "semantic_contract": "Return the long sum of values satisfying (value > threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.",
+      "signature": "public static long Run(int[] values, int threshold)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: efficient\nDefect class: none\nFramework: aspnetcore\nScenario: Return the long sum of values satisfying (value > threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.\nRequired implementation: Scan values once and sum values satisfying (value > threshold) directly into a long accumulator. No collections, arrays or LINQ; no unsigned casts.\nCode contract: exactly one method with signature public static long Run(int[] values, int threshold). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r1-bad",
+      "pair_id": "quality004-membership_miss_count-r1",
+      "ancestry_id": "membership_miss_count",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "membership",
+      "role": "bad",
+      "seed": 2026092402,
+      "expected_label": "inefficient",
+      "expected_defect_class": "cpu_saturation",
+      "semantic_contract": "Return, as long, the number of left positions whose value does not occur in right. Duplicates in left count separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.",
+      "signature": "public static long Run(int[] left, int[] right)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: inefficient\nDefect class: cpu_saturation\nFramework: aspnetcore\nScenario: Return, as long, the number of left positions whose value does not occur in right. Duplicates in left count separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.\nRequired implementation: For every left position, scan right from index zero with a nested loop and a local found flag. Stop the inner scan on the first match, then add 1 when not found. No hash sets, LINQ, sorting or auxiliary collections.\nCode contract: exactly one method with signature public static long Run(int[] left, int[] right). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-strings_all-r1-good",
+      "pair_id": "quality004-strings_all-r1",
+      "ancestry_id": "strings_all",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "strings",
+      "role": "good",
+      "seed": 2026092417,
+      "expected_label": "efficient",
+      "expected_defect_class": "none",
+      "semantic_contract": "Concatenate every string in original order with no delimiter. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.",
+      "signature": "public static string Run(string[] parts)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: efficient\nDefect class: none\nFramework: aspnetcore\nScenario: Concatenate every string in original order with no delimiter. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.\nRequired implementation: Use one System.Text.StringBuilder and Append to append every part in original order, then return ToString. No string.Join, LINQ or repeated +=.\nCode contract: exactly one method with signature public static string Run(string[] parts). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-aggregation_even_greater-r1-bad",
+      "pair_id": "quality004-aggregation_even_greater-r1",
+      "ancestry_id": "aggregation_even_greater",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "aggregation",
+      "role": "bad",
+      "seed": 2026092414,
+      "expected_label": "inefficient",
+      "expected_defect_class": "memory_pressure",
+      "semantic_contract": "Return the long sum of values satisfying (value > threshold && value % 2 == 0), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.",
+      "signature": "public static long Run(int[] values, int threshold)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: inefficient\nDefect class: memory_pressure\nFramework: aspnetcore\nScenario: Return the long sum of values satisfying (value > threshold && value % 2 == 0), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.\nRequired implementation: Allocate System.Collections.Generic.List<int>(values.Length). Store indices satisfying (value > threshold && value % 2 == 0). Call ToArray exactly once after the scan, then iterate that index array to sum selected values in a long accumulator. No early no-match return. Do not substitute List traversal for ToArray.\nCode contract: exactly one method with signature public static long Run(int[] values, int threshold). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r1-bad",
+      "pair_id": "quality004-membership_matched_position_sum-r1",
+      "ancestry_id": "membership_matched_position_sum",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "membership",
+      "role": "bad",
+      "seed": 2026092406,
+      "expected_label": "inefficient",
+      "expected_defect_class": "cpu_saturation",
+      "semantic_contract": "Return the long sum of one-based positions i+1 of left elements whose value occurs in right. Duplicate values at different positions contribute separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.",
+      "signature": "public static long Run(int[] left, int[] right)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: inefficient\nDefect class: cpu_saturation\nFramework: aspnetcore\nScenario: Return the long sum of one-based positions i+1 of left elements whose value occurs in right. Duplicate values at different positions contribute separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.\nRequired implementation: For every left position, scan right from index zero with a nested loop and a local found flag. Stop the inner scan on the first match, then add (long)i+1 when found. No hash sets, LINQ, sorting or auxiliary collections.\nCode contract: exactly one method with signature public static long Run(int[] left, int[] right). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-strings_delimited-r1-good",
+      "pair_id": "quality004-strings_delimited-r1",
+      "ancestry_id": "strings_delimited",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "strings",
+      "role": "good",
+      "seed": 2026092423,
+      "expected_label": "efficient",
+      "expected_defect_class": "none",
+      "semantic_contract": "Join every string in original order with the literal vertical bar | between consecutive array positions, including empty positions. No leading or trailing delimiter. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.",
+      "signature": "public static string Run(string[] parts)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: efficient\nDefect class: none\nFramework: aspnetcore\nScenario: Join every string in original order with the literal vertical bar | between consecutive array positions, including empty positions. No leading or trailing delimiter. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.\nRequired implementation: Use one System.Text.StringBuilder and Append to append each part in original order, inserting | before every part except the first, then return ToString. No string.Join, LINQ or repeated +=.\nCode contract: exactly one method with signature public static string Run(string[] parts). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-strings_reverse-r1-bad",
+      "pair_id": "quality004-strings_reverse-r1",
+      "ancestry_id": "strings_reverse",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "strings",
+      "role": "bad",
+      "seed": 2026092420,
+      "expected_label": "inefficient",
+      "expected_defect_class": "memory_pressure",
+      "semantic_contract": "Concatenate all strings in reverse array-index order with no delimiter. Do not reverse characters inside strings. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.",
+      "signature": "public static string Run(string[] parts)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: inefficient\nDefect class: memory_pressure\nFramework: aspnetcore\nScenario: Concatenate all strings in reverse array-index order with no delimiter. Do not reverse characters inside strings. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.\nRequired implementation: Start with string.Empty and use repeated += to append every part in reverse array-index order. No StringBuilder, string.Join, string.Concat, LINQ or other collections.\nCode contract: exactly one method with signature public static string Run(string[] parts). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r1-good",
+      "pair_id": "quality004-membership_matched_sum-r1",
+      "ancestry_id": "membership_matched_sum",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "membership",
+      "role": "good",
+      "seed": 2026092405,
+      "expected_label": "efficient",
+      "expected_defect_class": "none",
+      "semantic_contract": "Return the long sum of all left values that occur in right. Each matching left position contributes its value, including negative values and duplicates. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.",
+      "signature": "public static long Run(int[] left, int[] right)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: efficient\nDefect class: none\nFramework: aspnetcore\nScenario: Return the long sum of all left values that occur in right. Each matching left position contributes its value, including negative values and duplicates. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.\nRequired implementation: Construct one System.Collections.Generic.HashSet<int> from right. Visit every left position, query Contains, then add (long)left[i] when found. Do not deduplicate left. No LINQ.\nCode contract: exactly one method with signature public static long Run(int[] left, int[] right). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater_equal-r1-good",
+      "pair_id": "quality004-aggregation_greater_equal-r1",
+      "ancestry_id": "aggregation_greater_equal",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "aggregation",
+      "role": "good",
+      "seed": 2026092411,
+      "expected_label": "efficient",
+      "expected_defect_class": "none",
+      "semantic_contract": "Return the long sum of values satisfying (value >= threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.",
+      "signature": "public static long Run(int[] values, int threshold)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: efficient\nDefect class: none\nFramework: aspnetcore\nScenario: Return the long sum of values satisfying (value >= threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.\nRequired implementation: Scan values once and sum values satisfying (value >= threshold) directly into a long accumulator. No collections, arrays or LINQ; no unsigned casts.\nCode contract: exactly one method with signature public static long Run(int[] values, int threshold). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-strings_reverse-r1-good",
+      "pair_id": "quality004-strings_reverse-r1",
+      "ancestry_id": "strings_reverse",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "strings",
+      "role": "good",
+      "seed": 2026092421,
+      "expected_label": "efficient",
+      "expected_defect_class": "none",
+      "semantic_contract": "Concatenate all strings in reverse array-index order with no delimiter. Do not reverse characters inside strings. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.",
+      "signature": "public static string Run(string[] parts)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: efficient\nDefect class: none\nFramework: aspnetcore\nScenario: Concatenate all strings in reverse array-index order with no delimiter. Do not reverse characters inside strings. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.\nRequired implementation: Use one System.Text.StringBuilder and Append to append every part in reverse array-index order, then return ToString. No string.Join, LINQ or repeated +=.\nCode contract: exactly one method with signature public static string Run(string[] parts). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r1-bad",
+      "pair_id": "quality004-membership_match_count-r1",
+      "ancestry_id": "membership_match_count",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "membership",
+      "role": "bad",
+      "seed": 2026092400,
+      "expected_label": "inefficient",
+      "expected_defect_class": "cpu_saturation",
+      "semantic_contract": "Return, as long, the number of left positions whose value occurs in right. Duplicates in left count separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.",
+      "signature": "public static long Run(int[] left, int[] right)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: inefficient\nDefect class: cpu_saturation\nFramework: aspnetcore\nScenario: Return, as long, the number of left positions whose value occurs in right. Duplicates in left count separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.\nRequired implementation: For every left position, scan right from index zero with a nested loop and a local found flag. Stop the inner scan on the first match, then add 1 when found. No hash sets, LINQ, sorting or auxiliary collections.\nCode contract: exactly one method with signature public static long Run(int[] left, int[] right). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-strings_delimited-r1-bad",
+      "pair_id": "quality004-strings_delimited-r1",
+      "ancestry_id": "strings_delimited",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "strings",
+      "role": "bad",
+      "seed": 2026092422,
+      "expected_label": "inefficient",
+      "expected_defect_class": "memory_pressure",
+      "semantic_contract": "Join every string in original order with the literal vertical bar | between consecutive array positions, including empty positions. No leading or trailing delimiter. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.",
+      "signature": "public static string Run(string[] parts)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: inefficient\nDefect class: memory_pressure\nFramework: aspnetcore\nScenario: Join every string in original order with the literal vertical bar | between consecutive array positions, including empty positions. No leading or trailing delimiter. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.\nRequired implementation: Start with string.Empty and use repeated += to append each part in original order, inserting | before every part except the first. No StringBuilder, string.Join, string.Concat, LINQ or other collections.\nCode contract: exactly one method with signature public static string Run(string[] parts). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater-r1-bad",
+      "pair_id": "quality004-aggregation_greater-r1",
+      "ancestry_id": "aggregation_greater",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "aggregation",
+      "role": "bad",
+      "seed": 2026092408,
+      "expected_label": "inefficient",
+      "expected_defect_class": "memory_pressure",
+      "semantic_contract": "Return the long sum of values satisfying (value > threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.",
+      "signature": "public static long Run(int[] values, int threshold)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: inefficient\nDefect class: memory_pressure\nFramework: aspnetcore\nScenario: Return the long sum of values satisfying (value > threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.\nRequired implementation: Allocate System.Collections.Generic.List<int>(values.Length). Store indices satisfying (value > threshold). Call ToArray exactly once after the scan, then iterate that index array to sum selected values in a long accumulator. No early no-match return. Do not substitute List traversal for ToArray.\nCode contract: exactly one method with signature public static long Run(int[] values, int threshold). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r1-good",
+      "pair_id": "quality004-membership_match_count-r1",
+      "ancestry_id": "membership_match_count",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "membership",
+      "role": "good",
+      "seed": 2026092401,
+      "expected_label": "efficient",
+      "expected_defect_class": "none",
+      "semantic_contract": "Return, as long, the number of left positions whose value occurs in right. Duplicates in left count separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.",
+      "signature": "public static long Run(int[] left, int[] right)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: efficient\nDefect class: none\nFramework: aspnetcore\nScenario: Return, as long, the number of left positions whose value occurs in right. Duplicates in left count separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.\nRequired implementation: Construct one System.Collections.Generic.HashSet<int> from right. Visit every left position, query Contains, then add 1 when found. Do not deduplicate left. No LINQ.\nCode contract: exactly one method with signature public static long Run(int[] left, int[] right). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-aggregation_less-r1-bad",
+      "pair_id": "quality004-aggregation_less-r1",
+      "ancestry_id": "aggregation_less",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "aggregation",
+      "role": "bad",
+      "seed": 2026092412,
+      "expected_label": "inefficient",
+      "expected_defect_class": "memory_pressure",
+      "semantic_contract": "Return the long sum of values satisfying (value < threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.",
+      "signature": "public static long Run(int[] values, int threshold)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: inefficient\nDefect class: memory_pressure\nFramework: aspnetcore\nScenario: Return the long sum of values satisfying (value < threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.\nRequired implementation: Allocate System.Collections.Generic.List<int>(values.Length). Store indices satisfying (value < threshold). Call ToArray exactly once after the scan, then iterate that index array to sum selected values in a long accumulator. No early no-match return. Do not substitute List traversal for ToArray.\nCode contract: exactly one method with signature public static long Run(int[] values, int threshold). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-aggregation_even_greater-r1-good",
+      "pair_id": "quality004-aggregation_even_greater-r1",
+      "ancestry_id": "aggregation_even_greater",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "aggregation",
+      "role": "good",
+      "seed": 2026092415,
+      "expected_label": "efficient",
+      "expected_defect_class": "none",
+      "semantic_contract": "Return the long sum of values satisfying (value > threshold && value % 2 == 0), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.",
+      "signature": "public static long Run(int[] values, int threshold)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: efficient\nDefect class: none\nFramework: aspnetcore\nScenario: Return the long sum of values satisfying (value > threshold && value % 2 == 0), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.\nRequired implementation: Scan values once and sum values satisfying (value > threshold && value % 2 == 0) directly into a long accumulator. No collections, arrays or LINQ; no unsigned casts.\nCode contract: exactly one method with signature public static long Run(int[] values, int threshold). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r1-good",
+      "pair_id": "quality004-membership_matched_position_sum-r1",
+      "ancestry_id": "membership_matched_position_sum",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "membership",
+      "role": "good",
+      "seed": 2026092407,
+      "expected_label": "efficient",
+      "expected_defect_class": "none",
+      "semantic_contract": "Return the long sum of one-based positions i+1 of left elements whose value occurs in right. Duplicate values at different positions contribute separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.",
+      "signature": "public static long Run(int[] left, int[] right)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: efficient\nDefect class: none\nFramework: aspnetcore\nScenario: Return the long sum of one-based positions i+1 of left elements whose value occurs in right. Duplicate values at different positions contribute separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.\nRequired implementation: Construct one System.Collections.Generic.HashSet<int> from right. Visit every left position, query Contains, then add (long)i+1 when found. Do not deduplicate left. No LINQ.\nCode contract: exactly one method with signature public static long Run(int[] left, int[] right). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-strings_nonempty-r1-bad",
+      "pair_id": "quality004-strings_nonempty-r1",
+      "ancestry_id": "strings_nonempty",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "strings",
+      "role": "bad",
+      "seed": 2026092418,
+      "expected_label": "inefficient",
+      "expected_defect_class": "memory_pressure",
+      "semantic_contract": "Concatenate nonempty strings in original order with no delimiter; skip empty strings. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.",
+      "signature": "public static string Run(string[] parts)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: inefficient\nDefect class: memory_pressure\nFramework: aspnetcore\nScenario: Concatenate nonempty strings in original order with no delimiter; skip empty strings. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.\nRequired implementation: Start with string.Empty and use repeated += to append each nonempty part in original order. No StringBuilder, string.Join, string.Concat, LINQ or other collections.\nCode contract: exactly one method with signature public static string Run(string[] parts). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-aggregation_less-r1-good",
+      "pair_id": "quality004-aggregation_less-r1",
+      "ancestry_id": "aggregation_less",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "aggregation",
+      "role": "good",
+      "seed": 2026092413,
+      "expected_label": "efficient",
+      "expected_defect_class": "none",
+      "semantic_contract": "Return the long sum of values satisfying (value < threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.",
+      "signature": "public static long Run(int[] values, int threshold)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: efficient\nDefect class: none\nFramework: aspnetcore\nScenario: Return the long sum of values satisfying (value < threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.\nRequired implementation: Scan values once and sum values satisfying (value < threshold) directly into a long accumulator. No collections, arrays or LINQ; no unsigned casts.\nCode contract: exactly one method with signature public static long Run(int[] values, int threshold). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r1-good",
+      "pair_id": "quality004-membership_miss_count-r1",
+      "ancestry_id": "membership_miss_count",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "membership",
+      "role": "good",
+      "seed": 2026092403,
+      "expected_label": "efficient",
+      "expected_defect_class": "none",
+      "semantic_contract": "Return, as long, the number of left positions whose value does not occur in right. Duplicates in left count separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.",
+      "signature": "public static long Run(int[] left, int[] right)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: efficient\nDefect class: none\nFramework: aspnetcore\nScenario: Return, as long, the number of left positions whose value does not occur in right. Duplicates in left count separately. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.\nRequired implementation: Construct one System.Collections.Generic.HashSet<int> from right. Visit every left position, query Contains, then add 1 when not found. Do not deduplicate left. No LINQ.\nCode contract: exactly one method with signature public static long Run(int[] left, int[] right). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-strings_all-r1-bad",
+      "pair_id": "quality004-strings_all-r1",
+      "ancestry_id": "strings_all",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "strings",
+      "role": "bad",
+      "seed": 2026092416,
+      "expected_label": "inefficient",
+      "expected_defect_class": "memory_pressure",
+      "semantic_contract": "Concatenate every string in original order with no delimiter. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.",
+      "signature": "public static string Run(string[] parts)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: inefficient\nDefect class: memory_pressure\nFramework: aspnetcore\nScenario: Concatenate every string in original order with no delimiter. The array and elements are non-null. Empty array returns string.Empty. Do not mutate inputs.\nRequired implementation: Start with string.Empty and use repeated += to append every part in original order. No StringBuilder, string.Join, string.Concat, LINQ or other collections.\nCode contract: exactly one method with signature public static string Run(string[] parts). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r1-bad",
+      "pair_id": "quality004-membership_matched_sum-r1",
+      "ancestry_id": "membership_matched_sum",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "membership",
+      "role": "bad",
+      "seed": 2026092404,
+      "expected_label": "inefficient",
+      "expected_defect_class": "cpu_saturation",
+      "semantic_contract": "Return the long sum of all left values that occur in right. Each matching left position contributes its value, including negative values and duplicates. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.",
+      "signature": "public static long Run(int[] left, int[] right)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: inefficient\nDefect class: cpu_saturation\nFramework: aspnetcore\nScenario: Return the long sum of all left values that occur in right. Each matching left position contributes its value, including negative values and duplicates. Both arrays are non-null. Do not mutate inputs. Empty left yields zero. Empty right contains no values.\nRequired implementation: For every left position, scan right from index zero with a nested loop and a local found flag. Stop the inner scan on the first match, then add (long)left[i] when found. No hash sets, LINQ, sorting or auxiliary collections.\nCode contract: exactly one method with signature public static long Run(int[] left, int[] right). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater_equal-r1-bad",
+      "pair_id": "quality004-aggregation_greater_equal-r1",
+      "ancestry_id": "aggregation_greater_equal",
+      "replicate": 1,
+      "kind": "historical_single",
+      "family": "aggregation",
+      "role": "bad",
+      "seed": 2026092410,
+      "expected_label": "inefficient",
+      "expected_defect_class": "memory_pressure",
+      "semantic_contract": "Return the long sum of values satisfying (value >= threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.",
+      "signature": "public static long Run(int[] values, int threshold)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a generator of labeled .NET performance code samples for a research dataset. Given a target label, defect class, framework, and scenario, produce one realistic C# (.NET 8) sample. Respond with a single JSON object with exactly these keys: code, label, defect_class, mechanism, explanation. No text outside the JSON."
+        },
+        {
+          "role": "user",
+          "content": "Generate one C# (.NET 8) performance dataset sample.\nTarget label: inefficient\nDefect class: memory_pressure\nFramework: aspnetcore\nScenario: Return the long sum of values satisfying (value >= threshold), using signed int comparisons. The array is non-null; do not mutate it. Sum in long. Empty arrays or no selected values return zero.\nRequired implementation: Allocate System.Collections.Generic.List<int>(values.Length). Store indices satisfying (value >= threshold). Call ToArray exactly once after the scan, then iterate that index array to sum selected values in a long accumulator. No early no-match return. Do not substitute List traversal for ToArray.\nCode contract: exactly one method with signature public static long Run(int[] values, int threshold). It must compile inside a static class in .NET 8 with ImplicitUsings disabled. Fully qualify ALL non-keyword type names. No using directives, namespace, class declaration, extra methods, external packages or undefined extension methods. Null validation is not required.\nReturn exactly the five JSON keys requested by the system, all string values. Escape code inside JSON; no markdown or trailing text. Give qualitative explanations only. Do not invent timings, speedups or allocation measurements."
+        }
+      ]
+    }
+  ],
+  "run_id": "quality004-b01",
+  "pairing_policy": "Two fresh single-record calls per preassigned pair_id. 24 calls/12 pairs per batch. Preserve schema failures; infrastructure errors stop batch.",
+  "success_rule": "Record generation completeness separately from later common semantic/mechanism admission and held-out benchmark evaluation.",
+  "retry_policy": "No sampled-call retries or replacement candidates. Export any partial batch."
+}

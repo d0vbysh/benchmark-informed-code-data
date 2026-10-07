@@ -1,0 +1,22 @@
+{
+  "job_id": "benchmark-02-baseline-l2",
+  "status": "pass",
+  "time_ns": [
+    65.78133702278137,
+    62.95546889305115,
+    62.43436932563782,
+    60.26758551597595,
+    60.73369383811951
+  ],
+  "median_ns": 62.43436932563782,
+  "allocated_bytes": 0,
+  "raw_hashes": {
+    "bdn\\results\\TransferPilot.Sample04-report-full.json": "322dfea050b3342531a9efd672184970e4fc74179fb9fb920bd8ca507d064ed8",
+    "input.json": "c5d902d54064e20df97475bf35f130b7405ce227c3a807c92721c348c10d2f5a",
+    "console.log": "132000b5504988d8f7b607ae3d1aff7d1d60b0665a94901006bf298f8500c682",
+    "job.json": "84fb6aa6328ecc872acfbb1d0eecad2424ae232d145f6bb743ed0139165556e5",
+    "command.json": "09e02e727deeda7f8fb10dab9419423ff7c601f71e1346fe1a1f68757dc8d993"
+  },
+  "elapsed_seconds": 13.42199999999957,
+  "ended_utc": "2026-10-06T14:54:59.395345+00:00"
+}

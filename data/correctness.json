@@ -1,0 +1,1103 @@
+{
+  "runtime": "8.0.31",
+  "oracle_crosscheck_cases": 2652,
+  "results": [
+    {
+      "attempt_id": "quality004-strings_nonempty-r1-good",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater-r1-good",
+      "signature": true,
+      "tests": 232,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r1-bad",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_all-r1-good",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r1-bad",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r1-good",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater_equal-r1-good",
+      "signature": true,
+      "tests": 232,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_reverse-r1-good",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r1-bad",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_delimited-r1-bad",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r1-good",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-aggregation_even_greater-r1-good",
+      "signature": true,
+      "tests": 232,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r1-good",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_nonempty-r1-bad",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-aggregation_less-r1-good",
+      "signature": true,
+      "tests": 232,
+      "failed": 207,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 14,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -2147483648
+          },
+          "expected": 0,
+          "actual": 3,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 15,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -2
+          },
+          "expected": 0,
+          "actual": 3,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 16,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -1
+          },
+          "expected": -2,
+          "actual": 1,
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r1-good",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_all-r1-bad",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r1-bad",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater_equal-r1-bad",
+      "signature": true,
+      "tests": 232,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-aggregation_less-r2-good",
+      "signature": true,
+      "tests": 232,
+      "failed": 207,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 14,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -2147483648
+          },
+          "expected": 0,
+          "actual": 3,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 15,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -2
+          },
+          "expected": 0,
+          "actual": 3,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 16,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -1
+          },
+          "expected": -2,
+          "actual": 1,
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater_equal-r2-bad",
+      "signature": true,
+      "tests": 232,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater-r2-bad",
+      "signature": true,
+      "tests": 232,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_reverse-r2-bad",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r2-bad",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater-r2-good",
+      "signature": true,
+      "tests": 232,
+      "failed": 193,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 16,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -1
+          },
+          "expected": 3,
+          "actual": 1,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 17,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": 0
+          },
+          "expected": 3,
+          "actual": 0,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 18,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": 1
+          },
+          "expected": 2,
+          "actual": -1,
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-strings_reverse-r2-good",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r2-bad",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_delimited-r2-good",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater_equal-r2-good",
+      "signature": true,
+      "tests": 232,
+      "failed": 199,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 16,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -1
+          },
+          "expected": 2,
+          "actual": 0,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 17,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": 0
+          },
+          "expected": 3,
+          "actual": 0,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 18,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": 1
+          },
+          "expected": 3,
+          "actual": 0,
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-aggregation_even_greater-r2-good",
+      "signature": true,
+      "tests": 232,
+      "failed": 169,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 14,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -2147483648
+          },
+          "expected": 0,
+          "actual": -2,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 15,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -2
+          },
+          "expected": 2,
+          "actual": 0,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 16,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -1
+          },
+          "expected": 2,
+          "actual": 0,
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-aggregation_less-r2-bad",
+      "signature": true,
+      "tests": 232,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_nonempty-r2-good",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_all-r2-good",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r2-good",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_delimited-r2-bad",
+      "signature": true,
+      "tests": 211,
+      "failed": 32,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 2,
+          "input": {
+            "parts": [
+              "",
+              ""
+            ]
+          },
+          "expected": "|",
+          "actual": "",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 3,
+          "input": {
+            "parts": [
+              "",
+              "a"
+            ]
+          },
+          "expected": "|a",
+          "actual": "a",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 14,
+          "input": {
+            "parts": [
+              "",
+              "a",
+              "bc",
+              "\uD83D\uDE42",
+              "\uD83D\uDE42",
+              "bc",
+              "a",
+              "\uD83D\uDE42",
+              "|"
+            ]
+          },
+          "expected": "|a|bc|\uD83D\uDE42|\uD83D\uDE42|bc|a|\uD83D\uDE42||",
+          "actual": "a|bc|\uD83D\uDE42|\uD83D\uDE42|bc|a|\uD83D\uDE42||",
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r2-good",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_all-r2-bad",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r2-good",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_nonempty-r2-bad",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r2-bad",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r2-good",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r2-bad",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r3-bad",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater-r3-good",
+      "signature": true,
+      "tests": 232,
+      "failed": 200,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 14,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -2147483648
+          },
+          "expected": 0,
+          "actual": -3,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 15,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -2
+          },
+          "expected": 2,
+          "actual": -1,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 16,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -1
+          },
+          "expected": 3,
+          "actual": 0,
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r3-good",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_all-r3-good",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r3-bad",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_all-r3-bad",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_delimited-r3-good",
+      "signature": true,
+      "tests": 211,
+      "failed": 32,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 2,
+          "input": {
+            "parts": [
+              "",
+              ""
+            ]
+          },
+          "expected": "|",
+          "actual": "",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 3,
+          "input": {
+            "parts": [
+              "",
+              "a"
+            ]
+          },
+          "expected": "|a",
+          "actual": "a",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 14,
+          "input": {
+            "parts": [
+              "",
+              "a",
+              "bc",
+              "\uD83D\uDE42",
+              "\uD83D\uDE42",
+              "bc",
+              "a",
+              "\uD83D\uDE42",
+              "|"
+            ]
+          },
+          "expected": "|a|bc|\uD83D\uDE42|\uD83D\uDE42|bc|a|\uD83D\uDE42||",
+          "actual": "a|bc|\uD83D\uDE42|\uD83D\uDE42|bc|a|\uD83D\uDE42||",
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-strings_nonempty-r3-bad",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-aggregation_less-r3-good",
+      "signature": true,
+      "tests": 232,
+      "failed": 207,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 14,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -2147483648
+          },
+          "expected": 0,
+          "actual": 3,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 15,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -2
+          },
+          "expected": 0,
+          "actual": 3,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 16,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -1
+          },
+          "expected": -2,
+          "actual": 1,
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r3-bad",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r3-good",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-strings_reverse-r3-good",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater_equal-r3-good",
+      "signature": true,
+      "tests": 232,
+      "failed": 199,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 16,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -1
+          },
+          "expected": 2,
+          "actual": 0,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 17,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": 0
+          },
+          "expected": 3,
+          "actual": 0,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 18,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": 1
+          },
+          "expected": 3,
+          "actual": 0,
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-strings_delimited-r3-bad",
+      "signature": true,
+      "tests": 211,
+      "failed": 32,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 2,
+          "input": {
+            "parts": [
+              "",
+              ""
+            ]
+          },
+          "expected": "|",
+          "actual": "",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 3,
+          "input": {
+            "parts": [
+              "",
+              "a"
+            ]
+          },
+          "expected": "|a",
+          "actual": "a",
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 14,
+          "input": {
+            "parts": [
+              "",
+              "a",
+              "bc",
+              "\uD83D\uDE42",
+              "\uD83D\uDE42",
+              "bc",
+              "a",
+              "\uD83D\uDE42",
+              "|"
+            ]
+          },
+          "expected": "|a|bc|\uD83D\uDE42|\uD83D\uDE42|bc|a|\uD83D\uDE42||",
+          "actual": "a|bc|\uD83D\uDE42|\uD83D\uDE42|bc|a|\uD83D\uDE42||",
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-strings_nonempty-r3-good",
+      "signature": true,
+      "tests": 211,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r3-bad",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r3-good",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    },
+    {
+      "attempt_id": "quality004-aggregation_even_greater-r3-good",
+      "signature": true,
+      "tests": 232,
+      "failed": 169,
+      "pass": false,
+      "examples": [
+        {
+          "case_id": 14,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -2147483648
+          },
+          "expected": 0,
+          "actual": -2,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 15,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -2
+          },
+          "expected": 2,
+          "actual": 0,
+          "mutated": false,
+          "error": null
+        },
+        {
+          "case_id": 16,
+          "input": {
+            "values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "threshold": -1
+          },
+          "expected": 2,
+          "actual": 0,
+          "mutated": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r3-good",
+      "signature": true,
+      "tests": 220,
+      "failed": 0,
+      "pass": true,
+      "examples": []
+    }
+  ]
+}

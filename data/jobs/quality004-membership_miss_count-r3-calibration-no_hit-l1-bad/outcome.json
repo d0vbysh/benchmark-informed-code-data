@@ -1,0 +1,22 @@
+{
+  "job_id": "quality004-membership_miss_count-r3-calibration-no_hit-l1-bad",
+  "status": "pass",
+  "time_ns": [
+    1341.3661003112793,
+    1303.0200004577637,
+    1296.189785003662,
+    1346.8531608581543,
+    1338.8325691223145
+  ],
+  "median_ns": 1338.8325691223145,
+  "allocated_bytes": 0,
+  "raw_hashes": {
+    "bdn\\results\\Quality004.Sample18-report-full.json": "8ed1168110ffff113e2716e05106683f0d603c52ad6553d72d4a49982d2f5b39",
+    "input.json": "6ebd46afc4f6d4af432c6b399c8d9484e2be7a2abbb42c1edd91e3efa9b12edc",
+    "console.log": "dc1871a0cad5d105aa8bf2689170d676eae83b3a609d9d4c88e21642919e4264",
+    "job.json": "85af23fe74970fe5e62004c7f1a0d6adf80c1bfb8e4910d8e14d24e5a173d818",
+    "command.json": "6d44699949cedd84bacecaafd7edf29fa24b67c3db685e808584336e1e33353b"
+  },
+  "elapsed_seconds": 13.328999999999724,
+  "ended_utc": "2026-09-25T18:46:50.241976+00:00"
+}

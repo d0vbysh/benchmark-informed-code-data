@@ -1,0 +1,1631 @@
+{
+  "summary": {
+    "attempts": 72,
+    "raw_compile": 32,
+    "normalized_compile": 61,
+    "functional_pass": 49,
+    "method_admitted": 44,
+    "planned_pairs": 36,
+    "admitted_pairs": 15,
+    "admitted_contracts": 7,
+    "family_contracts": {
+      "membership": 3,
+      "aggregation": 1,
+      "strings": 3
+    },
+    "candidate_test_invocations": 13423,
+    "oracle_crosscheck_cases": 2652,
+    "cluster_interval_permitted": false,
+    "timing_status": "not_started"
+  },
+  "methods": [
+    {
+      "attempt_id": "quality004-strings_nonempty-r1-good",
+      "pair_id": "quality004-strings_nonempty-r1",
+      "contract_id": "strings_nonempty",
+      "family": "strings",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "2766c766651c06488f1a583363f94955eaf7f77e53200208e4d90a1993b074ef"
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater-r1-good",
+      "pair_id": "quality004-aggregation_greater-r1",
+      "contract_id": "aggregation_greater",
+      "family": "aggregation",
+      "role": "good",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "6f7a373410a29e1a0f2757784019ff8b25b330af5d3d2776c5acf19e50ea2ae6"
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r1-bad",
+      "pair_id": "quality004-membership_miss_count-r1",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "e9dc7d055ea173ff2fa981a56b35a596e8d185edd4a994164bf2d80e76fcc7cc"
+    },
+    {
+      "attempt_id": "quality004-strings_all-r1-good",
+      "pair_id": "quality004-strings_all-r1",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "3ac07d029dec80973f7297d75a0636c3a1a7c2191cb6a9be12aeda1e3fcdc834"
+    },
+    {
+      "attempt_id": "quality004-aggregation_even_greater-r1-bad",
+      "pair_id": "quality004-aggregation_even_greater-r1",
+      "contract_id": "aggregation_even_greater",
+      "family": "aggregation",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": false,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "compilation_failed"
+      ],
+      "canonical_sha256": "8aa3465413b9ab983cb5b60676d6452802911a81dcd5e7cebcf4dcbd7d9449d7"
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r1-bad",
+      "pair_id": "quality004-membership_matched_position_sum-r1",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "e1ac66ac30e261fb683933dc59cf6c793f31447ffafe418057d611d8503a2632"
+    },
+    {
+      "attempt_id": "quality004-strings_delimited-r1-good",
+      "pair_id": "quality004-strings_delimited-r1",
+      "contract_id": "strings_delimited",
+      "family": "strings",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": false,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "compilation_failed"
+      ],
+      "canonical_sha256": "535affef7eac5039dd94eb93fa2c441bd0176d3659b75afcbadec01a49aa4116"
+    },
+    {
+      "attempt_id": "quality004-strings_reverse-r1-bad",
+      "pair_id": "quality004-strings_reverse-r1",
+      "contract_id": "strings_reverse",
+      "family": "strings",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": false,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "compilation_failed"
+      ],
+      "canonical_sha256": "a8ddc6729543353a41bee509b8b12c3299b91dc98f492352c53aa41fccaa953e"
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r1-good",
+      "pair_id": "quality004-membership_matched_sum-r1",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "a6d7e70e0953009fc29149b3580279b1f0a51bf78ff0358eb61a547e0619ecbe"
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater_equal-r1-good",
+      "pair_id": "quality004-aggregation_greater_equal-r1",
+      "contract_id": "aggregation_greater_equal",
+      "family": "aggregation",
+      "role": "good",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "96cdda9da5f6ef471f39a477a03cfd6bd9f3177d365f5eaeacd389599215d694"
+    },
+    {
+      "attempt_id": "quality004-strings_reverse-r1-good",
+      "pair_id": "quality004-strings_reverse-r1",
+      "contract_id": "strings_reverse",
+      "family": "strings",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "296018aefe056469c64fd1c8be76d63c5d020ee0c9a8704dd78521c2d89c325f"
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r1-bad",
+      "pair_id": "quality004-membership_match_count-r1",
+      "contract_id": "membership_match_count",
+      "family": "membership",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "strict_prompt_review_fail",
+      "admitted": false,
+      "reasons": [
+        "missing_explicit_local_found_flag"
+      ],
+      "canonical_sha256": "0981a8522aabf61b134f9777dc76699b54ba0a1df20c3c8b1a3ad77a9d94b0ad"
+    },
+    {
+      "attempt_id": "quality004-strings_delimited-r1-bad",
+      "pair_id": "quality004-strings_delimited-r1",
+      "contract_id": "strings_delimited",
+      "family": "strings",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "19ffb7faa8676ab454bd28148be410a11461184b145ff9e25e4f35f7046b6dee"
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater-r1-bad",
+      "pair_id": "quality004-aggregation_greater-r1",
+      "contract_id": "aggregation_greater",
+      "family": "aggregation",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": false,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "compilation_failed"
+      ],
+      "canonical_sha256": "43e0d3147e3d3b406ceab28b38b81b709de57a85dd86b8d6d37bea33d632dc45"
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r1-good",
+      "pair_id": "quality004-membership_match_count-r1",
+      "contract_id": "membership_match_count",
+      "family": "membership",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "e9d0217c107b960d588da1d2ddd7a0fc4e1f9002bd7d6235b50f79b7d0969e0d"
+    },
+    {
+      "attempt_id": "quality004-aggregation_less-r1-bad",
+      "pair_id": "quality004-aggregation_less-r1",
+      "contract_id": "aggregation_less",
+      "family": "aggregation",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": false,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "compilation_failed"
+      ],
+      "canonical_sha256": "e5e44b024d5a850cffdec19a28491ba32106692024cdec0161e06200d5b3c875"
+    },
+    {
+      "attempt_id": "quality004-aggregation_even_greater-r1-good",
+      "pair_id": "quality004-aggregation_even_greater-r1",
+      "contract_id": "aggregation_even_greater",
+      "family": "aggregation",
+      "role": "good",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "4ad66d9e8eea59d54cfcb8b4d06268a7faba3323c92dc083cf1d32cd3b264b93"
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r1-good",
+      "pair_id": "quality004-membership_matched_position_sum-r1",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "b087e53299caba19a6fc282f741fc71a19343b7f93c17d9aa2d2951fc942206e"
+    },
+    {
+      "attempt_id": "quality004-strings_nonempty-r1-bad",
+      "pair_id": "quality004-strings_nonempty-r1",
+      "contract_id": "strings_nonempty",
+      "family": "strings",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_fail",
+      "admitted": false,
+      "reasons": [
+        "StringBuilder_in_repeated_concatenation_role"
+      ],
+      "canonical_sha256": "2766c766651c06488f1a583363f94955eaf7f77e53200208e4d90a1993b074ef"
+    },
+    {
+      "attempt_id": "quality004-aggregation_less-r1-good",
+      "pair_id": "quality004-aggregation_less-r1",
+      "contract_id": "aggregation_less",
+      "family": "aggregation",
+      "role": "good",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ],
+      "canonical_sha256": "7fb2c8c360ac3b6d0d0406b3237bf977aeed4e44c778133bfc2d434eb0468abd"
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r1-good",
+      "pair_id": "quality004-membership_miss_count-r1",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "8eb287a2f935ac942a182bd9deabe22d36ba3037001500f49eda3c8658925ed0"
+    },
+    {
+      "attempt_id": "quality004-strings_all-r1-bad",
+      "pair_id": "quality004-strings_all-r1",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "8da32754aefa0b508413a9b7c512e30869510dd952e0170e0bd44aa2494202f4"
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r1-bad",
+      "pair_id": "quality004-membership_matched_sum-r1",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "cb3cccb538881196de639e0eb625aa5633d758e7e7cb3875e59ae0dabf3fa4f2"
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater_equal-r1-bad",
+      "pair_id": "quality004-aggregation_greater_equal-r1",
+      "contract_id": "aggregation_greater_equal",
+      "family": "aggregation",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "63d912f8dfe1d68f156b95ec74548300d4147234172b8ed568d1e5177bd57824"
+    },
+    {
+      "attempt_id": "quality004-aggregation_less-r2-good",
+      "pair_id": "quality004-aggregation_less-r2",
+      "contract_id": "aggregation_less",
+      "family": "aggregation",
+      "role": "good",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ],
+      "canonical_sha256": "7fb2c8c360ac3b6d0d0406b3237bf977aeed4e44c778133bfc2d434eb0468abd"
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater_equal-r2-bad",
+      "pair_id": "quality004-aggregation_greater_equal-r2",
+      "contract_id": "aggregation_greater_equal",
+      "family": "aggregation",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "63d912f8dfe1d68f156b95ec74548300d4147234172b8ed568d1e5177bd57824"
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater-r2-bad",
+      "pair_id": "quality004-aggregation_greater-r2",
+      "contract_id": "aggregation_greater",
+      "family": "aggregation",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "44936bd411b5f7156a234106939402888de4d0763d63f1849f57792325ffa110"
+    },
+    {
+      "attempt_id": "quality004-strings_reverse-r2-bad",
+      "pair_id": "quality004-strings_reverse-r2",
+      "contract_id": "strings_reverse",
+      "family": "strings",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "123f1502337f807f08433fbfa2935f8c95de4a7b983ae8298cf772b4c82c9588"
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r2-bad",
+      "pair_id": "quality004-membership_matched_sum-r2",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "17de6b25022029225f83eae4a558cb53dacf367580ae9238c401ab97b07c3af9"
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater-r2-good",
+      "pair_id": "quality004-aggregation_greater-r2",
+      "contract_id": "aggregation_greater",
+      "family": "aggregation",
+      "role": "good",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ],
+      "canonical_sha256": "eb4af1e76e5f70edc05b97cd2025b7aa88fab64271921aceb259af9d9417d4b9"
+    },
+    {
+      "attempt_id": "quality004-aggregation_even_greater-r2-bad",
+      "pair_id": "quality004-aggregation_even_greater-r2",
+      "contract_id": "aggregation_even_greater",
+      "family": "aggregation",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": false,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "compilation_failed"
+      ],
+      "canonical_sha256": "dd813020e1de14fc9855ad56a852643702590576b2f0ae0fdfb6c5da94fac3a0"
+    },
+    {
+      "attempt_id": "quality004-strings_reverse-r2-good",
+      "pair_id": "quality004-strings_reverse-r2",
+      "contract_id": "strings_reverse",
+      "family": "strings",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "45c19533940fbb2c26d8789bde5be6d6b6d7156ec3083b38ad9a85f01d42341f"
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r2-bad",
+      "pair_id": "quality004-membership_matched_position_sum-r2",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "858ce9342df0f6e53e0dcc9c13331af16990b90b8a6e3415b947ae9112feb2da"
+    },
+    {
+      "attempt_id": "quality004-strings_delimited-r2-good",
+      "pair_id": "quality004-strings_delimited-r2",
+      "contract_id": "strings_delimited",
+      "family": "strings",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "63c974f2755ec60bb366515e3cd71134b5fb64c05537eda7507cc4eddf2c276a"
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater_equal-r2-good",
+      "pair_id": "quality004-aggregation_greater_equal-r2",
+      "contract_id": "aggregation_greater_equal",
+      "family": "aggregation",
+      "role": "good",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ],
+      "canonical_sha256": "916a1a215bd600e43169ccfee047b6c853f4a8edb2efd156189014b33750362e"
+    },
+    {
+      "attempt_id": "quality004-aggregation_even_greater-r2-good",
+      "pair_id": "quality004-aggregation_even_greater-r2",
+      "contract_id": "aggregation_even_greater",
+      "family": "aggregation",
+      "role": "good",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ],
+      "canonical_sha256": "b629f5f565145f072a5c2e0faab0dc37b9a0871dfca292a72cc1d669d2f4bde5"
+    },
+    {
+      "attempt_id": "quality004-aggregation_less-r2-bad",
+      "pair_id": "quality004-aggregation_less-r2",
+      "contract_id": "aggregation_less",
+      "family": "aggregation",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "e1f86dc55c880499742dbfd5ed68c8922569f28094550ed87adeeb65b396e749"
+    },
+    {
+      "attempt_id": "quality004-strings_nonempty-r2-good",
+      "pair_id": "quality004-strings_nonempty-r2",
+      "contract_id": "strings_nonempty",
+      "family": "strings",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "60319a04e7976332857301b159643a8cd9858a01950220e6a24d16d54da753db"
+    },
+    {
+      "attempt_id": "quality004-strings_all-r2-good",
+      "pair_id": "quality004-strings_all-r2",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "3ac07d029dec80973f7297d75a0636c3a1a7c2191cb6a9be12aeda1e3fcdc834"
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r2-good",
+      "pair_id": "quality004-membership_miss_count-r2",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "064fe52fab1ccc766e038f04b28ef6b85f5b9bcba239d8698f5dd02a6721e2ce"
+    },
+    {
+      "attempt_id": "quality004-strings_delimited-r2-bad",
+      "pair_id": "quality004-strings_delimited-r2",
+      "contract_id": "strings_delimited",
+      "family": "strings",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ],
+      "canonical_sha256": "06feb09ffad9fc5365316f412831655f2bcbced9b03a8611bb7c2632fb6a5137"
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r2-good",
+      "pair_id": "quality004-membership_matched_sum-r2",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "3fdc4f95b1277cbd703f4919c89e907d03948f42c4515e82a0eb0c65eeb0c673"
+    },
+    {
+      "attempt_id": "quality004-strings_all-r2-bad",
+      "pair_id": "quality004-strings_all-r2",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "ef2dfad2f52aea9723f526fbad4af66e4d025e645a74b6442e690314f01ef770"
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r2-good",
+      "pair_id": "quality004-membership_matched_position_sum-r2",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "62a51820a169eabe2f6a9da4a9c47184e1d965d0c589f9ab5c00693345ab50b1"
+    },
+    {
+      "attempt_id": "quality004-strings_nonempty-r2-bad",
+      "pair_id": "quality004-strings_nonempty-r2",
+      "contract_id": "strings_nonempty",
+      "family": "strings",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "bc913f6cc0928b08ecb7cf28e2d613c5b34b3c32181aa05a503827d37a880c41"
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r2-bad",
+      "pair_id": "quality004-membership_match_count-r2",
+      "contract_id": "membership_match_count",
+      "family": "membership",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "strict_prompt_review_fail",
+      "admitted": false,
+      "reasons": [
+        "missing_explicit_local_found_flag"
+      ],
+      "canonical_sha256": "0d4a366b430b70f7fc937ae52f8616f76fdc591c264e271721f86ca4cd7557da"
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r2-good",
+      "pair_id": "quality004-membership_match_count-r2",
+      "contract_id": "membership_match_count",
+      "family": "membership",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "e9d0217c107b960d588da1d2ddd7a0fc4e1f9002bd7d6235b50f79b7d0969e0d"
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r2-bad",
+      "pair_id": "quality004-membership_miss_count-r2",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "98c335f88dc569e12e6989cf91fa6a94929e2f4f0762be647bc2c168ee05048c"
+    },
+    {
+      "attempt_id": "quality004-strings_reverse-r3-bad",
+      "pair_id": "quality004-strings_reverse-r3",
+      "contract_id": "strings_reverse",
+      "family": "strings",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": false,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "compilation_failed"
+      ],
+      "canonical_sha256": "8fa628e80ebeed3e2d4194a847a26cb42f916efcb01475336fc322bc48630e80"
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r3-bad",
+      "pair_id": "quality004-membership_matched_position_sum-r3",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "567f643035ac4ad1a4d6b704dbf8a3266e37273b769159b0bf7678f278acfbee"
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater-r3-good",
+      "pair_id": "quality004-aggregation_greater-r3",
+      "contract_id": "aggregation_greater",
+      "family": "aggregation",
+      "role": "good",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ],
+      "canonical_sha256": "74de3b27920971a28fda737ace686a7b4f0aa531c2e6a55d137531ce3745130f"
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r3-good",
+      "pair_id": "quality004-membership_matched_sum-r3",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "375086618723eb83bf415b5300f3b7b8266147c40a7bd2f518b7d54bce7c0212"
+    },
+    {
+      "attempt_id": "quality004-aggregation_even_greater-r3-bad",
+      "pair_id": "quality004-aggregation_even_greater-r3",
+      "contract_id": "aggregation_even_greater",
+      "family": "aggregation",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": false,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "compilation_failed"
+      ],
+      "canonical_sha256": "596c4770065f154ab049bda03014c41a87ea80037f3a83a40164e43ea0fdac43"
+    },
+    {
+      "attempt_id": "quality004-strings_all-r3-good",
+      "pair_id": "quality004-strings_all-r3",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "39b57f3b1569c8b00ccfda696829bf122b1b89a823a9346e3036cb21b67cb30d"
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r3-bad",
+      "pair_id": "quality004-membership_match_count-r3",
+      "contract_id": "membership_match_count",
+      "family": "membership",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "strict_prompt_review_fail",
+      "admitted": false,
+      "reasons": [
+        "missing_explicit_local_found_flag"
+      ],
+      "canonical_sha256": "0d4a366b430b70f7fc937ae52f8616f76fdc591c264e271721f86ca4cd7557da"
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater-r3-bad",
+      "pair_id": "quality004-aggregation_greater-r3",
+      "contract_id": "aggregation_greater",
+      "family": "aggregation",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": false,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "compilation_failed"
+      ],
+      "canonical_sha256": "ccdd1ae6d21cc7d90b0baa602de4e56d3e5fa9d0966838b5e1228bcb845e39a0"
+    },
+    {
+      "attempt_id": "quality004-strings_all-r3-bad",
+      "pair_id": "quality004-strings_all-r3",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "ef2dfad2f52aea9723f526fbad4af66e4d025e645a74b6442e690314f01ef770"
+    },
+    {
+      "attempt_id": "quality004-strings_delimited-r3-good",
+      "pair_id": "quality004-strings_delimited-r3",
+      "contract_id": "strings_delimited",
+      "family": "strings",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ],
+      "canonical_sha256": "bdeae05c849e34f12255dd72507d0038eb8d05495e33da48ec4350b0a28a9e4c"
+    },
+    {
+      "attempt_id": "quality004-strings_nonempty-r3-bad",
+      "pair_id": "quality004-strings_nonempty-r3",
+      "contract_id": "strings_nonempty",
+      "family": "strings",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_fail",
+      "admitted": false,
+      "reasons": [
+        "StringBuilder_in_repeated_concatenation_role"
+      ],
+      "canonical_sha256": "2766c766651c06488f1a583363f94955eaf7f77e53200208e4d90a1993b074ef"
+    },
+    {
+      "attempt_id": "quality004-aggregation_less-r3-good",
+      "pair_id": "quality004-aggregation_less-r3",
+      "contract_id": "aggregation_less",
+      "family": "aggregation",
+      "role": "good",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ],
+      "canonical_sha256": "bf0e71e05372a1abc06b0cee67bf33678837de710752418e8678b37dd5eda65d"
+    },
+    {
+      "attempt_id": "quality004-membership_matched_sum-r3-bad",
+      "pair_id": "quality004-membership_matched_sum-r3",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "6b269c5206a4cad06a3d1935c4fe2ea763a1e458002fe60b4703f62c6fecbfcd"
+    },
+    {
+      "attempt_id": "quality004-membership_match_count-r3-good",
+      "pair_id": "quality004-membership_match_count-r3",
+      "contract_id": "membership_match_count",
+      "family": "membership",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "e9d0217c107b960d588da1d2ddd7a0fc4e1f9002bd7d6235b50f79b7d0969e0d"
+    },
+    {
+      "attempt_id": "quality004-strings_reverse-r3-good",
+      "pair_id": "quality004-strings_reverse-r3",
+      "contract_id": "strings_reverse",
+      "family": "strings",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "1a2a4007192814f1183c4044abf842a9ddfb740c611f209c97b286fe4776ea9a"
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater_equal-r3-good",
+      "pair_id": "quality004-aggregation_greater_equal-r3",
+      "contract_id": "aggregation_greater_equal",
+      "family": "aggregation",
+      "role": "good",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ],
+      "canonical_sha256": "916a1a215bd600e43169ccfee047b6c853f4a8edb2efd156189014b33750362e"
+    },
+    {
+      "attempt_id": "quality004-aggregation_less-r3-bad",
+      "pair_id": "quality004-aggregation_less-r3",
+      "contract_id": "aggregation_less",
+      "family": "aggregation",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": false,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "compilation_failed"
+      ],
+      "canonical_sha256": "fc5ea3f16597bf40dcbfd1ef6632f49af63451f33884b90d8817129c363f1de4"
+    },
+    {
+      "attempt_id": "quality004-strings_delimited-r3-bad",
+      "pair_id": "quality004-strings_delimited-r3",
+      "contract_id": "strings_delimited",
+      "family": "strings",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ],
+      "canonical_sha256": "f96dac3056e3df33e3009612e2abec68eb3645b6d32cfc747ca1cdda0b5cc8cc"
+    },
+    {
+      "attempt_id": "quality004-strings_nonempty-r3-good",
+      "pair_id": "quality004-strings_nonempty-r3",
+      "contract_id": "strings_nonempty",
+      "family": "strings",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "60319a04e7976332857301b159643a8cd9858a01950220e6a24d16d54da753db"
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r3-bad",
+      "pair_id": "quality004-membership_miss_count-r3",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "role": "bad",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "0accbbf118f2b2db717f23fcb811203d64ca466efab88da12dfa20bc437d32a3"
+    },
+    {
+      "attempt_id": "quality004-membership_miss_count-r3-good",
+      "pair_id": "quality004-membership_miss_count-r3",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "63789bb831611f1f406b11ff3b00fc584248a72f3d3cad79993d007427f2f752"
+    },
+    {
+      "attempt_id": "quality004-aggregation_greater_equal-r3-bad",
+      "pair_id": "quality004-aggregation_greater_equal-r3",
+      "contract_id": "aggregation_greater_equal",
+      "family": "aggregation",
+      "role": "bad",
+      "raw_compile": false,
+      "normalized_compile": false,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "compilation_failed"
+      ],
+      "canonical_sha256": "2c66efc4f046a525213ca51363add2c6f5721df086db7cd96ab0245d9331db15"
+    },
+    {
+      "attempt_id": "quality004-aggregation_even_greater-r3-good",
+      "pair_id": "quality004-aggregation_even_greater-r3",
+      "contract_id": "aggregation_even_greater",
+      "family": "aggregation",
+      "role": "good",
+      "raw_compile": true,
+      "normalized_compile": true,
+      "functional_pass": false,
+      "mechanism": "not_admitted_before_mechanism_review",
+      "admitted": false,
+      "reasons": [
+        "functional_tests_failed"
+      ],
+      "canonical_sha256": "c4ed1a90347218e166a9f48815d17164b7e1f8e87c696a988e442db50daf2ab9"
+    },
+    {
+      "attempt_id": "quality004-membership_matched_position_sum-r3-good",
+      "pair_id": "quality004-membership_matched_position_sum-r3",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "role": "good",
+      "raw_compile": false,
+      "normalized_compile": true,
+      "functional_pass": true,
+      "mechanism": "manual_review_pass",
+      "admitted": true,
+      "reasons": [],
+      "canonical_sha256": "53a2561aebdfc868d9fa8fa67a43cefdfd4a42ae2b5bfbbfc275b40cc5812c6e"
+    }
+  ],
+  "pairs": [
+    {
+      "pair_id": "quality004-aggregation_even_greater-r1",
+      "contract_id": "aggregation_even_greater",
+      "family": "aggregation",
+      "admitted": false,
+      "methods": [
+        "quality004-aggregation_even_greater-r1-bad",
+        "quality004-aggregation_even_greater-r1-good"
+      ],
+      "reasons": {
+        "bad": [
+          "compilation_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-aggregation_even_greater-r2",
+      "contract_id": "aggregation_even_greater",
+      "family": "aggregation",
+      "admitted": false,
+      "methods": [
+        "quality004-aggregation_even_greater-r2-bad",
+        "quality004-aggregation_even_greater-r2-good"
+      ],
+      "reasons": {
+        "bad": [
+          "compilation_failed"
+        ],
+        "good": [
+          "functional_tests_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-aggregation_even_greater-r3",
+      "contract_id": "aggregation_even_greater",
+      "family": "aggregation",
+      "admitted": false,
+      "methods": [
+        "quality004-aggregation_even_greater-r3-bad",
+        "quality004-aggregation_even_greater-r3-good"
+      ],
+      "reasons": {
+        "bad": [
+          "compilation_failed"
+        ],
+        "good": [
+          "functional_tests_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-aggregation_greater-r1",
+      "contract_id": "aggregation_greater",
+      "family": "aggregation",
+      "admitted": false,
+      "methods": [
+        "quality004-aggregation_greater-r1-good",
+        "quality004-aggregation_greater-r1-bad"
+      ],
+      "reasons": {
+        "bad": [
+          "compilation_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-aggregation_greater-r2",
+      "contract_id": "aggregation_greater",
+      "family": "aggregation",
+      "admitted": false,
+      "methods": [
+        "quality004-aggregation_greater-r2-bad",
+        "quality004-aggregation_greater-r2-good"
+      ],
+      "reasons": {
+        "good": [
+          "functional_tests_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-aggregation_greater-r3",
+      "contract_id": "aggregation_greater",
+      "family": "aggregation",
+      "admitted": false,
+      "methods": [
+        "quality004-aggregation_greater-r3-good",
+        "quality004-aggregation_greater-r3-bad"
+      ],
+      "reasons": {
+        "good": [
+          "functional_tests_failed"
+        ],
+        "bad": [
+          "compilation_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-aggregation_greater_equal-r1",
+      "contract_id": "aggregation_greater_equal",
+      "family": "aggregation",
+      "admitted": true,
+      "methods": [
+        "quality004-aggregation_greater_equal-r1-good",
+        "quality004-aggregation_greater_equal-r1-bad"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-aggregation_greater_equal-r2",
+      "contract_id": "aggregation_greater_equal",
+      "family": "aggregation",
+      "admitted": false,
+      "methods": [
+        "quality004-aggregation_greater_equal-r2-bad",
+        "quality004-aggregation_greater_equal-r2-good"
+      ],
+      "reasons": {
+        "good": [
+          "functional_tests_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-aggregation_greater_equal-r3",
+      "contract_id": "aggregation_greater_equal",
+      "family": "aggregation",
+      "admitted": false,
+      "methods": [
+        "quality004-aggregation_greater_equal-r3-good",
+        "quality004-aggregation_greater_equal-r3-bad"
+      ],
+      "reasons": {
+        "good": [
+          "functional_tests_failed"
+        ],
+        "bad": [
+          "compilation_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-aggregation_less-r1",
+      "contract_id": "aggregation_less",
+      "family": "aggregation",
+      "admitted": false,
+      "methods": [
+        "quality004-aggregation_less-r1-bad",
+        "quality004-aggregation_less-r1-good"
+      ],
+      "reasons": {
+        "bad": [
+          "compilation_failed"
+        ],
+        "good": [
+          "functional_tests_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-aggregation_less-r2",
+      "contract_id": "aggregation_less",
+      "family": "aggregation",
+      "admitted": false,
+      "methods": [
+        "quality004-aggregation_less-r2-good",
+        "quality004-aggregation_less-r2-bad"
+      ],
+      "reasons": {
+        "good": [
+          "functional_tests_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-aggregation_less-r3",
+      "contract_id": "aggregation_less",
+      "family": "aggregation",
+      "admitted": false,
+      "methods": [
+        "quality004-aggregation_less-r3-good",
+        "quality004-aggregation_less-r3-bad"
+      ],
+      "reasons": {
+        "good": [
+          "functional_tests_failed"
+        ],
+        "bad": [
+          "compilation_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-membership_match_count-r1",
+      "contract_id": "membership_match_count",
+      "family": "membership",
+      "admitted": false,
+      "methods": [
+        "quality004-membership_match_count-r1-bad",
+        "quality004-membership_match_count-r1-good"
+      ],
+      "reasons": {
+        "bad": [
+          "missing_explicit_local_found_flag"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-membership_match_count-r2",
+      "contract_id": "membership_match_count",
+      "family": "membership",
+      "admitted": false,
+      "methods": [
+        "quality004-membership_match_count-r2-bad",
+        "quality004-membership_match_count-r2-good"
+      ],
+      "reasons": {
+        "bad": [
+          "missing_explicit_local_found_flag"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-membership_match_count-r3",
+      "contract_id": "membership_match_count",
+      "family": "membership",
+      "admitted": false,
+      "methods": [
+        "quality004-membership_match_count-r3-bad",
+        "quality004-membership_match_count-r3-good"
+      ],
+      "reasons": {
+        "bad": [
+          "missing_explicit_local_found_flag"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r1",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "admitted": true,
+      "methods": [
+        "quality004-membership_matched_position_sum-r1-bad",
+        "quality004-membership_matched_position_sum-r1-good"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r2",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "admitted": true,
+      "methods": [
+        "quality004-membership_matched_position_sum-r2-bad",
+        "quality004-membership_matched_position_sum-r2-good"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-membership_matched_position_sum-r3",
+      "contract_id": "membership_matched_position_sum",
+      "family": "membership",
+      "admitted": true,
+      "methods": [
+        "quality004-membership_matched_position_sum-r3-bad",
+        "quality004-membership_matched_position_sum-r3-good"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r1",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "admitted": true,
+      "methods": [
+        "quality004-membership_matched_sum-r1-good",
+        "quality004-membership_matched_sum-r1-bad"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r2",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "admitted": true,
+      "methods": [
+        "quality004-membership_matched_sum-r2-bad",
+        "quality004-membership_matched_sum-r2-good"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-membership_matched_sum-r3",
+      "contract_id": "membership_matched_sum",
+      "family": "membership",
+      "admitted": true,
+      "methods": [
+        "quality004-membership_matched_sum-r3-good",
+        "quality004-membership_matched_sum-r3-bad"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r1",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "admitted": true,
+      "methods": [
+        "quality004-membership_miss_count-r1-bad",
+        "quality004-membership_miss_count-r1-good"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r2",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "admitted": true,
+      "methods": [
+        "quality004-membership_miss_count-r2-good",
+        "quality004-membership_miss_count-r2-bad"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-membership_miss_count-r3",
+      "contract_id": "membership_miss_count",
+      "family": "membership",
+      "admitted": true,
+      "methods": [
+        "quality004-membership_miss_count-r3-bad",
+        "quality004-membership_miss_count-r3-good"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-strings_all-r1",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "admitted": true,
+      "methods": [
+        "quality004-strings_all-r1-good",
+        "quality004-strings_all-r1-bad"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-strings_all-r2",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "admitted": true,
+      "methods": [
+        "quality004-strings_all-r2-good",
+        "quality004-strings_all-r2-bad"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-strings_all-r3",
+      "contract_id": "strings_all",
+      "family": "strings",
+      "admitted": true,
+      "methods": [
+        "quality004-strings_all-r3-good",
+        "quality004-strings_all-r3-bad"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-strings_delimited-r1",
+      "contract_id": "strings_delimited",
+      "family": "strings",
+      "admitted": false,
+      "methods": [
+        "quality004-strings_delimited-r1-good",
+        "quality004-strings_delimited-r1-bad"
+      ],
+      "reasons": {
+        "good": [
+          "compilation_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-strings_delimited-r2",
+      "contract_id": "strings_delimited",
+      "family": "strings",
+      "admitted": false,
+      "methods": [
+        "quality004-strings_delimited-r2-good",
+        "quality004-strings_delimited-r2-bad"
+      ],
+      "reasons": {
+        "bad": [
+          "functional_tests_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-strings_delimited-r3",
+      "contract_id": "strings_delimited",
+      "family": "strings",
+      "admitted": false,
+      "methods": [
+        "quality004-strings_delimited-r3-good",
+        "quality004-strings_delimited-r3-bad"
+      ],
+      "reasons": {
+        "good": [
+          "functional_tests_failed"
+        ],
+        "bad": [
+          "functional_tests_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-strings_nonempty-r1",
+      "contract_id": "strings_nonempty",
+      "family": "strings",
+      "admitted": false,
+      "methods": [
+        "quality004-strings_nonempty-r1-good",
+        "quality004-strings_nonempty-r1-bad"
+      ],
+      "reasons": {
+        "bad": [
+          "StringBuilder_in_repeated_concatenation_role"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-strings_nonempty-r2",
+      "contract_id": "strings_nonempty",
+      "family": "strings",
+      "admitted": true,
+      "methods": [
+        "quality004-strings_nonempty-r2-good",
+        "quality004-strings_nonempty-r2-bad"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-strings_nonempty-r3",
+      "contract_id": "strings_nonempty",
+      "family": "strings",
+      "admitted": false,
+      "methods": [
+        "quality004-strings_nonempty-r3-bad",
+        "quality004-strings_nonempty-r3-good"
+      ],
+      "reasons": {
+        "bad": [
+          "StringBuilder_in_repeated_concatenation_role"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-strings_reverse-r1",
+      "contract_id": "strings_reverse",
+      "family": "strings",
+      "admitted": false,
+      "methods": [
+        "quality004-strings_reverse-r1-bad",
+        "quality004-strings_reverse-r1-good"
+      ],
+      "reasons": {
+        "bad": [
+          "compilation_failed"
+        ]
+      }
+    },
+    {
+      "pair_id": "quality004-strings_reverse-r2",
+      "contract_id": "strings_reverse",
+      "family": "strings",
+      "admitted": true,
+      "methods": [
+        "quality004-strings_reverse-r2-bad",
+        "quality004-strings_reverse-r2-good"
+      ],
+      "reasons": {}
+    },
+    {
+      "pair_id": "quality004-strings_reverse-r3",
+      "contract_id": "strings_reverse",
+      "family": "strings",
+      "admitted": false,
+      "methods": [
+        "quality004-strings_reverse-r3-bad",
+        "quality004-strings_reverse-r3-good"
+      ],
+      "reasons": {
+        "bad": [
+          "compilation_failed"
+        ]
+      }
+    }
+  ],
+  "canonical_duplicate_groups": [
+    [
+      "quality004-strings_nonempty-r1-good",
+      "quality004-strings_nonempty-r1-bad",
+      "quality004-strings_nonempty-r3-bad"
+    ],
+    [
+      "quality004-strings_all-r1-good",
+      "quality004-strings_all-r2-good"
+    ],
+    [
+      "quality004-membership_match_count-r1-good",
+      "quality004-membership_match_count-r2-good",
+      "quality004-membership_match_count-r3-good"
+    ],
+    [
+      "quality004-aggregation_less-r1-good",
+      "quality004-aggregation_less-r2-good"
+    ],
+    [
+      "quality004-aggregation_greater_equal-r1-bad",
+      "quality004-aggregation_greater_equal-r2-bad"
+    ],
+    [
+      "quality004-aggregation_greater_equal-r2-good",
+      "quality004-aggregation_greater_equal-r3-good"
+    ],
+    [
+      "quality004-strings_nonempty-r2-good",
+      "quality004-strings_nonempty-r3-good"
+    ],
+    [
+      "quality004-strings_all-r2-bad",
+      "quality004-strings_all-r3-bad"
+    ],
+    [
+      "quality004-membership_match_count-r2-bad",
+      "quality004-membership_match_count-r3-bad"
+    ]
+  ],
+  "canonicalization_limit": "Ignores trivia and consistently renames declared parameters/locals. Does not prove semantic equivalence or collapse different loop syntax. No deduplication applied to primary admission."
+}

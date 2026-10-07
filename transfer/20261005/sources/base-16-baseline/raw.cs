@@ -1,0 +1,1 @@
+public static class Baseline { public static string Run(string[] parts) { string result = string.Empty; for (int i = 0; i < parts.Length; i += 2) { result += parts[i]; } return result; } }
